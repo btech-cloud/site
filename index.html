@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Site institucional moderno, responsivo e pronto para personalizacao."
+    >
+    <title>Seu Site | Presenca digital simples e bonita</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Navegacao principal">
+        <a class="brand" href="#inicio" aria-label="Ir para o inicio">
+          <span class="brand__mark" aria-hidden="true">S</span>
+          <span>Seu Site</span>
+        </a>
+
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu">
+          <span class="sr-only">Abrir menu</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav__links" id="menu">
+          <li><a href="#servicos">Servicos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero__content container">
+          <div class="hero__text">
+            <p class="eyebrow">Novo projeto digital</p>
+            <h1>Construa uma presenca online clara, moderna e profissional.</h1>
+            <p class="hero__lead">
+              Esta pagina inicial foi criada como ponto de partida para apresentar
+              sua marca, seus servicos e um caminho simples para o cliente entrar em contato.
+            </p>
+            <div class="hero__actions">
+              <a class="button button--primary" href="#contato">Comecar agora</a>
+              <a class="button button--secondary" href="#servicos">Ver servicos</a>
+            </div>
+          </div>
+
+          <div class="hero__card" aria-label="Resumo do site">
+            <div class="hero__card-topline"></div>
+            <p class="hero__metric">100%</p>
+            <p class="hero__metric-label">Responsivo para celular, tablet e desktop</p>
+            <div class="hero__mini-grid" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="servicos">
+        <div class="container">
+          <div class="section__heading">
+            <p class="eyebrow">O que o site entrega</p>
+            <h2>Uma base simples para crescer.</h2>
+            <p>
+              Use estes blocos para destacar ofertas, beneficios ou diferenciais do seu projeto.
+            </p>
+          </div>
+
+          <div class="cards">
+            <article class="card">
+              <span class="card__icon" aria-hidden="true">01</span>
+              <h3>Apresentacao objetiva</h3>
+              <p>Mostre quem voce e, o que oferece e por que as pessoas devem confiar no seu trabalho.</p>
+            </article>
+
+            <article class="card">
+              <span class="card__icon" aria-hidden="true">02</span>
+              <h3>Design responsivo</h3>
+              <p>Layouts fluidos garantem boa leitura em telas pequenas e grandes sem ajustes manuais.</p>
+            </article>
+
+            <article class="card">
+              <span class="card__icon" aria-hidden="true">03</span>
+              <h3>Contato direto</h3>
+              <p>Um formulario simples ajuda visitantes interessados a enviarem mensagens rapidamente.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--split" id="sobre">
+        <div class="container split">
+          <div>
+            <p class="eyebrow">Sobre o projeto</p>
+            <h2>Feito para ser editado com facilidade.</h2>
+          </div>
+          <div class="split__text">
+            <p>
+              A estrutura usa apenas HTML, CSS e JavaScript. Isso facilita publicar em qualquer
+              hospedagem estatica e adaptar textos, cores e secoes conforme a identidade do site.
+            </p>
+            <ul class="checklist">
+              <li>Sem configuracao complexa</li>
+              <li>Codigo organizado por arquivo</li>
+              <li>Base acessivel e responsiva</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contato">
+        <div class="container contact">
+          <div>
+            <p class="eyebrow">Contato</p>
+            <h2>Vamos transformar esta base no seu site final?</h2>
+            <p>
+              Personalize este formulario com seu e-mail, telefone ou link preferido para receber mensagens.
+            </p>
+          </div>
+
+          <form class="contact__form">
+            <label>
+              Nome
+              <input type="text" name="name" placeholder="Seu nome" autocomplete="name">
+            </label>
+            <label>
+              E-mail
+              <input type="email" name="email" placeholder="voce@email.com" autocomplete="email">
+            </label>
+            <label>
+              Mensagem
+              <textarea name="message" rows="4" placeholder="Como posso ajudar?"></textarea>
+            </label>
+            <button class="button button--primary" type="submit">Enviar mensagem</button>
+            <p class="form-note" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__content">
+        <p>&copy; <span id="current-year"></span> Seu Site. Todos os direitos reservados.</p>
+        <a href="#inicio">Voltar ao topo</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
