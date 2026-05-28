@@ -1,7 +1,7 @@
 const menuButton = document.querySelector(".nav__toggle");
 const menu = document.querySelector(".nav__links");
 const currentYear = document.querySelector("#current-year");
-const contactForm = document.querySelector(".contact__form");
+const contactForm = document.querySelector(".contact-form");
 const formNote = document.querySelector(".form-note");
 
 if (currentYear) {
@@ -27,7 +27,7 @@ if (menuButton && menu) {
 if (contactForm && formNote) {
   contactForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    formNote.textContent = "Mensagem pronta para envio. Configure um servico de formulario para receber contatos.";
+    formNote.textContent = "Mensagem registrada. Configure o envio do formulário para receber os contatos da ABTECH.";
     contactForm.reset();
   });
 }

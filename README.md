@@ -1,17 +1,20 @@
-# Site
+# Site ABTECH
 
-Landing page estatica criada com HTML, CSS e JavaScript puro. Ela serve como
-ponto de partida para um site institucional, portfolio ou pagina de apresentacao.
+Site institucional estático para a ABTECH, criado com HTML, CSS e JavaScript puro.
 
-## Arquivos
+A proposta visual segue o manual de identidade enviado: uso de colmeia, tipografia com referência à Century Gothic, paleta reduzida da marca e uma comunicação mais consultiva, humana e operacional.
 
-- `index.html`: estrutura da pagina e conteudo principal.
-- `styles.css`: estilos, layout responsivo e identidade visual.
-- `script.js`: menu mobile, ano automatico no rodape e comportamento do formulario.
+## Estrutura
+
+- `index.html`: home institucional com posicionamento, quem somos, áreas de atuação, experiências e contato.
+- `cloud.html`: página dedicada para Cloud & Infraestrutura, posicionada como especialidade operacional e consultiva.
+- `styles.css`: sistema visual, responsividade, componentes e aplicação da identidade ABTECH.
+- `script.js`: menu mobile, ano automático e feedback do formulário.
+- `assets/abtech-mark.svg`: elemento de colmeia inspirado na identidade visual da marca.
 
 ## Como abrir localmente
 
-Abra o arquivo `index.html` diretamente no navegador ou rode um servidor local:
+Abra `index.html` no navegador ou rode um servidor local:
 
 ```bash
 python3 -m http.server 8000
@@ -19,8 +22,9 @@ python3 -m http.server 8000
 
 Depois acesse `http://localhost:8000`.
 
-## Personalizacao
+## Próximos ajustes recomendados
 
-1. Troque textos, nome da marca e chamadas em `index.html`.
-2. Ajuste cores e espacamentos no bloco `:root` de `styles.css`.
-3. Configure o formulario de contato em `script.js` ou conecte um servico de envio.
+1. Substituir o SVG temporário pelo logotipo oficial em arquivo vetorial, se disponível.
+2. Conectar o formulário de contato a um serviço de envio.
+3. Inserir clientes, segmentos, cases e logos conforme a ABTECH consolidar esses materiais.
+4. Revisar textos finais com os responsáveis Erico e Alexandre antes da publicação.
