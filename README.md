@@ -7,7 +7,7 @@ A proposta visual segue o manual de identidade enviado: uso de colmeia, tipograf
 ## Estrutura
 
 - `index.html`: home institucional com posicionamento, quem somos, áreas de atuação, experiências e contato.
-- `cloud.html`: página dedicada para Cloud & Infraestrutura, posicionada como especialidade operacional e consultiva.
+- `cloud.html`: página dedicada para Cloud & Arquitetura, posicionada como escolha, direcionamento e acompanhamento consultivo sem infraestrutura própria.
 - `styles.css`: sistema visual, responsividade, componentes e aplicação da identidade ABTECH.
 - `script.js`: menu mobile, ano automático e feedback do formulário.
 - `assets/abtech-mark.svg`: elemento de colmeia inspirado na identidade visual da marca.
