@@ -27,7 +27,7 @@ if (menuButton && menu) {
 if (contactForm && formNote) {
   contactForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    formNote.textContent = "Mensagem registrada. Configure o envio do formulário para receber os contatos da ABTECH.";
+    formNote.textContent = "Mensagem registrada. Configure o envio do formulário para iniciar as conversas com a ABTECH.";
     contactForm.reset();
   });
 }
