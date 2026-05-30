@@ -16,6 +16,7 @@ O conceito central do site é **tecnologia forte sem perder proximidade**: cloud
 - `assets/bnuvem-logo.svg`: logotipo horizontal B Nuvem com colmeia e tipografia inspirada no manual.
 - `assets/bnuvem-people-workshop.png`: imagem editorial de pessoas em contexto de tecnologia e operação.
 - `assets/bnuvem-operations-team.png`: imagem editorial de equipe revisando operação e execução.
+- `assets/bnuvem-client-conversation.png`: imagem editorial de conversa com cliente e planejamento operacional.
 
 ## Como abrir localmente
 
