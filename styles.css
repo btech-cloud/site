@@ -85,14 +85,20 @@ button, a, input, textarea { -webkit-tap-highlight-color: transparent; }
 .hero__orb--blue { top: 60px; right: -130px; background: linear-gradient(135deg, var(--blue), var(--violet)); }
 .hero__orb--magenta { bottom: -170px; left: -120px; background: linear-gradient(135deg, var(--magenta), var(--amber)); }
 .hero__orb--cyan { top: 34%; left: 52%; width: 260px; height: 260px; background: linear-gradient(135deg, var(--cyan), var(--mint)); opacity: 0.13; }
-.brand-field { position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: 0.38; }
-.brand-field span { position: absolute; width: 120px; height: 104px; clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%); border: 2px solid rgba(20, 60, 255, 0.12); }
-.brand-field span:nth-child(1) { top: 13%; left: 5%; background: rgba(0, 255, 255, 0.08); }
-.brand-field span:nth-child(2) { top: 24%; left: 12%; border-color: rgba(200, 0, 210, 0.16); }
-.brand-field span:nth-child(3) { right: 8%; top: 20%; background: rgba(255, 175, 60, 0.1); }
-.brand-field span:nth-child(4) { right: 18%; bottom: 16%; border-color: rgba(0, 225, 180, 0.18); }
-.brand-field span:nth-child(5) { left: 40%; bottom: 8%; background: rgba(110, 30, 230, 0.08); }
-.brand-field span:nth-child(6) { right: 3%; bottom: 42%; border-color: rgba(255, 0, 255, 0.16); }
+.brand-field { position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: 0.52; }
+.brand-field span {
+  position: absolute;
+  width: 132px;
+  height: 114px;
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  mix-blend-mode: multiply;
+}
+.brand-field span:nth-child(1) { top: 15%; left: 5%; background: linear-gradient(135deg, var(--amber), var(--magenta)); }
+.brand-field span:nth-child(2) { top: 22%; left: 11%; background: linear-gradient(135deg, var(--blue), var(--violet)); opacity: 0.82; }
+.brand-field span:nth-child(3) { top: 29%; left: 17%; background: linear-gradient(135deg, var(--cyan), var(--mint)); opacity: 0.78; }
+.brand-field span:nth-child(4) { right: 13%; top: 16%; background: linear-gradient(135deg, var(--amber), var(--pink)); opacity: 0.78; }
+.brand-field span:nth-child(5) { right: 7%; top: 23%; background: linear-gradient(135deg, var(--blue), var(--violet)); opacity: 0.82; }
+.brand-field span:nth-child(6) { right: 1%; top: 30%; background: linear-gradient(135deg, var(--cyan), var(--mint)); opacity: 0.78; }
 .hero__content { display: grid; grid-template-columns: minmax(0, 1fr) minmax(360px, 0.86fr); gap: 56px; align-items: center; }
 .hero__content--page { align-items: stretch; }
 .hero__copy { max-width: 780px; }
