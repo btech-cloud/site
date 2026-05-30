@@ -27,7 +27,7 @@ if (menuButton && menu) {
 if (contactForm && formNote) {
   contactForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    formNote.textContent = "Mensagem registrada. Configure o envio do formulário para iniciar as conversas com a BCloud.";
+    formNote.textContent = "Mensagem registrada. Configure o envio do formulário para iniciar as conversas com a Bnuvem.";
     contactForm.reset();
   });
 }
