@@ -110,6 +110,12 @@ h1, h2, h3 { line-height: 1.05; letter-spacing: -0.045em; }
 h1 { max-width: 900px; margin-bottom: 24px; font-size: clamp(2.75rem, 7vw, 6rem); }
 h2 { margin-bottom: 18px; font-size: clamp(2rem, 4vw, 3.65rem); }
 h3 { margin-bottom: 12px; font-size: 1.3rem; }
+.gradient-text {
+  color: transparent;
+  background: linear-gradient(100deg, var(--blue), var(--violet) 42%, var(--magenta) 72%, var(--amber));
+  -webkit-background-clip: text;
+  background-clip: text;
+}
 .hero__lead, .section-heading p, .rich-text, .audience-card p, .capability-card p, .visual-section p, .process-card p, .feature-list p, .contact-card p, .cloud-positioning p { color: var(--muted); font-size: 1.05rem; }
 .hero__lead { max-width: 720px; margin-bottom: 34px; font-size: clamp(1.05rem, 1.4vw, 1.22rem); }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 14px; }
@@ -253,6 +259,79 @@ h3 { margin-bottom: 12px; font-size: 1.3rem; }
   gap: 42px;
   align-items: center;
   margin-bottom: 78px;
+}
+.photo-honeycomb {
+  position: relative;
+  min-height: 500px;
+}
+.photo-honeycomb::before,
+.photo-honeycomb::after {
+  position: absolute;
+  content: "";
+  clip-path: polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);
+  pointer-events: none;
+}
+.photo-honeycomb::before {
+  top: 26px;
+  left: 18px;
+  width: 190px;
+  height: 164px;
+  background: linear-gradient(135deg, var(--amber), var(--magenta));
+  opacity: 0.72;
+  mix-blend-mode: multiply;
+}
+.photo-honeycomb::after {
+  right: 42px;
+  bottom: 28px;
+  width: 210px;
+  height: 182px;
+  border: 3px solid rgba(20, 60, 255, 0.18);
+}
+.photo-hex {
+  position: absolute;
+  margin: 0;
+  overflow: hidden;
+  clip-path: polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);
+  box-shadow: var(--shadow-soft);
+  isolation: isolate;
+}
+.photo-hex::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background:
+    radial-gradient(circle at 22% 18%, rgba(0,255,255,0.28), transparent 13rem),
+    linear-gradient(135deg, rgba(10,20,50,0.08), rgba(200,0,210,0.18));
+  mix-blend-mode: soft-light;
+}
+.photo-hex img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.photo-hex--one {
+  top: 76px;
+  left: 30px;
+  width: 330px;
+  height: 286px;
+  z-index: 2;
+}
+.photo-hex--two {
+  top: 18px;
+  right: 32px;
+  width: 270px;
+  height: 234px;
+  z-index: 1;
+}
+.photo-hex--three {
+  right: 92px;
+  bottom: 24px;
+  width: 300px;
+  height: 260px;
+  z-index: 3;
+}
+.photo-hex--three img {
+  object-position: 70% center;
 }
 .people-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
 .people-grid--featured { gap: 24px; }
@@ -432,6 +511,10 @@ h3 { margin-bottom: 12px; font-size: 1.3rem; }
   .brand-statement { min-height: auto; }
   .brand-statement img { margin-bottom: 44px; }
   .people-context { margin-bottom: 56px; }
+  .photo-honeycomb { min-height: 430px; }
+  .photo-hex--one { left: 0; width: 300px; height: 260px; }
+  .photo-hex--two { right: 0; width: 250px; height: 216px; }
+  .photo-hex--three { right: 50px; width: 280px; height: 242px; }
   .image-panel--people, .image-panel--operations { transform: none; }
   .audience-grid, .people-grid { grid-template-columns: 1fr; }
   .cloud-positioning__inner { grid-template-columns: 1fr; }
@@ -445,6 +528,12 @@ h3 { margin-bottom: 12px; font-size: 1.3rem; }
   .hero-console, .contact-card, .visual-section__inner, .cloud-positioning__inner { padding: 24px; border-radius: 24px; }
   .method-visual { padding: 18px; border-radius: 24px; }
   .image-panel, .image-panel img { min-height: 300px; }
+  .photo-honeycomb { min-height: 360px; }
+  .photo-honeycomb::before { width: 130px; height: 112px; }
+  .photo-honeycomb::after { width: 150px; height: 130px; }
+  .photo-hex--one { top: 78px; width: 230px; height: 200px; }
+  .photo-hex--two { width: 190px; height: 165px; }
+  .photo-hex--three { right: 20px; bottom: 28px; width: 210px; height: 182px; }
   .cloud-map { min-height: 290px; }
   .cloud-map__center img { width: 82px; }
   .node { font-size: 0.72rem; padding-inline: 10px; }
