@@ -1,6 +1,6 @@
 <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Símbolo Bnuvem</title>
-  <desc id="desc">Colmeia Bnuvem com hexágono e três formas orgânicas em degradê sobrepostas.</desc>
+  <title id="title">Símbolo B Nuvem</title>
+  <desc id="desc">Colmeia B Nuvem com hexágono e três formas orgânicas em degradê sobrepostas.</desc>
   <defs>
     <clipPath id="hexClip"><path d="M48 4L86.1 26V70L48 92L9.9 70V26L48 4Z"/></clipPath>
     <linearGradient id="topWarm" x1="20" y1="8" x2="54" y2="60" gradientUnits="userSpaceOnUse"><stop stop-color="#FFAF3C"/><stop offset="0.48" stop-color="#FF4BAA"/><stop offset="1" stop-color="#B400D7"/></linearGradient>
