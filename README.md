@@ -1,18 +1,19 @@
-# Site ABTECH
+# Site BNuvem
 
-Site institucional estático para a ABTECH, criado com HTML, CSS e JavaScript puro.
+Site institucional estático para a BNuvem, criado com HTML, CSS e JavaScript puro.
 
 A proposta visual segue o manual de identidade enviado: uso de colmeia, tipografia com referência à Century Gothic, paleta reduzida da marca e uma comunicação consultiva, humana e operacional.
 
-O conceito central do site é **proximidade operacional**: tecnologia forte sem perder humanidade, com clareza, acompanhamento e construção conjunta.
+O conceito central do site é **proximidade operacional com profundidade técnica**: tecnologia forte, cloud, IA e automação sem perder humanidade, clareza e acompanhamento.
 
 ## Estrutura
 
-- `index.html`: home institucional com proximidade operacional, quem somos, atuação, forma de trabalho, experiências e contato.
-- `cloud.html`: página dedicada para cloud acompanhada, posicionada como escolha, arquitetura e acompanhamento consultivo sem infraestrutura própria.
-- `styles.css`: sistema visual, responsividade, componentes e aplicação da identidade ABTECH.
+- `index.html`: home institucional com públicos, soluções, stack técnico, proximidade operacional, pessoas e contato.
+- `cloud.html`: página dedicada para cloud acompanhada, cobrindo clientes que querem simplicidade e empresas técnicas que precisam de escala.
+- `styles.css`: sistema visual, responsividade, componentes e aplicação da identidade BNuvem.
 - `script.js`: menu mobile, ano automático e feedback do formulário.
-- `assets/abtech-mark.svg`: elemento de colmeia inspirado na identidade visual da marca.
+- `assets/bnuvem-mark.svg`: elemento de colmeia inspirado na identidade visual da marca.
+- `assets/bnuvem-logo.svg`: logotipo horizontal BNuvem com colmeia e tipografia inspirada no manual.
 
 ## Como abrir localmente
 
@@ -26,7 +27,7 @@ Depois acesse `http://localhost:8000`.
 
 ## Próximos ajustes recomendados
 
-1. Substituir o SVG temporário pelo logotipo oficial em arquivo vetorial, se disponível.
+1. Revisar o logotipo BNuvem final com designer, se houver arquivo vetorial oficial.
 2. Conectar o formulário de contato a um serviço de envio.
-3. Inserir clientes, segmentos, cases e logos conforme a ABTECH consolidar esses materiais.
+3. Inserir clientes, segmentos, cases e logos conforme a BNuvem consolidar esses materiais.
 4. Revisar textos finais com os responsáveis Erico e Alexandre antes da publicação.

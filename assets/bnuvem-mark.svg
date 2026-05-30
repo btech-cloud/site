@@ -1,0 +1,22 @@
+<svg width="96" height="82" viewBox="0 0 96 82" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Símbolo BNuvem</title>
+  <desc id="desc">Colmeia com três células orgânicas em degradê nas cores da identidade BNuvem.</desc>
+  <defs>
+    <linearGradient id="cellA" x1="4" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#143CFF"/>
+      <stop offset="1" stop-color="#6E1EE6"/>
+    </linearGradient>
+    <linearGradient id="cellB" x1="46" y1="4" x2="91" y2="55" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C800D2"/>
+      <stop offset="0.5" stop-color="#FF00FF"/>
+      <stop offset="1" stop-color="#FFAF3C"/>
+    </linearGradient>
+    <linearGradient id="cellC" x1="26" y1="32" x2="70" y2="79" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00FFFF"/>
+      <stop offset="1" stop-color="#00E1B4"/>
+    </linearGradient>
+  </defs>
+  <path d="M25 5.5L45.8 17.5V41.5L25 53.5L4.2 41.5V17.5L25 5.5Z" fill="url(#cellA)" fill-opacity="0.95"/>
+  <path d="M68 5.5L88.8 17.5V41.5L68 53.5L47.2 41.5V17.5L68 5.5Z" fill="url(#cellB)" fill-opacity="0.93"/>
+  <path d="M46.5 30.5L67.3 42.5V66.5L46.5 78.5L25.7 66.5V42.5L46.5 30.5Z" fill="url(#cellC)" fill-opacity="0.9"/>
+</svg>
