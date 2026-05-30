@@ -1,0 +1,21 @@
+<svg width="96" height="82" viewBox="0 0 96 82" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Marca ABTECH</title>
+  <desc id="desc">Colmeia com tres celulas em degradê nas cores da identidade ABTECH.</desc>
+  <defs>
+    <linearGradient id="cellA" x1="12" y1="8" x2="58" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#143CFF"/>
+      <stop offset="1" stop-color="#6E1EE6"/>
+    </linearGradient>
+    <linearGradient id="cellB" x1="38" y1="4" x2="86" y2="57" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C800D2"/>
+      <stop offset="1" stop-color="#FFAF3C"/>
+    </linearGradient>
+    <linearGradient id="cellC" x1="24" y1="34" x2="74" y2="82" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00FFFF"/>
+      <stop offset="1" stop-color="#00E1B4"/>
+    </linearGradient>
+  </defs>
+  <path d="M25 5.5L45.8 17.5V41.5L25 53.5L4.2 41.5V17.5L25 5.5Z" fill="url(#cellA)" fill-opacity="0.94"/>
+  <path d="M68 5.5L88.8 17.5V41.5L68 53.5L47.2 41.5V17.5L68 5.5Z" fill="url(#cellB)" fill-opacity="0.92"/>
+  <path d="M46.5 30.5L67.3 42.5V66.5L46.5 78.5L25.7 66.5V42.5L46.5 30.5Z" fill="url(#cellC)" fill-opacity="0.88"/>
+</svg>

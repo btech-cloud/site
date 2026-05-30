@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Site institucional moderno, responsivo e pronto para personalizacao."
+      content="ABTECH: tecnologia próxima para organizar cloud, IA, automação, gestão e relacionamento com menos ruído e mais continuidade operacional."
     >
-    <title>Seu Site | Presenca digital simples e bonita</title>
+    <title>ABTECH | Tecnologia forte, perto da operação</title>
+    <link rel="icon" href="assets/abtech-mark.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header class="site-header">
-      <nav class="nav container" aria-label="Navegacao principal">
-        <a class="brand" href="#inicio" aria-label="Ir para o inicio">
-          <span class="brand__mark" aria-hidden="true">S</span>
-          <span>Seu Site</span>
+    <header class="site-header" data-header>
+      <nav class="nav container" aria-label="Navegação principal">
+        <a class="brand" href="index.html" aria-label="ABTECH - início">
+          <img class="brand__mark" src="assets/abtech-mark.svg" alt="" width="48" height="41">
+          <span class="brand__name">ABTECH</span>
         </a>
 
         <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu">
@@ -26,118 +27,317 @@
         </button>
 
         <ul class="nav__links" id="menu">
-          <li><a href="#servicos">Servicos</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="#proximidade">Proximidade</a></li>
+          <li><a href="#quem-somos">Quem somos</a></li>
+          <li><a href="#atuacao">Atuação</a></li>
+          <li><a href="cloud.html">Cloud</a></li>
+          <li><a class="nav__cta" href="#contato">Conversar com a ABTECH</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="hero" id="inicio">
+      <section class="hero hero--home" id="inicio">
+        <div class="hero__orb hero__orb--blue" aria-hidden="true"></div>
+        <div class="hero__orb hero__orb--amber" aria-hidden="true"></div>
+
         <div class="hero__content container">
-          <div class="hero__text">
-            <p class="eyebrow">Novo projeto digital</p>
-            <h1>Construa uma presenca online clara, moderna e profissional.</h1>
+          <div class="hero__copy">
+            <p class="eyebrow">Proximidade operacional</p>
+            <h1>Tecnologia forte, feita perto da operação.</h1>
             <p class="hero__lead">
-              Esta pagina inicial foi criada como ponto de partida para apresentar
-              sua marca, seus servicos e um caminho simples para o cliente entrar em contato.
+              A ABTECH ajuda negócios reais a atravessar mudanças tecnológicas sem caos,
+              sem distância e sem linguagem complicada. A gente entende a rotina, organiza
+              o caminho e constrói junto uma operação mais clara, inteligente e contínua.
             </p>
-            <div class="hero__actions">
-              <a class="button button--primary" href="#contato">Comecar agora</a>
-              <a class="button button--secondary" href="#servicos">Ver servicos</a>
+            <div class="hero__actions" aria-label="Ações principais">
+              <a class="button button--primary" href="#contato">Vamos construir isso junto</a>
+              <a class="button button--secondary" href="#proximidade">Entender a abordagem</a>
             </div>
           </div>
 
-          <div class="hero__card" aria-label="Resumo do site">
-            <div class="hero__card-topline"></div>
-            <p class="hero__metric">100%</p>
-            <p class="hero__metric-label">Responsivo para celular, tablet e desktop</p>
-            <div class="hero__mini-grid" aria-hidden="true">
+          <aside class="hero-panel" aria-label="Resumo do posicionamento ABTECH">
+            <div class="hero-panel__top">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span>Tecnologia sem afastar pessoas</span>
+            </div>
+            <div class="honeycomb honeycomb--hero" aria-hidden="true">
               <span></span>
               <span></span>
               <span></span>
             </div>
+            <p class="hero-panel__statement">
+              A transformação funciona melhor quando alguém caminha perto: escutando a operação,
+              simplificando decisões e acompanhando a evolução no ritmo certo.
+            </p>
+            <dl class="signal-grid">
+              <div>
+                <dt>Escuta real</dt>
+                <dd>Antes da solução, entendemos a rotina e o problema.</dd>
+              </div>
+              <div>
+                <dt>Clareza prática</dt>
+                <dd>Traduzimos tecnologia em decisões possíveis.</dd>
+              </div>
+              <div>
+                <dt>Continuidade</dt>
+                <dd>Acompanhamento para a operação evoluir sem perder controle.</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="Pilares ABTECH">
+        <div class="container trust-strip__inner">
+          <span>Clareza</span>
+          <span>Continuidade</span>
+          <span>IA aplicada</span>
+          <span>Cloud acompanhada</span>
+          <span>Relacionamento</span>
+        </div>
+      </section>
+
+      <section class="section intro-section" id="proximidade">
+        <div class="container two-column two-column--intro">
+          <div>
+            <p class="eyebrow">Ideia central</p>
+            <h2>A tecnologia não deveria afastar pessoas. Deveria aproximar operação, clareza e crescimento.</h2>
+          </div>
+          <div class="rich-text principle-panel">
+            <p>
+              O trabalho da ABTECH começa perto da realidade do cliente: conversas, processos,
+              gargalos, dúvidas, ferramentas já usadas e decisões que ficaram difíceis demais.
+            </p>
+            <p>
+              A partir daí, conectamos cloud, IA, automação, gestão e relacionamento de um jeito
+              simples de acompanhar. Não é sobre empurrar tecnologia. É sobre reduzir ruído,
+              organizar a transição e criar uma base mais preparada para crescer.
+            </p>
           </div>
         </div>
       </section>
 
-      <section class="section" id="servicos">
+      <section class="section section--soft" id="quem-somos">
+        <div class="container two-column two-column--intro">
+          <div>
+            <p class="eyebrow">Quem somos</p>
+            <h2>Uma operação consultiva que entra na conversa e fica perto da construção.</h2>
+          </div>
+          <div class="rich-text">
+            <p>
+              A ABTECH nasce da experiência prática em gestão, atendimento, comunicação,
+              tecnologia, operação e crescimento. Nosso papel é ajudar empresas a entender o que
+              precisa ser organizado antes de transformar qualquer ferramenta em promessa.
+            </p>
+            <p>
+              Trabalhamos com diagnóstico, arquitetura, IA, automação, cloud, relacionamento e
+              marketing de forma integrada. A diferença está na forma: menos distância, menos
+              buzzword e mais presença para transformar necessidade em estrutura sustentável.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container people-section">
+          <div class="section-heading section-heading--center">
+            <p class="eyebrow">Pessoas à frente</p>
+            <h2>Duas frentes fortes para pensar, organizar e executar junto.</h2>
+            <p>
+              A ABTECH não precisa parecer gigante para transmitir confiança. Ela precisa mostrar
+              quem está perto da decisão, da operação e da evolução dos projetos.
+            </p>
+          </div>
+
+          <div class="people-grid">
+            <article class="person-card">
+              <div class="person-card__avatar" aria-hidden="true">E</div>
+              <p class="person-card__role">Gestão, relacionamento e estratégia operacional</p>
+              <h3>Erico</h3>
+              <p>
+                Conecta estratégia, operação, comunicação e relacionamento para transformar
+                necessidades dispersas em caminhos mais claros. Atua na leitura do cliente, na
+                organização de prioridades e na criação de estruturas sustentáveis para a evolução
+                tecnológica fazer sentido no dia a dia.
+              </p>
+            </article>
+
+            <article class="person-card">
+              <div class="person-card__avatar" aria-hidden="true">A</div>
+              <p class="person-card__role">IA, cloud e inteligência operacional</p>
+              <h3>Alexandre</h3>
+              <p>
+                Identifica gargalos, oportunidades e pontos de melhoria dentro da operação.
+                Desenha caminhos com IA, automação, cloud e arquitetura para tornar ambientes
+                mais inteligentes, eficientes e preparados para crescer sem complicar a rotina.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--soft" id="atuacao">
         <div class="container">
-          <div class="section__heading">
-            <p class="eyebrow">O que o site entrega</p>
-            <h2>Uma base simples para crescer.</h2>
+          <div class="section-heading">
+            <p class="eyebrow">Como ajudamos</p>
+            <h2>Menos tecnologia solta. Mais operação organizada.</h2>
             <p>
-              Use estes blocos para destacar ofertas, beneficios ou diferenciais do seu projeto.
+              A ABTECH atua onde a tecnologia encontra a rotina: decisões de cloud, IA aplicada,
+              automações, gestão, atendimento, comunicação e crescimento. Sempre com acompanhamento,
+              clareza e cuidado para não transformar mudança em confusão.
             </p>
           </div>
 
-          <div class="cards">
-            <article class="card">
-              <span class="card__icon" aria-hidden="true">01</span>
-              <h3>Apresentacao objetiva</h3>
-              <p>Mostre quem voce e, o que oferece e por que as pessoas devem confiar no seu trabalho.</p>
+          <div class="capability-grid">
+            <article class="capability-card capability-card--featured">
+              <span class="capability-card__number">01</span>
+              <h3>Cloud & Arquitetura</h3>
+              <p>
+                Ajudamos a escolher provedores, desenhar arquitetura e acompanhar decisões de cloud
+                sem vender infraestrutura própria e sem deixar o cliente sozinho no processo.
+              </p>
+              <a href="cloud.html">Ver cloud acompanhada</a>
             </article>
 
-            <article class="card">
-              <span class="card__icon" aria-hidden="true">02</span>
-              <h3>Design responsivo</h3>
-              <p>Layouts fluidos garantem boa leitura em telas pequenas e grandes sem ajustes manuais.</p>
+            <article class="capability-card">
+              <span class="capability-card__number">02</span>
+              <h3>IA & Automação</h3>
+              <p>
+                Aplicamos IA e automação para reduzir atrito, encontrar oportunidades e melhorar
+                atendimento, gestão e processos sem criar complexidade desnecessária.
+              </p>
             </article>
 
-            <article class="card">
-              <span class="card__icon" aria-hidden="true">03</span>
-              <h3>Contato direto</h3>
-              <p>Um formulario simples ajuda visitantes interessados a enviarem mensagens rapidamente.</p>
+            <article class="capability-card">
+              <span class="capability-card__number">03</span>
+              <h3>Gestão & Operação</h3>
+              <p>
+                Organizamos prioridades, fluxos, rotinas e indicadores práticos para que a empresa
+                tenha mais clareza sobre o que precisa mudar e por onde começar.
+              </p>
+            </article>
+
+            <article class="capability-card">
+              <span class="capability-card__number">04</span>
+              <h3>Relacionamento & Growth</h3>
+              <p>
+                Conectamos comunicação, marketing e relacionamento com clientes internos e externos
+                para apoiar crescimento com mais coerência e menos ruído operacional.
+              </p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section section--split" id="sobre">
-        <div class="container split">
-          <div>
-            <p class="eyebrow">Sobre o projeto</p>
-            <h2>Feito para ser editado com facilidade.</h2>
-          </div>
-          <div class="split__text">
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Forma de trabalho</p>
+            <h2>Não é “faça tudo sozinho”. É “vamos construir isso junto”.</h2>
             <p>
-              A estrutura usa apenas HTML, CSS e JavaScript. Isso facilita publicar em qualquer
-              hospedagem estatica e adaptar textos, cores e secoes conforme a identidade do site.
+              A proximidade operacional aparece no jeito de conduzir: entender, organizar,
+              direcionar e acompanhar. A tecnologia entra como meio para dar clareza e continuidade.
             </p>
-            <ul class="checklist">
-              <li>Sem configuracao complexa</li>
-              <li>Codigo organizado por arquivo</li>
-              <li>Base acessivel e responsiva</li>
-            </ul>
+          </div>
+
+          <div class="process-grid">
+            <article class="process-card">
+              <span>01</span>
+              <h3>Escutar a rotina</h3>
+              <p>Entendemos o que trava a operação, onde há ruído e quais decisões precisam ficar mais claras.</p>
+            </article>
+            <article class="process-card">
+              <span>02</span>
+              <h3>Organizar o caminho</h3>
+              <p>Separamos urgência de prioridade e transformamos necessidades em um plano possível de executar.</p>
+            </article>
+            <article class="process-card">
+              <span>03</span>
+              <h3>Aplicar tecnologia</h3>
+              <p>Conectamos cloud, IA, automação e ferramentas com a realidade da equipe e do cliente.</p>
+            </article>
+            <article class="process-card">
+              <span>04</span>
+              <h3>Acompanhar a evolução</h3>
+              <p>Seguimos perto para ajustar, simplificar e garantir que a mudança vire continuidade.</p>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="section" id="contato">
-        <div class="container contact">
+      <section class="section cloud-preview" id="cloud">
+        <div class="container cloud-preview__inner">
+          <div class="cloud-preview__visual" aria-hidden="true">
+            <img src="assets/abtech-mark.svg" alt="" width="96" height="82">
+            <div class="cloud-preview__line"></div>
+            <div class="cloud-preview__nodes">
+              <span>Escolha</span>
+              <span>Arquitetura</span>
+              <span>Acompanhamento</span>
+            </div>
+          </div>
           <div>
-            <p class="eyebrow">Contato</p>
-            <h2>Vamos transformar esta base no seu site final?</h2>
+            <p class="eyebrow">Cloud sem labirinto</p>
+            <h2>Você não precisa virar especialista em cloud para tomar decisões melhores.</h2>
             <p>
-              Personalize este formulario com seu e-mail, telefone ou link preferido para receber mensagens.
+              A ABTECH ajuda a comparar caminhos, escolher provedores, desenhar arquitetura e acompanhar
+              a operação. Sem vender infraestrutura própria. Sem transformar cloud em vitrine técnica.
+              Com foco no que sustenta a rotina e reduz risco.
+            </p>
+            <a class="button button--primary" href="cloud.html">Conhecer cloud acompanhada</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experiencias">
+        <div class="container two-column">
+          <div>
+            <p class="eyebrow">Experiências</p>
+            <h2>Projetos reais pedem escuta, contexto e responsabilidade.</h2>
+          </div>
+          <div class="experience-panel">
+            <p>
+              Este espaço está preparado para reunir segmentos, clientes, aprendizados e cases conforme
+              a ABTECH consolidar sua história pública. A lógica continua a mesma: comunicar experiência
+              real sem inflar tamanho, prometer demais ou esconder a fase atual da operação.
+            </p>
+            <div class="tag-list" aria-label="Segmentos e experiências futuras">
+              <span>Operações locais</span>
+              <span>Negócios digitais</span>
+              <span>Atendimento</span>
+              <span>Cloud e IA</span>
+              <span>Projetos sob medida</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contato">
+        <div class="container contact-card">
+          <div>
+            <p class="eyebrow">Primeira conversa</p>
+            <h2>Conte onde a operação está pesada. A gente ajuda a organizar o próximo passo.</h2>
+            <p>
+              Não precisa chegar com a solução pronta. Traga o cenário, a dúvida ou o gargalo.
+              A conversa começa por entender a realidade antes de indicar tecnologia.
             </p>
           </div>
 
-          <form class="contact__form">
+          <form class="contact-form">
             <label>
               Nome
-              <input type="text" name="name" placeholder="Seu nome" autocomplete="name">
+              <input type="text" name="name" placeholder="Seu nome" autocomplete="name" required>
             </label>
             <label>
               E-mail
-              <input type="email" name="email" placeholder="voce@email.com" autocomplete="email">
+              <input type="email" name="email" placeholder="voce@empresa.com" autocomplete="email" required>
             </label>
             <label>
-              Mensagem
-              <textarea name="message" rows="4" placeholder="Como posso ajudar?"></textarea>
+              O que você quer organizar?
+              <textarea name="message" rows="4" placeholder="Ex.: cloud, IA, atendimento, gestão, automação, relacionamento..." required></textarea>
             </label>
-            <button class="button button--primary" type="submit">Enviar mensagem</button>
+            <button class="button button--primary" type="submit">Começar a conversa</button>
             <p class="form-note" role="status" aria-live="polite"></p>
           </form>
         </div>
@@ -146,7 +346,11 @@
 
     <footer class="site-footer">
       <div class="container site-footer__content">
-        <p>&copy; <span id="current-year"></span> Seu Site. Todos os direitos reservados.</p>
+        <a class="brand brand--footer" href="index.html" aria-label="ABTECH - início">
+          <img class="brand__mark" src="assets/abtech-mark.svg" alt="" width="42" height="36">
+          <span class="brand__name">ABTECH</span>
+        </a>
+        <p>&copy; <span id="current-year"></span> ABTECH. Tecnologia forte sem perder humanidade.</p>
         <a href="#inicio">Voltar ao topo</a>
       </div>
     </footer>
