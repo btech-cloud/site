@@ -13,6 +13,7 @@ O conceito central do site é **tecnologia forte sem perder proximidade**: cloud
 - `styles.css`: sistema visual, responsividade, componentes e aplicação da identidade B Nuvem.
 - `script.js`: menu mobile, ano automático e feedback do formulário.
 - `assets/bnuvem-mark.svg`: elemento de colmeia inspirado na identidade visual da marca.
+- `assets/bnuvem-mark-exact.png`: recorte do hexágono original do manual para preservar a forma da marca.
 - `assets/bnuvem-logo.svg`: logotipo horizontal B Nuvem com colmeia e tipografia inspirada no manual.
 - `assets/bnuvem-people-workshop.png`: imagem editorial de pessoas em contexto de tecnologia e operação.
 - `assets/bnuvem-operations-team.png`: imagem editorial de equipe revisando operação e execução.
