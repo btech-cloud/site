@@ -116,6 +116,18 @@ h3 { margin-bottom: 12px; font-size: 1.3rem; }
   -webkit-background-clip: text;
   background-clip: text;
 }
+.brand-word {
+  color: transparent;
+  font-weight: 900;
+  background: linear-gradient(105deg, var(--blue), var(--violet) 45%, var(--magenta));
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.brand-word--light {
+  background: linear-gradient(105deg, var(--cyan), #ffffff 45%, var(--amber));
+  -webkit-background-clip: text;
+  background-clip: text;
+}
 .hero__lead, .section-heading p, .rich-text, .audience-card p, .capability-card p, .visual-section p, .process-card p, .feature-list p, .contact-card p, .cloud-positioning p { color: var(--muted); font-size: 1.05rem; }
 .hero__lead { max-width: 720px; margin-bottom: 34px; font-size: clamp(1.05rem, 1.4vw, 1.22rem); }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 14px; }
