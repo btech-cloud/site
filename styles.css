@@ -118,10 +118,16 @@ h3 { margin-bottom: 12px; font-size: 1.3rem; }
 }
 .brand-word {
   color: transparent;
-  font-weight: 900;
+  font-weight: 400;
   background: linear-gradient(105deg, var(--blue), var(--violet) 45%, var(--magenta));
   -webkit-background-clip: text;
   background-clip: text;
+}
+.brand-word__b {
+  font-weight: 900;
+}
+.brand-word__name {
+  font-weight: 400;
 }
 .brand-word--light {
   background: linear-gradient(105deg, var(--cyan), #ffffff 45%, var(--amber));
