@@ -768,9 +768,14 @@ textarea {
   display: none;
 }
 
-.faq-item p {
+.faq-item p,
+.faq-item__answer p {
   margin: 14px 0 0;
   color: var(--muted);
+}
+
+.faq-item__answer p {
+  margin-top: 0;
 }
 
 .contact-card--warm {

@@ -77,8 +77,8 @@
           <div class="hero__copy">
             <p class="eyebrow">Proximidade operacional</p>
             <h1>
-              Toda empresa precisa <span class="hl-gradient">evoluir</span>.
-              <span class="hero__line">Nem toda evolução precisa ser <span class="hl-violet">complicada</span>.</span>
+              Toda empresa precisa <span class="hl-key hl-key--evoluir">Evoluir</span>.
+              <span class="hero__line">Nem toda evolução precisa ser <span class="hl-key hl-key--complicada">Complicada</span>.</span>
             </h1>
             <p class="hero__lead">
               A <span class="brand-word"><span class="brand-word__b">B</span><span class="brand-word__tech">Tech</span></span>
@@ -162,7 +162,7 @@
             <h2>A tecnologia não deveria <span class="hl-magenta">afastar</span> pessoas.</h2>
             <p class="manifesto-lead">Deveria <span class="hl-gradient">aproximar</span> operação, clareza e crescimento.</p>
           </div>
-          <div class="rich-text principle-panel principle-panel--dark">
+          <div class="manifesto-panel">
             <p>
               O trabalho da
               <span class="brand-word"><span class="brand-word__b">B</span><span class="brand-word__tech">Tech</span></span>
@@ -271,6 +271,9 @@
               critério para não transformar mudança em confusão.
             </p>
           </div>
+          <div class="process-banner process-banner--ajuda" aria-hidden="true">
+            <img src="assets/images/equipe-trabalho.jpg" alt="" width="1200" height="400" loading="lazy">
+          </div>
           <div class="capability-grid">
             <article class="capability-card capability-card--cloud">
               <div class="capability-card__icon-wrap" aria-hidden="true">
@@ -362,101 +365,72 @@
             </p>
           </div>
 
-          <div class="partners-groups">
-            <article class="partners-group">
-              <header class="partners-group__head">
-                <img src="assets/partners/redhat.svg" alt="Red Hat" class="partners-group__brand" width="96" height="24">
-                <h3>Red Hat</h3>
-              </header>
-              <ul class="partners-stack">
-                <li class="partner-chip">
-                  <img src="assets/partners/openshift.svg" alt="" width="28" height="28" aria-hidden="true">
-                  <span>OpenShift</span>
-                </li>
-                <li class="partner-chip">
-                  <img src="assets/partners/ansible.svg" alt="" width="28" height="28" aria-hidden="true">
-                  <span>Ansible</span>
-                </li>
-                <li class="partner-chip">
-                  <img src="assets/partners/redhat.svg" alt="" width="28" height="28" aria-hidden="true">
-                  <span>RHEL</span>
-                </li>
+          <div class="partners-board">
+            <article class="partner-card">
+              <div class="partner-card__brand">
+                <img src="assets/partners/redhat.svg" alt="Red Hat" width="120" height="32">
+              </div>
+              <h3>Red Hat</h3>
+              <p>OpenShift, automação e base Linux para operações que precisam de escala com governança.</p>
+              <ul class="partner-card__tags">
+                <li><img src="assets/partners/openshift.svg" alt="" width="22" height="22" aria-hidden="true"> OpenShift</li>
+                <li><img src="assets/partners/ansible.svg" alt="" width="22" height="22" aria-hidden="true"> Ansible</li>
+                <li>RHEL</li>
               </ul>
             </article>
 
-            <article class="partners-group">
-              <header class="partners-group__head">
-                <img src="assets/partners/sas.svg" alt="SAS" class="partners-group__brand" width="72" height="24">
-                <h3>SAS Analytics</h3>
-              </header>
-              <ul class="partners-stack">
-                <li class="partner-chip"><span>SAS 9</span></li>
-                <li class="partner-chip"><span>Viya 3.5</span></li>
-                <li class="partner-chip"><span>Viya 4</span></li>
+            <article class="partner-card">
+              <div class="partner-card__brand">
+                <img src="assets/partners/sas.svg" alt="SAS" width="88" height="32">
+              </div>
+              <h3>SAS Analytics</h3>
+              <p>Ambientes analíticos, migração e operação de plataformas SAS no dia a dia do negócio.</p>
+              <ul class="partner-card__tags">
+                <li>SAS 9</li>
+                <li>Viya 3.5</li>
+                <li>Viya 4</li>
               </ul>
             </article>
 
-            <article class="partners-group">
-              <header class="partners-group__head">
-                <img src="assets/partners/veeam.svg" alt="Veeam" class="partners-group__brand" width="96" height="24">
-                <h3>Proteção de dados</h3>
-              </header>
-              <ul class="partners-stack">
-                <li class="partner-chip"><span>Veeam Backup</span></li>
+            <article class="partner-card partner-card--veeam">
+              <div class="partner-card__brand partner-card__brand--veeam">
+                <img src="assets/partners/veeam.svg" alt="Veeam" width="140" height="36">
+              </div>
+              <h3>Proteção de dados</h3>
+              <p>Backup, recuperação e continuidade com a stack Veeam — desenho, operação e acompanhamento consultivo.</p>
+              <ul class="partner-card__tags">
+                <li>Veeam Backup &amp; Replication</li>
+                <li>Recuperação</li>
+                <li>Monitoramento de jobs</li>
               </ul>
             </article>
 
-            <article class="partners-group partners-group--wide">
-              <header class="partners-group__head">
-                <img src="assets/partners/devops.svg" alt="DevOps" class="partners-group__brand" width="96" height="24">
-                <h3>DevOps, Kubernetes e CI/CD</h3>
-              </header>
-              <div class="partners-logo-grid">
-                <figure class="partner-logo">
-                  <img src="assets/partners/rancher.svg" alt="Rancher" width="40" height="40">
-                  <figcaption>Rancher</figcaption>
-                </figure>
-                <figure class="partner-logo">
-                  <img src="assets/partners/kubernetes.svg" alt="Kubernetes" width="40" height="40">
-                  <figcaption>Kubernetes</figcaption>
-                </figure>
-                <figure class="partner-logo">
-                  <img src="assets/partners/gitlab.svg" alt="GitLab" width="40" height="40">
-                  <figcaption>GitLab CI/CD</figcaption>
-                </figure>
-                <figure class="partner-logo">
-                  <img src="assets/partners/git.svg" alt="Git" width="40" height="40">
-                  <figcaption>Git</figcaption>
-                </figure>
-                <figure class="partner-logo">
-                  <img src="assets/partners/github.svg" alt="GitHub" width="40" height="40">
-                  <figcaption>GitHub Actions</figcaption>
-                </figure>
-                <figure class="partner-logo">
-                  <img src="assets/partners/argocd.svg" alt="Argo CD" width="88" height="24">
-                  <figcaption>Argo CD</figcaption>
-                </figure>
+            <article class="partner-card partner-card--wide">
+              <div class="partner-card__brand">
+                <img src="assets/partners/devops.svg" alt="DevOps" width="100" height="28">
+              </div>
+              <h3>DevOps, Kubernetes e CI/CD</h3>
+              <p>Pipeline, cluster e entrega contínua com ferramentas que o time já usa ou está avaliando.</p>
+              <div class="partner-card__logos">
+                <figure><img src="assets/partners/rancher.svg" alt="Rancher" width="36" height="36"><figcaption>Rancher</figcaption></figure>
+                <figure><img src="assets/partners/kubernetes.svg" alt="Kubernetes" width="36" height="36"><figcaption>Kubernetes</figcaption></figure>
+                <figure><img src="assets/partners/gitlab.svg" alt="GitLab" width="36" height="36"><figcaption>GitLab</figcaption></figure>
+                <figure><img src="assets/partners/git.svg" alt="Git" width="36" height="36"><figcaption>Git</figcaption></figure>
+                <figure><img src="assets/partners/github.svg" alt="GitHub Actions" width="36" height="36"><figcaption>GitHub Actions</figcaption></figure>
+                <figure><img src="assets/partners/argocd.svg" alt="Argo CD" width="72" height="22"><figcaption>Argo CD</figcaption></figure>
               </div>
             </article>
 
-            <article class="partners-group partners-group--wide partners-group--featured">
-              <header class="partners-group__head">
-                <img src="assets/partners/amazonaws.svg" alt="Cloud" class="partners-group__brand" width="96" height="24">
-                <h3>Cloud+ e serviços gerenciados</h3>
-              </header>
-              <div class="partners-logo-grid partners-logo-grid--cloud">
-                <figure class="partner-logo">
-                  <img src="assets/partners/s3.svg" alt="Amazon S3" width="88" height="32">
-                  <figcaption>S3 como serviço</figcaption>
-                </figure>
-                <figure class="partner-logo">
-                  <img src="assets/partners/file-server.svg" alt="Servidor de arquivos" width="40" height="40">
-                  <figcaption>Servidor de arquivos como serviço</figcaption>
-                </figure>
-                <figure class="partner-logo">
-                  <img src="assets/partners/ia-cloud.svg" alt="IA para cloud" width="40" height="40">
-                  <figcaption>IA para gerenciamento da cloud interna</figcaption>
-                </figure>
+            <article class="partner-card partner-card--wide partner-card--cloud">
+              <div class="partner-card__brand">
+                <img src="assets/partners/amazonaws.svg" alt="AWS" width="100" height="28">
+              </div>
+              <h3>Cloud+ e serviços gerenciados</h3>
+              <p>Objetos, arquivos e inteligência aplicada à cloud interna — sem vender infraestrutura própria da BTech.</p>
+              <div class="partner-card__logos partner-card__logos--cloud">
+                <figure><img src="assets/partners/s3.svg" alt="Amazon S3" width="72" height="28"><figcaption>S3 como serviço</figcaption></figure>
+                <figure><img src="assets/partners/file-server.svg" alt="Servidor de arquivos" width="36" height="36"><figcaption>Arquivos como serviço</figcaption></figure>
+                <figure><img src="assets/partners/ia-cloud.svg" alt="IA para cloud" width="36" height="36"><figcaption>IA na cloud interna</figcaption></figure>
               </div>
             </article>
           </div>
@@ -581,22 +555,66 @@
             <h2>Dúvidas comuns</h2>
           </div>
           <div class="faq-list">
-            <details class="faq-item">
-              <summary>A <span class="brand-word"><span class="brand-word__b">B</span><span class="brand-word__tech">Tech</span></span> vende infraestrutura cloud?</summary>
-              <p>Não. Somos consultoria; ajudamos a escolher provedores e desenhar arquitetura.</p>
-            </details>
-            <details class="faq-item">
-              <summary>O que é consultoria em cloud?</summary>
-              <p>Apoio estratégico e técnico para nuvem, migração, backup e monitoramento.</p>
-            </details>
-            <details class="faq-item">
-              <summary>Trabalham com Red Hat, SAS e DevOps?</summary>
-              <p>Sim — apoiamos operações com OpenShift, Ansible, RHEL, SAS Viya, Veeam, Kubernetes, GitLab, GitHub Actions, Argo CD e serviços cloud+, conforme o contexto do cliente.</p>
-            </details>
-            <details class="faq-item">
-              <summary>A <span class="brand-word"><span class="brand-word__b">B</span><span class="brand-word__tech">Tech</span></span> atende empresas pequenas e médias?</summary>
-              <p>Sim, com plano consultivo proporcional à operação.</p>
-            </details>
+            <article class="faq-item">
+              <h3 class="faq-item__question">A <span class="brand-word"><span class="brand-word__b">B</span><span class="brand-word__tech">Tech</span></span> vende infraestrutura cloud?</h3>
+              <div class="faq-item__answer">
+                <p>
+                  <strong>Não.</strong> Somos consultoria em tecnologia. Ajudamos a comparar provedores (AWS, Azure,
+                  Google Cloud e outros), desenhar arquitetura, definir políticas de backup e monitoramento e
+                  acompanhar a operação — sem comercializar datacenter ou cloud própria da BTech.
+                </p>
+              </div>
+            </article>
+            <article class="faq-item">
+              <h3 class="faq-item__question">O que é consultoria em cloud na prática?</h3>
+              <div class="faq-item__answer">
+                <p>
+                  É apoio estratégico e técnico antes, durante e depois da mudança: entender o que a operação
+                  precisa, organizar prioridades, escolher serviços, planejar migração, custos e continuidade.
+                  Você mantém o controle; nós entramos para reduzir ruído e risco nas decisões.
+                </p>
+              </div>
+            </article>
+            <article class="faq-item">
+              <h3 class="faq-item__question">Trabalham com Red Hat, SAS, Veeam e DevOps?</h3>
+              <div class="faq-item__answer">
+                <p>
+                  Sim, conforme o contexto do cliente. Apoiamos ambientes com OpenShift, Ansible e RHEL; plataformas
+                  SAS 9 e Viya; proteção de dados com Veeam; e práticas de DevOps com Kubernetes, Rancher, GitLab,
+                  Git, GitHub Actions e Argo CD — sempre com consultoria e acompanhamento, não como revenda de caixa preta.
+                </p>
+              </div>
+            </article>
+            <article class="faq-item">
+              <h3 class="faq-item__question">Como a IA entra no trabalho da BTech?</h3>
+              <div class="faq-item__answer">
+                <p>
+                  Aplicamos IA e automação onde reduz trabalho manual e ruído: processos internos, atendimento,
+                  integração entre sistemas e governança (LGPD, segurança, observabilidade). O foco é resultado
+                  operacional, não demonstração futurista.
+                </p>
+              </div>
+            </article>
+            <article class="faq-item">
+              <h3 class="faq-item__question">A BTech atende empresas pequenas e médias?</h3>
+              <div class="faq-item__answer">
+                <p>
+                  Sim. O formato é consultivo e proporcional: diagnóstico, plano possível de executar e
+                  acompanhamento no ritmo da operação — para times que precisam evoluir sem virar refém de
+                  projetos intermináveis.
+                </p>
+              </div>
+            </article>
+            <article class="faq-item">
+              <h3 class="faq-item__question">Como funciona a primeira conversa?</h3>
+              <div class="faq-item__answer">
+                <p>
+                  Você conta onde a operação está pesada (cloud, backup, IA, processos, integração). A partir
+                  disso organizamos o próximo passo: escuta, clareza de prioridades e, se fizer sentido, um
+                  caminho técnico inicial — sem compromisso de pacote fechado na primeira troca.
+                </p>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -608,14 +626,27 @@
             <h2>Conte onde a operação está <span class="hl-violet">pesada</span>. Organizamos o próximo passo.</h2>
             <p>Não precisa chegar com a solução pronta. Começamos pela realidade do negócio.</p>
           </div>
-          <form class="contact-form">
+          <form
+            class="contact-form"
+            id="contact-form"
+            data-form-endpoint="https://formsubmit.co/ajax/contato@btech.cloud"
+            data-form-email="contato@btech.cloud"
+            novalidate
+          >
             <label>Nome<input type="text" name="name" placeholder="Seu nome" autocomplete="name" required></label>
             <label>E-mail<input type="email" name="email" placeholder="voce@empresa.com" autocomplete="email" required></label>
             <label>O que você quer organizar?
               <textarea name="message" rows="4" placeholder="Ex.: cloud, OpenShift, SAS, backup, CI/CD, IA..." required></textarea>
             </label>
+            <input type="hidden" name="_subject" value="Nova mensagem — site BTech Consultoria">
+            <input type="hidden" name="_captcha" value="false">
             <button class="button button--primary" type="submit">Começar a conversa</button>
             <p class="form-note" role="status" aria-live="polite"></p>
+            <p class="form-disclaimer">
+              O formulário envia para <strong>contato@btech.cloud</strong> via FormSubmit.
+              Na primeira mensagem, confirme o e-mail no link que o serviço enviar.
+              Para outro destino, altere <code>data-form-endpoint</code> no HTML.
+            </p>
           </form>
         </div>
       </section>

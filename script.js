@@ -25,9 +25,50 @@ if (menuButton && menu) {
 }
 
 if (contactForm && formNote) {
-  contactForm.addEventListener("submit", (event) => {
+  const endpoint = contactForm.dataset.formEndpoint?.trim() || "";
+  const targetEmail = contactForm.dataset.formEmail?.trim() || "contato@btech.cloud";
+
+  contactForm.addEventListener("submit", async (event) => {
     event.preventDefault();
-    formNote.textContent = "Mensagem registrada. Configure o envio do formulário para iniciar as conversas com a BTech Consultoria.";
-    contactForm.reset();
+
+    if (!endpoint) {
+      formNote.textContent =
+        "Envio não configurado. Defina data-form-endpoint no formulário ou use contato@btech.cloud diretamente.";
+      return;
+    }
+
+    const submitButton = contactForm.querySelector('button[type="submit"]');
+    const formData = new FormData(contactForm);
+    const payload = Object.fromEntries(formData.entries());
+
+    if (submitButton instanceof HTMLButtonElement) {
+      submitButton.disabled = true;
+    }
+
+    formNote.textContent = "Enviando…";
+
+    try {
+      const response = await fetch(endpoint, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error("Falha no envio");
+      }
+
+      formNote.textContent = `Mensagem enviada. Em breve retornamos no e-mail informado (destino: ${targetEmail}).`;
+      contactForm.reset();
+    } catch {
+      formNote.textContent = `Não foi possível enviar agora. Escreva diretamente para ${targetEmail}.`;
+    } finally {
+      if (submitButton instanceof HTMLButtonElement) {
+        submitButton.disabled = false;
+      }
+    }
   });
 }
