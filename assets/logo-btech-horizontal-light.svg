@@ -1,39 +1,20 @@
-<svg width="230" height="56" viewBox="0 0 230 56" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logoTitle">
-  <title id="logoTitle">BTech</title>
-  <defs>
-    <clipPath id="hexClipL">
-      <path d="M50 2.5 92.5 27.1V77.9L50 102.5 7.5 77.9V27.1L50 2.5Z"/>
-    </clipPath>
-    <linearGradient id="gWarmL" x1="0%" y1="20%" x2="100%" y2="80%">
-      <stop offset="0%" stop-color="#FFAF3C"/>
-      <stop offset="45%" stop-color="#C800D2"/>
-      <stop offset="100%" stop-color="#FA7300"/>
-    </linearGradient>
-    <linearGradient id="gCoolL" x1="100%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#00FFFF"/>
-      <stop offset="50%" stop-color="#00E1B4"/>
-      <stop offset="100%" stop-color="#37B44B"/>
-    </linearGradient>
-    <linearGradient id="gDeepL" x1="50%" y1="100%" x2="50%" y2="0%">
-      <stop offset="0%" stop-color="#143CFF"/>
-      <stop offset="55%" stop-color="#6E1EE6"/>
-      <stop offset="100%" stop-color="#0A1432"/>
-    </linearGradient>
-    <radialGradient id="gPinkL" cx="30%" cy="55%" r="55%">
-      <stop offset="0%" stop-color="#FF00FF" stop-opacity="0.85"/>
-      <stop offset="100%" stop-color="#C800D2" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
-  <g transform="scale(0.47)">
-    <g clip-path="url(#hexClipL)">
-      <rect width="100" height="115" fill="#143CFF" fill-opacity="0.35"/>
-      <ellipse cx="28" cy="52" rx="38" ry="34" fill="url(#gWarmL)" fill-opacity="0.92"/>
-      <ellipse cx="72" cy="42" rx="36" ry="32" fill="url(#gCoolL)" fill-opacity="0.88"/>
-      <ellipse cx="50" cy="78" rx="42" ry="36" fill="url(#gDeepL)" fill-opacity="0.9"/>
-      <ellipse cx="32" cy="58" rx="30" ry="28" fill="url(#gPinkL)"/>
+<svg width="196" height="48" viewBox="0 0 196 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="BTech">
+  <svg x="0" y="1" width="42" height="48" viewBox="0 0 100 115" aria-hidden="true">
+    <defs>
+      <clipPath id="hl"><path d="M50 2.5 92.5 27.1V77.9L50 102.5 7.5 77.9V27.1L50 2.5Z"/></clipPath>
+      <linearGradient id="hlw" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFAF3C"/><stop offset="0.5" stop-color="#FF6E64"/><stop offset="1" stop-color="#C800D2"/></linearGradient>
+      <linearGradient id="hlc" x1="1" y1="0" x2="0" y2="1"><stop stop-color="#00FFFF"/><stop offset="1" stop-color="#00E1B4"/></linearGradient>
+      <linearGradient id="hld" x1="0.5" y1="1" x2="0.5" y2="0"><stop stop-color="#143CFF"/><stop offset="0.6" stop-color="#6E1EE6"/></linearGradient>
+      <radialGradient id="hlp" cx="28%" cy="50%" r="50%"><stop stop-color="#FF00FF" stop-opacity="0.75"/><stop offset="1" stop-color="#C800D2" stop-opacity="0"/></radialGradient>
+    </defs>
+    <g clip-path="url(#hl)">
+      <ellipse cx="26" cy="50" rx="40" ry="36" fill="url(#hlw)" fill-opacity="0.93"/>
+      <ellipse cx="74" cy="40" rx="38" ry="34" fill="url(#hlc)" fill-opacity="0.9"/>
+      <ellipse cx="48" cy="76" rx="44" ry="38" fill="url(#hld)" fill-opacity="0.92"/>
+      <ellipse cx="30" cy="56" rx="28" ry="26" fill="url(#hlp)"/>
     </g>
-  </g>
-  <text x="56" y="37" fill="#FFFFFF" font-family="Century Gothic, CenturyGothic, AppleGothic, sans-serif" font-size="30" letter-spacing="0.02em">
-    <tspan font-weight="700">B</tspan><tspan font-weight="400">Tech</tspan>
+  </svg>
+  <text x="52" y="32" font-family="Century Gothic, CenturyGothic, sans-serif" font-size="26" letter-spacing="0.04em">
+    <tspan fill="#FFFFFF" font-weight="700">B</tspan><tspan fill="#FFFFFF" font-weight="400">Tech</tspan>
   </text>
 </svg>
