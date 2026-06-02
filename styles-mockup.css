@@ -89,26 +89,34 @@
 }
 
 .ticker-strip--mockup {
-  padding: 20px 0;
   background: linear-gradient(90deg, var(--mockup-ink) 0%, var(--mockup-purple) 50%, var(--mockup-ink) 100%);
 }
 
-.ticker-strip--mockup .ticker-strip__track {
-  gap: 0;
-  letter-spacing: 0.14em;
-  animation-duration: 48s;
+.ticker-strip--static {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px clamp(16px, 4vw, 32px);
+  overflow: visible;
 }
 
-.ticker-strip__item {
-  flex-shrink: 0;
-  padding: 0 32px;
-  white-space: nowrap;
+.ticker-strip--static .ticker-strip__text {
+  margin: 0;
+  max-width: 100%;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: clamp(0.62rem, 1.1vw, 0.75rem);
+  font-weight: 800;
+  line-height: 1.55;
+  letter-spacing: 0.12em;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: normal;
 }
 
-.ticker-strip__item::after {
-  margin-left: 32px;
-  color: rgba(255, 255, 255, 0.45);
-  content: "•";
+@media (min-width: 900px) {
+  .ticker-strip--static .ticker-strip__text {
+    white-space: nowrap;
+  }
 }
 
 .hero-panel--float .hero-panel__brand img {
@@ -184,7 +192,11 @@
 }
 
 .partner-tile__logo-wrap--veeam {
-  background: rgba(0, 179, 54, 0.06);
+  background: #fff;
+}
+
+.partner-tile__logo-wrap--veeam img {
+  max-height: 36px;
 }
 
 .partner-tile--veeam {
