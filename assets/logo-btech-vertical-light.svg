@@ -1,0 +1,39 @@
+<svg width="120" height="150" viewBox="0 0 120 150" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">BTech</title>
+  <defs>
+    <clipPath id="hexClipV">
+      <path d="M50 2.5 92.5 27.1V77.9L50 102.5 7.5 77.9V27.1L50 2.5Z"/>
+    </clipPath>
+    <linearGradient id="gWarmV" x1="0%" y1="20%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#FFAF3C"/>
+      <stop offset="45%" stop-color="#C800D2"/>
+      <stop offset="100%" stop-color="#FA7300"/>
+    </linearGradient>
+    <linearGradient id="gCoolV" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00FFFF"/>
+      <stop offset="50%" stop-color="#00E1B4"/>
+      <stop offset="100%" stop-color="#37B44B"/>
+    </linearGradient>
+    <linearGradient id="gDeepV" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#143CFF"/>
+      <stop offset="55%" stop-color="#6E1EE6"/>
+      <stop offset="100%" stop-color="#0A1432"/>
+    </linearGradient>
+    <radialGradient id="gPinkV" cx="30%" cy="55%" r="55%">
+      <stop offset="0%" stop-color="#FF00FF" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#C800D2" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g transform="translate(10 0) scale(1)">
+    <g clip-path="url(#hexClipV)">
+      <rect width="100" height="115" fill="#143CFF" fill-opacity="0.35"/>
+      <ellipse cx="28" cy="52" rx="38" ry="34" fill="url(#gWarmV)" fill-opacity="0.92"/>
+      <ellipse cx="72" cy="42" rx="36" ry="32" fill="url(#gCoolV)" fill-opacity="0.88"/>
+      <ellipse cx="50" cy="78" rx="42" ry="36" fill="url(#gDeepV)" fill-opacity="0.9"/>
+      <ellipse cx="32" cy="58" rx="30" ry="28" fill="url(#gPinkV)"/>
+    </g>
+  </g>
+  <text x="60" y="138" text-anchor="middle" fill="#FFFFFF" font-family="Century Gothic, CenturyGothic, AppleGothic, sans-serif" font-size="26" letter-spacing="0.06em">
+    <tspan font-weight="700">B</tspan><tspan font-weight="400">Tech</tspan>
+  </text>
+</svg>
