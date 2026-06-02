@@ -1,0 +1,493 @@
+/* Layout alinhado ao mockup de referência (B Nuvem / BTech) */
+
+:root {
+  --mockup-ink: #1a0b40;
+  --mockup-purple: #2d1b69;
+  --tint-blue: #eef4ff;
+  --tint-blue-border: rgba(20, 60, 255, 0.14);
+}
+
+/* —— Hero estilo mockup —— */
+.hero--mockup {
+  padding: 100px 0 80px;
+  background:
+    radial-gradient(ellipse 70% 50% at 95% 5%, rgba(110, 30, 230, 0.15), transparent),
+    radial-gradient(ellipse 60% 45% at 5% 95%, rgba(20, 60, 255, 0.12), transparent),
+    #ffffff;
+}
+
+.hero--mockup .hero__content {
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.85fr);
+  gap: 48px;
+  align-items: center;
+}
+
+.hero--mockup .hero__float-hex {
+  opacity: 0.22;
+}
+
+.hero--mockup h1 {
+  max-width: 16ch;
+  font-size: clamp(1.75rem, 3.2vw, 2.45rem);
+  line-height: 1.15;
+}
+
+.hl-key--futuro {
+  background: linear-gradient(120deg, var(--blue) 0%, var(--violet) 50%, var(--magenta) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hl-key--presente {
+  color: var(--magenta);
+}
+
+.hero-panel--float {
+  padding: 32px 28px;
+  background: #fff;
+  border: 1px solid rgba(10, 20, 50, 0.08);
+  border-radius: 28px;
+  box-shadow: 0 28px 80px rgba(26, 11, 64, 0.12);
+}
+
+.hero-panel--float .hero-panel__brand img {
+  width: 72px;
+  margin-bottom: 16px;
+}
+
+.hero-checklist {
+  display: grid;
+  gap: 14px;
+  padding: 0;
+  margin: 22px 0 0;
+  list-style: none;
+}
+
+.hero-checklist li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.hero-checklist li::before {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: center;
+  background: var(--brand-gradient, linear-gradient(135deg, var(--blue), var(--violet)));
+  border-radius: 50%;
+  content: "✓";
+}
+
+.ticker-strip--mockup {
+  background: linear-gradient(90deg, var(--mockup-ink) 0%, var(--mockup-purple) 50%, var(--mockup-ink) 100%);
+}
+
+.ticker-strip--mockup .ticker-strip__track {
+  letter-spacing: 0.16em;
+}
+
+/* —— Quem somos —— */
+.section--quem-mockup {
+  padding: 72px 0;
+  background: #fff;
+}
+
+.quem-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.95fr);
+  gap: 36px;
+  align-items: start;
+  margin-bottom: 40px;
+}
+
+.quem-intro h2 {
+  max-width: 20ch;
+  margin: 0;
+}
+
+.tint-panel {
+  padding: 28px 30px;
+  color: var(--ink-soft);
+  background: var(--tint-blue);
+  border: 1px solid var(--tint-blue-border);
+  border-radius: var(--radius-lg);
+}
+
+.tint-panel p {
+  margin: 0 0 14px;
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+
+.tint-panel p:last-child {
+  margin-bottom: 0;
+}
+
+.photo-grid-office {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 14px;
+  min-height: 300px;
+}
+
+.photo-grid-office img {
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+}
+
+.photo-grid-office__main {
+  grid-row: span 2;
+  min-height: 100%;
+}
+
+/* —— Pessoas mockup —— */
+.section--pessoas-mockup {
+  padding: 72px 0;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(250, 232, 247, 0.8), transparent 45%),
+    linear-gradient(180deg, #fafbff 0%, #fff 100%);
+}
+
+.section--pessoas-mockup .section-heading h2 {
+  max-width: 28ch;
+  margin-inline: auto;
+}
+
+.people-grid--mockup {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 36px;
+}
+
+.person-card--mockup {
+  padding: 32px 28px;
+  background: #fff;
+  border: 1px solid rgba(10, 20, 50, 0.08);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+}
+
+.person-card--mockup .person-card__avatar {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 18px;
+  font-size: 1.35rem;
+  background: var(--brand-gradient, linear-gradient(135deg, var(--blue), var(--violet)));
+  color: #fff;
+}
+
+.person-card--mockup .person-card__avatar--alt {
+  background: linear-gradient(135deg, var(--violet), var(--magenta));
+}
+
+.person-card__expertise {
+  display: grid;
+  gap: 8px;
+  padding: 0;
+  margin: 16px 0 0;
+  list-style: none;
+}
+
+.person-card__expertise li {
+  position: relative;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.person-card__expertise li::before {
+  position: absolute;
+  left: 0;
+  color: var(--blue);
+  font-weight: 800;
+  content: "•";
+}
+
+/* —— Como ajudamos —— */
+.section--ajuda-mockup {
+  padding: 72px 0;
+  background:
+    radial-gradient(circle at 0% 0%, rgba(20, 60, 255, 0.08), transparent 40%),
+    linear-gradient(180deg, #f7f9ff 0%, #fff 100%);
+}
+
+.ajuda-bridge {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 1fr);
+  gap: 36px;
+  align-items: center;
+  margin: 36px 0 40px;
+  padding: 28px;
+  background: #fff;
+  border: 1px solid rgba(10, 20, 50, 0.08);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+}
+
+.ajuda-bridge__media img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+
+.ajuda-bridge h3 {
+  margin: 0 0 12px;
+  font-size: 1.2rem;
+}
+
+.ajuda-bridge p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.process-grid--mockup {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.process-grid--mockup .process-card {
+  padding: 24px 22px;
+  background: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.process-grid--mockup .process-card span {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--blue);
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+/* —— Capacidades (fundo roxo escuro) —— */
+.section--tech-mockup {
+  padding: 88px 0;
+  color: #fff;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(0, 255, 255, 0.12), transparent 42%),
+    radial-gradient(circle at 85% 80%, rgba(200, 0, 210, 0.18), transparent 40%),
+    linear-gradient(160deg, #1a0b40 0%, #2d1b69 35%, #143cff 100%);
+}
+
+.section--tech-mockup .section-heading h2 {
+  max-width: 32ch;
+  color: #fff;
+}
+
+.section--tech-mockup .section-heading p {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.tech-depth-card a {
+  display: inline-block;
+  margin-top: 14px;
+  color: var(--cyan);
+  font-size: 0.88rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.tech-depth-card a:hover {
+  text-decoration: underline;
+}
+
+/* —— Experiências —— */
+.section--experiencias {
+  padding: 72px 0;
+  background: var(--paper-warm);
+}
+
+.experience-panel--mockup {
+  padding: 28px;
+  background: #fff;
+  border: 1px solid rgba(10, 20, 50, 0.08);
+  border-top: 4px solid;
+  border-image: linear-gradient(90deg, var(--blue), var(--magenta)) 1;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.tag-list--mockup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag-list--mockup span {
+  padding: 10px 16px;
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+  font-weight: 800;
+  background: var(--surface-strong);
+  border: 1px solid rgba(10, 20, 50, 0.08);
+  border-radius: 999px;
+}
+
+/* —— Cloud bloco —— */
+.section--cloud-mockup {
+  padding: 56px 0;
+  background: #f7f9ff;
+}
+
+.cloud-block {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(260px, 0.9fr);
+  gap: 40px;
+  align-items: center;
+  padding: 48px 44px;
+  color: #fff;
+  background:
+    radial-gradient(circle at 0% 50%, rgba(0, 255, 255, 0.18), transparent 45%),
+    linear-gradient(125deg, #0a1432 0%, #1e3a8a 50%, #6e1ee6 100%);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 32px 90px rgba(20, 60, 255, 0.2);
+}
+
+.cloud-block h2 {
+  max-width: 28ch;
+  color: #fff;
+}
+
+.cloud-block > p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.cloud-block .cloud-tags {
+  justify-content: flex-end;
+  margin: 0;
+}
+
+/* —— IA mockup —— */
+.section--ia-mockup {
+  padding: 72px 0;
+  background: #fff;
+}
+
+.ia-mockup-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.95fr);
+  gap: 40px;
+  align-items: start;
+}
+
+/* —— Contato mockup —— */
+.contact-section--mockup {
+  padding: 72px 0 88px;
+  background: linear-gradient(180deg, #f3efe8 0%, #f7f9ff 100%);
+}
+
+.contact-section--mockup .contact-card {
+  padding: 48px;
+  background: #fff;
+  border-radius: var(--radius-xl);
+  box-shadow: 0 28px 70px rgba(26, 11, 64, 0.1);
+}
+
+.contact-section--mockup h2 {
+  max-width: 22ch;
+}
+
+.contact-form .button--primary {
+  width: 100%;
+  justify-content: center;
+  padding: 16px 24px;
+}
+
+/* —— Footer claro —— */
+.site-footer--light {
+  padding: 32px 0;
+  color: var(--muted);
+  background: #f7f7f5;
+  border-top: 1px solid rgba(10, 20, 50, 0.08);
+}
+
+.site-footer--light .site-footer__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-footer--light .brand--footer-stacked img {
+  width: 64px;
+  margin: 0;
+}
+
+.site-footer--light a {
+  color: var(--blue);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+/* Headlines: destaque consistente */
+h1 .hl-gradient,
+h2 .hl-gradient,
+h1 .hl-key,
+h2 .hl-key {
+  font-weight: 800;
+}
+
+@media (max-width: 1040px) {
+  .photo-grid-office {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .photo-grid-office__main {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    max-height: 280px;
+  }
+
+  .process-grid--mockup {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cloud-block {
+    grid-template-columns: 1fr;
+  }
+
+  .cloud-block .cloud-tags {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 880px) {
+  .hero--mockup .hero__content,
+  .quem-intro,
+  .ajuda-bridge,
+  .ia-mockup-layout,
+  .people-grid--mockup {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-grid-office {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .process-grid--mockup {
+    grid-template-columns: 1fr;
+  }
+}
