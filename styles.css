@@ -184,9 +184,9 @@ textarea {
   pointer-events: none;
   opacity: 0.22;
   background:
-    url("assets/logo-icon.svg") 94% 6% / 140px auto no-repeat,
-    url("assets/logo-icon.svg") 2% 78% / 110px auto no-repeat,
-    url("assets/logo-icon.svg") 48% 42% / 90px auto no-repeat;
+    url("assets/logo-symbol-oficial.png") 94% 6% / 140px auto no-repeat,
+    url("assets/logo-symbol-oficial.png") 2% 78% / 110px auto no-repeat,
+    url("assets/logo-symbol-oficial.png") 48% 42% / 90px auto no-repeat;
 }
 
 .section--surface-blush {
@@ -708,7 +708,7 @@ textarea {
   width: 100px;
   height: 115px;
   content: "";
-  background: url("assets/logo-icon.svg") center / contain no-repeat;
+  background: url("assets/logo-symbol-oficial.png") center / contain no-repeat;
   opacity: 0.12;
   pointer-events: none;
 }
@@ -1169,7 +1169,7 @@ h3 {
   width: 56px;
   height: 64px;
   content: "";
-  background: url("assets/logo-icon.svg") center / contain no-repeat;
+  background: url("assets/logo-symbol-oficial.png") center / contain no-repeat;
   opacity: 0.4;
 }
 

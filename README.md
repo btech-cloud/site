@@ -12,8 +12,9 @@ O conceito central do site é **proximidade operacional**: tecnologia forte sem 
 - `cloud.html`: redireciona para `index.html#cloud-acompanhada`.
 - `styles.css`: sistema visual, responsividade, componentes e aplicação da identidade ABTech.
 - `script.js`: menu mobile, ano automático e feedback do formulário.
-- `assets/logo-btech-horizontal.svg`: logotipo horizontal (colmeia + BTech Consultoria).
-- `assets/logo-icon.svg`: símbolo oficial (hexágono com elementos orgânicos em degradê).
+- `assets/logo-btech-horizontal-oficial.png`: logotipo horizontal oficial (símbolo do manual + **B**TECH).
+- `assets/logo-btech-stacked-oficial.png`: logotipo empilhado oficial.
+- `assets/logo-symbol-oficial.png`: símbolo hexagonal extraído do manual de marca.
 - `assets/visuals/`: padrões e painéis com colmeia/hexágonos conforme o manual.
 
 ## Como abrir localmente
