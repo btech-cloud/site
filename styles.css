@@ -253,7 +253,7 @@ textarea {
 }
 
 .hero-panel__brand img {
-  width: 92px;
+  width: 110px;
   height: auto;
 }
 
@@ -367,7 +367,10 @@ textarea {
 
 .hero__line {
   display: block;
-  margin-top: 0.12em;
+  margin-top: 0.2em;
+  font-size: 0.94em;
+  font-weight: 600;
+  line-height: 1.28;
 }
 
 .hero__note {
@@ -507,7 +510,11 @@ textarea {
 }
 
 .eyebrow--on-dark {
-  color: var(--cyan);
+  color: #ffaf3c;
+}
+
+.eyebrow--on-dark::before {
+  background: linear-gradient(135deg, var(--magenta), var(--amber));
 }
 
 .eyebrow--on-dark::before {
@@ -829,9 +836,16 @@ h3 {
 }
 
 h1 {
-  max-width: 15ch;
-  margin-bottom: 20px;
-  font-size: clamp(1.85rem, 3.2vw, 2.75rem);
+  max-width: 20ch;
+  margin-bottom: 18px;
+  font-size: clamp(1.45rem, 2.35vw, 2rem);
+  font-weight: 700;
+  line-height: 1.22;
+}
+
+.hero--home h1 {
+  max-width: 19ch;
+  font-size: clamp(1.35rem, 2.1vw, 1.85rem);
 }
 
 h2 {

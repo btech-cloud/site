@@ -1,20 +1,24 @@
-<svg width="196" height="48" viewBox="0 0 196 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="BTech">
-  <svg x="0" y="1" width="42" height="48" viewBox="0 0 100 115" aria-hidden="true">
-    <defs>
-      <clipPath id="hl"><path d="M50 2.5 92.5 27.1V77.9L50 102.5 7.5 77.9V27.1L50 2.5Z"/></clipPath>
-      <linearGradient id="hlw" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFAF3C"/><stop offset="0.5" stop-color="#FF6E64"/><stop offset="1" stop-color="#C800D2"/></linearGradient>
-      <linearGradient id="hlc" x1="1" y1="0" x2="0" y2="1"><stop stop-color="#00FFFF"/><stop offset="1" stop-color="#00E1B4"/></linearGradient>
-      <linearGradient id="hld" x1="0.5" y1="1" x2="0.5" y2="0"><stop stop-color="#143CFF"/><stop offset="0.6" stop-color="#6E1EE6"/></linearGradient>
-      <radialGradient id="hlp" cx="28%" cy="50%" r="50%"><stop stop-color="#FF00FF" stop-opacity="0.75"/><stop offset="1" stop-color="#C800D2" stop-opacity="0"/></radialGradient>
-    </defs>
-    <g clip-path="url(#hl)">
-      <ellipse cx="26" cy="50" rx="40" ry="36" fill="url(#hlw)" fill-opacity="0.93"/>
-      <ellipse cx="74" cy="40" rx="38" ry="34" fill="url(#hlc)" fill-opacity="0.9"/>
-      <ellipse cx="48" cy="76" rx="44" ry="38" fill="url(#hld)" fill-opacity="0.92"/>
-      <ellipse cx="30" cy="56" rx="28" ry="26" fill="url(#hlp)"/>
+<svg width="188" height="48" viewBox="0 0 188 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="BTech">
+  <defs>
+    <clipPath id="hexHL">
+      <path d="M50 2.5 92.5 27.1V77.9L50 102.5 7.5 77.9V27.1L50 2.5Z"/>
+    </clipPath>
+  </defs>
+  <g transform="translate(0 1) scale(0.4)">
+    <g clip-path="url(#hexHL)">
+      <rect width="100" height="115" fill="#143CFF" fill-opacity="0.2"/>
+      <ellipse cx="22" cy="42" rx="36" ry="32" fill="#FFAF3C" fill-opacity="0.88"/>
+      <ellipse cx="32" cy="58" rx="30" ry="28" fill="#FF6E64" fill-opacity="0.75"/>
+      <ellipse cx="18" cy="68" rx="28" ry="30" fill="#C800D2" fill-opacity="0.82"/>
+      <ellipse cx="78" cy="36" rx="34" ry="30" fill="#00E1B4" fill-opacity="0.9"/>
+      <ellipse cx="70" cy="52" rx="26" ry="24" fill="#00FFFF" fill-opacity="0.7"/>
+      <ellipse cx="50" cy="48" rx="38" ry="34" fill="#143CFF" fill-opacity="0.85"/>
+      <ellipse cx="58" cy="72" rx="40" ry="32" fill="#6E1EE6" fill-opacity="0.8"/>
+      <ellipse cx="42" cy="78" rx="32" ry="28" fill="#0A1432" fill-opacity="0.55"/>
+      <ellipse cx="82" cy="68" rx="24" ry="22" fill="#143CFF" fill-opacity="0.65"/>
     </g>
-  </svg>
-  <text x="52" y="32" font-family="Century Gothic, CenturyGothic, sans-serif" font-size="26" letter-spacing="0.04em">
-    <tspan fill="#FFFFFF" font-weight="700">B</tspan><tspan fill="#FFFFFF" font-weight="400">Tech</tspan>
+  </g>
+  <text x="50" y="32" font-family="Century Gothic, CenturyGothic, AppleGothic, sans-serif" font-size="20" letter-spacing="0.14em">
+    <tspan fill="#FFFFFF" font-weight="700">B</tspan><tspan fill="#FFFFFF" font-weight="300">TECH</tspan>
   </text>
 </svg>
