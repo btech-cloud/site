@@ -1,20 +1,42 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0A1432"/>
-      <stop offset="1" stop-color="#17295D"/>
+    <clipPath id="hexOg">
+      <path d="M50 2.5 92.5 27.1V77.9L50 102.5 7.5 77.9V27.1L50 2.5Z"/>
+    </clipPath>
+    <linearGradient id="ogWarm" x1="0%" y1="20%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#FFAF3C"/>
+      <stop offset="45%" stop-color="#C800D2"/>
+      <stop offset="100%" stop-color="#FA7300"/>
     </linearGradient>
-    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#143CFF"/><stop offset="1" stop-color="#6E1EE6"/></linearGradient>
-    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#C800D2"/><stop offset="1" stop-color="#FFAF3C"/></linearGradient>
-    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00FFFF"/><stop offset="1" stop-color="#00E1B4"/></linearGradient>
+    <linearGradient id="ogCool" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00FFFF"/>
+      <stop offset="50%" stop-color="#00E1B4"/>
+      <stop offset="100%" stop-color="#37B44B"/>
+    </linearGradient>
+    <linearGradient id="ogDeep" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#143CFF"/>
+      <stop offset="55%" stop-color="#6E1EE6"/>
+      <stop offset="100%" stop-color="#0A1432"/>
+    </linearGradient>
+    <radialGradient id="ogPink" cx="30%" cy="55%" r="55%">
+      <stop offset="0%" stop-color="#FF00FF" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#C800D2" stop-opacity="0"/>
+    </radialGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <g transform="translate(120 160) scale(2.4)">
-    <path d="M25 5.5L45.8 17.5V41.5L25 53.5L4.2 41.5V17.5L25 5.5Z" fill="url(#g1)" fill-opacity="0.92"/>
-    <path d="M68 5.5L88.8 17.5V41.5L68 53.5L47.2 41.5V17.5L68 5.5Z" fill="url(#g2)" fill-opacity="0.9"/>
-    <path d="M46.5 30.5L67.3 42.5V66.5L46.5 78.5L25.7 66.5V42.5L46.5 30.5Z" fill="url(#g3)" fill-opacity="0.88"/>
+  <rect width="1200" height="630" fill="#0A1432"/>
+  <circle cx="1000" cy="120" r="220" fill="#143CFF" fill-opacity="0.2"/>
+  <circle cx="200" cy="520" r="180" fill="#C800D2" fill-opacity="0.15"/>
+  <g transform="translate(120 140) scale(2.2)">
+    <g clip-path="url(#hexOg)">
+      <rect width="100" height="115" fill="#143CFF" fill-opacity="0.35"/>
+      <ellipse cx="28" cy="52" rx="38" ry="34" fill="url(#ogWarm)" fill-opacity="0.92"/>
+      <ellipse cx="72" cy="42" rx="36" ry="32" fill="url(#ogCool)" fill-opacity="0.88"/>
+      <ellipse cx="50" cy="78" rx="42" ry="36" fill="url(#ogDeep)" fill-opacity="0.9"/>
+      <ellipse cx="32" cy="58" rx="30" ry="28" fill="url(#ogPink)"/>
+    </g>
   </g>
-  <text x="120" y="420" fill="#FFFFFF" font-family="Century Gothic, sans-serif" font-size="64" font-weight="700">BTech</text>
-  <text x="120" y="470" fill="rgba(255,255,255,0.8)" font-family="Century Gothic, sans-serif" font-size="24" letter-spacing="0.2em">CONSULTORIA</text>
-  <text x="120" y="540" fill="rgba(255,255,255,0.72)" font-family="Century Gothic, sans-serif" font-size="28">Cloud, IA e automa??o para empresas</text>
+  <text x="120" y="430" fill="#FFFFFF" font-family="Century Gothic, sans-serif" font-size="72" letter-spacing="0.02em">
+    <tspan font-weight="700">B</tspan><tspan font-weight="400">Tech</tspan>
+  </text>
+  <text x="120" y="500" fill="rgba(255,255,255,0.75)" font-family="Century Gothic, sans-serif" font-size="28">Consultoria · Cloud, IA e automa??o</text>
 </svg>
