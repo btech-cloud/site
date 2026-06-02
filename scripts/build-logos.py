@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-BTECH a partir do manual ABTECH (p.17 cartão de visitas).
+BTECH = manual ABTECH sem a letra A.
 
-Mantém: símbolo (SVG do manual), cores, TECH raster do manual, proporções.
-Muda só: ABTECH → BTECH (remove o A; B negrito no lugar).
+- Símbolo: logo-icon.svg (cores do manual)
+- Texto: recorte do cartão p.17 — remove só a faixa do «A», mantém B+TECH originais
 """
 from __future__ import annotations
 
@@ -13,18 +13,18 @@ import tempfile
 from pathlib import Path
 
 import numpy as np
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "assets"
-FONTS = ASSETS / "fonts"
-FONT_BOLD = FONTS / "GOTHICB.ttf"
 SYMBOL_SVG = ASSETS / "logo-icon.svg"
 MANUAL_PDF = ASSETS / "source" / "manual-abtech.pdf"
 MANUAL_FALLBACK = Path(
     "/home/ubuntu/.cursor/projects/workspace/uploads/ManualABTECH-compactado_3ef1.pdf"
 )
-A_WIDTH_RATIO = 0.28
+# Largura da letra «A» no wordmark ABTECH do cartão (medido no manual)
+A_WIDTH_RATIO = 0.175
+TEXT_BAND_HEIGHT_RATIO = 0.72
 SYMBOL_TEXT_GAP = 0.015
 
 
@@ -70,29 +70,9 @@ def wordmark_btech_from_manual(card: Image.Image) -> Image.Image:
     m = (arr < 200).any(axis=2)
     ys, xs = np.where(m)
     raw = raw.crop((int(xs.min()), int(ys.min()), int(xs.max() + 1), int(ys.max() + 1)))
-    aw = max(1, int(raw.width * A_WIDTH_RATIO))
-    tech = to_transparent(raw.crop((aw, 0, raw.width, raw.height)))
-    a_h = raw.crop((0, 0, aw, raw.height)).height
-
-    fbold = ImageFont.truetype(FONT_BOLD, 80)
-    for size in range(8, 320):
-        f = ImageFont.truetype(FONT_BOLD, size)
-        d = ImageDraw.Draw(Image.new("RGBA", (10, 10)))
-        bb = d.textbbox((0, 0), "B", font=f)
-        if bb[3] - bb[1] >= a_h - 3:
-            fbold = f
-            break
-
-    b_canvas = Image.new("RGBA", (400, 400), (0, 0, 0, 0))
-    d = ImageDraw.Draw(b_canvas)
-    bb = d.textbbox((0, 0), "B", font=fbold)
-    d.text((-bb[0], -bb[1]), "B", font=fbold, fill=(0, 0, 0, 255))
-    b_img = b_canvas.crop(b_canvas.getbbox())
-
-    out = Image.new("RGBA", (b_img.width + tech.width, max(b_img.height, tech.height)), (0, 0, 0, 0))
-    out.paste(b_img, (0, (out.height - b_img.height) // 2), b_img)
-    out.paste(tech, (b_img.width, (out.height - tech.height) // 2), tech)
-    return out
+    band = raw.crop((0, 0, raw.width, int(raw.height * TEXT_BAND_HEIGHT_RATIO)))
+    cut = max(1, int(band.width * A_WIDTH_RATIO))
+    return to_transparent(band.crop((cut, 0, band.width, band.height)))
 
 
 def render_symbol(width: int) -> Image.Image:
@@ -147,8 +127,7 @@ def save_all(pdf: Path) -> None:
     icon = Image.new("RGBA", (512, 512), (0, 0, 0, 0))
     icon.paste(sym, ((512 - sym.width) // 2, (512 - sym.height) // 2), sym)
     icon.save(ASSETS / "logo-icon-oficial.png")
-    print("OK manual:", pdf)
-    print("  stacked", stacked.size, "horizontal", horiz.size)
+    print("OK", pdf, "stacked", stacked.size, "horizontal", horiz.size)
 
 
 if __name__ == "__main__":
