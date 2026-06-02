@@ -89,11 +89,196 @@
 }
 
 .ticker-strip--mockup {
+  padding: 20px 0;
   background: linear-gradient(90deg, var(--mockup-ink) 0%, var(--mockup-purple) 50%, var(--mockup-ink) 100%);
 }
 
 .ticker-strip--mockup .ticker-strip__track {
-  letter-spacing: 0.16em;
+  gap: 0;
+  letter-spacing: 0.14em;
+  animation-duration: 48s;
+}
+
+.ticker-strip__item {
+  flex-shrink: 0;
+  padding: 0 32px;
+  white-space: nowrap;
+}
+
+.ticker-strip__item::after {
+  margin-left: 32px;
+  color: rgba(255, 255, 255, 0.45);
+  content: "•";
+}
+
+.hero-panel--float .hero-panel__brand img {
+  width: 88px;
+  height: auto;
+  margin: 0 auto 12px;
+  display: block;
+}
+
+.pessoas-bridge {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.95fr) minmax(0, 1fr);
+  gap: 40px;
+  align-items: center;
+  margin-top: 56px;
+  padding-top: 48px;
+  border-top: 1px solid rgba(10, 20, 50, 0.08);
+}
+
+.pessoas-bridge__media img {
+  width: 100%;
+  max-height: 360px;
+  object-fit: cover;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-soft);
+}
+
+/* —— Parceiros (layout limpo) —— */
+.partners-ecosystem {
+  display: grid;
+  gap: 20px;
+  margin-top: 36px;
+}
+
+.partners-ecosystem__row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.partner-tile {
+  padding: 28px 24px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid rgba(10, 20, 50, 0.08);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.partner-tile__logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  background: var(--surface-strong);
+  border-radius: var(--radius-md);
+}
+
+.partner-tile__logo-wrap img {
+  width: auto;
+  max-width: 100%;
+  max-height: 32px;
+  object-fit: contain;
+}
+
+.partner-tile__logo-wrap--veeam {
+  background: rgba(0, 179, 54, 0.06);
+}
+
+.partner-tile--veeam {
+  border-color: rgba(0, 179, 54, 0.2);
+}
+
+.partner-tile h3 {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+}
+
+.partner-tile__chips {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.partner-band {
+  padding: 28px 32px;
+  background: #fff;
+  border: 1px solid rgba(10, 20, 50, 0.08);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.partner-band--cloud {
+  background: linear-gradient(145deg, #fff 0%, #f0f4ff 100%);
+  border-color: rgba(20, 60, 255, 0.12);
+}
+
+.partner-band__head h3 {
+  margin: 0 0 8px;
+  font-size: 1.12rem;
+}
+
+.partner-band__head p {
+  margin: 0 0 20px;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.partner-band__logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.partner-band__logos li {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  min-width: 96px;
+  padding: 14px 12px;
+  background: var(--surface-strong);
+  border: 1px solid rgba(10, 20, 50, 0.08);
+  border-radius: var(--radius-md);
+}
+
+.partner-band__logos img {
+  width: auto;
+  max-width: 80px;
+  max-height: 36px;
+  object-fit: contain;
+}
+
+.partner-band__logos span {
+  color: var(--ink-soft);
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.25;
+}
+
+.contact-details {
+  display: grid;
+  gap: 6px;
+  margin-top: 20px;
+}
+
+.contact-details a {
+  color: var(--blue);
+  font-size: 1rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+.site-footer--light p a {
+  color: var(--blue);
+  font-weight: 700;
+  text-decoration: none;
 }
 
 /* —— Quem somos —— */
@@ -298,18 +483,6 @@
   color: rgba(255, 255, 255, 0.78);
 }
 
-.tech-depth-card a {
-  display: inline-block;
-  margin-top: 14px;
-  color: var(--cyan);
-  font-size: 0.88rem;
-  font-weight: 800;
-  text-decoration: none;
-}
-
-.tech-depth-card a:hover {
-  text-decoration: underline;
-}
 
 /* —— Experiências —— */
 .section--experiencias {
@@ -449,6 +622,14 @@ h2 .hl-key {
 }
 
 @media (max-width: 1040px) {
+  .partners-ecosystem__row {
+    grid-template-columns: 1fr;
+  }
+
+  .pessoas-bridge {
+    grid-template-columns: 1fr;
+  }
+
   .photo-grid-office {
     grid-template-columns: 1fr 1fr;
   }

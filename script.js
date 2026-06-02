@@ -26,14 +26,14 @@ if (menuButton && menu) {
 
 if (contactForm && formNote) {
   const endpoint = contactForm.dataset.formEndpoint?.trim() || "";
-  const targetEmail = contactForm.dataset.formEmail?.trim() || "contato@btech.cloud";
+  const targetEmail = contactForm.dataset.formEmail?.trim() || "comercial@b-tech.cloud";
 
   contactForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     if (!endpoint) {
       formNote.textContent =
-        "Envio não configurado. Defina data-form-endpoint no formulário ou use contato@btech.cloud diretamente.";
+        "Envio não configurado. Escreva para comercial@b-tech.cloud ou ligue (11) 9 3022-6495.";
       return;
     }
 
