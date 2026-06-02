@@ -1,0 +1,28 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A1432"/>
+      <stop offset="1" stop-color="#24135A"/>
+    </linearGradient>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#143CFF"/>
+      <stop offset="1" stop-color="#6E1EE6"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#C800D2"/>
+      <stop offset="1" stop-color="#FFAF3C"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#00FFFF"/>
+      <stop offset="1" stop-color="#00E1B4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="980" cy="120" r="220" fill="#143CFF" fill-opacity="0.18"/>
+  <circle cx="180" cy="520" r="180" fill="#FFAF3C" fill-opacity="0.14"/>
+  <path d="M120 180L200 226V318L120 364L40 318V226L120 180Z" fill="url(#g1)" fill-opacity="0.9"/>
+  <path d="M260 180L340 226V318L260 364L180 318V226L260 180Z" fill="url(#g2)" fill-opacity="0.88"/>
+  <path d="M190 290L270 336V428L190 474L110 428V336L190 290Z" fill="url(#g3)" fill-opacity="0.85"/>
+  <text x="120" y="460" fill="white" font-family="Century Gothic, Arial, sans-serif" font-size="56" font-weight="700">BTECH Consultoria</text>
+  <text x="120" y="520" fill="rgba(255,255,255,0.78)" font-family="Century Gothic, Arial, sans-serif" font-size="28">Cloud, IA e automação para empresas</text>
+</svg>

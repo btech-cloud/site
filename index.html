@@ -3,20 +3,68 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BTECH Consultoria | Cloud, IA e Automação para Empresas</title>
     <meta
       name="description"
-      content="ABTECH: tecnologia próxima para organizar cloud, IA, automação, gestão e relacionamento com menos ruído e mais continuidade operacional."
+      content="Consultoria em tecnologia, cloud, IA e automação para empresas. A BTECH ajuda a organizar operações, apoiar decisões e aplicar tecnologia com proximidade."
     >
-    <title>ABTECH | Tecnologia forte, perto da operação</title>
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://btech.cloud/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://btech.cloud/">
+    <meta property="og:title" content="BTECH Consultoria | Cloud, IA e Automação para Empresas">
+    <meta
+      property="og:description"
+      content="Consultoria em tecnologia, cloud, IA e automação para empresas. Organize operações e aplique tecnologia com proximidade e linguagem clara."
+    >
+    <meta property="og:image" content="https://btech.cloud/assets/og-cover.svg">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BTECH Consultoria | Cloud, IA e Automação para Empresas">
+    <meta
+      name="twitter:description"
+      content="Consultoria em tecnologia, cloud, IA e automação para empresas com proximidade operacional."
+    >
+    <meta name="twitter:image" content="https://btech.cloud/assets/og-cover.svg">
     <link rel="icon" href="assets/abtech-mark.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "BTECH Consultoria",
+          "url": "https://btech.cloud/",
+          "logo": "https://btech.cloud/assets/abtech-mark.svg",
+          "description": "Consultoria em tecnologia, cloud, IA e automação para empresas.",
+          "slogan": "Tecnologia forte, feita perto da operação."
+        },
+        {
+          "@type": "ProfessionalService",
+          "name": "BTECH Consultoria",
+          "url": "https://btech.cloud/",
+          "serviceType": [
+            "Consultoria em tecnologia",
+            "Consultoria em cloud",
+            "Inteligência artificial para empresas",
+            "Automação empresarial"
+          ],
+          "areaServed": "BR",
+          "description": "Consultoria em cloud, arquitetura cloud, IA aplicada, automação empresarial e gestão de tecnologia."
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
+    <div class="honeycomb-bg" aria-hidden="true"></div>
+
     <header class="site-header" data-header>
       <nav class="nav container" aria-label="Navegação principal">
-        <a class="brand" href="index.html" aria-label="ABTECH - início">
+        <a class="brand" href="#inicio" aria-label="BTECH Consultoria - início">
           <img class="brand__mark" src="assets/abtech-mark.svg" alt="" width="48" height="41">
-          <span class="brand__name">ABTECH</span>
+          <span class="brand__name"><span class="brand-highlight">BTECH</span> Consultoria</span>
         </a>
 
         <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu">
@@ -27,11 +75,12 @@
         </button>
 
         <ul class="nav__links" id="menu">
-          <li><a href="#proximidade">Proximidade</a></li>
+          <li><a href="#proximidade">Ideia</a></li>
           <li><a href="#quem-somos">Quem somos</a></li>
-          <li><a href="#atuacao">Atuação</a></li>
-          <li><a href="cloud.html">Cloud</a></li>
-          <li><a class="nav__cta" href="#contato">Conversar com a ABTECH</a></li>
+          <li><a href="#atuacao">Como ajudamos</a></li>
+          <li><a href="#cloud-acompanhada">Cloud</a></li>
+          <li><a href="#ia-automacao">IA</a></li>
+          <li><a class="nav__cta" href="#contato">Conversar com a BTECH</a></li>
         </ul>
       </nav>
     </header>
@@ -40,237 +89,269 @@
       <section class="hero hero--home" id="inicio">
         <div class="hero__orb hero__orb--blue" aria-hidden="true"></div>
         <div class="hero__orb hero__orb--amber" aria-hidden="true"></div>
+        <div class="hero__hex hero__hex--one" aria-hidden="true"></div>
+        <div class="hero__hex hero__hex--two" aria-hidden="true"></div>
 
-        <div class="hero__content container">
+        <div class="hero__content container hero__content--split">
           <div class="hero__copy">
-            <p class="eyebrow">Proximidade operacional</p>
-            <h1>Tecnologia forte, feita perto da operação.</h1>
+            <p class="eyebrow eyebrow--light">Consultoria em tecnologia</p>
+            <h1>
+              Toda empresa precisa evoluir.
+              <span class="hero__line">Nem toda evolução precisa ser complicada.</span>
+            </h1>
             <p class="hero__lead">
-              A ABTECH ajuda negócios reais a atravessar mudanças tecnológicas sem caos,
-              sem distância e sem linguagem complicada. A gente entende a rotina, organiza
-              o caminho e constrói junto uma operação mais clara, inteligente e contínua.
+              A <strong class="brand-inline"><span class="brand-highlight">BTECH</span> Consultoria</strong>
+              ajuda empresas a organizar tecnologia, cloud, IA, automação e operação com proximidade,
+              linguagem clara e acompanhamento estratégico.
+            </p>
+            <p class="hero__note">
+              Somos consultoria em tecnologia. Não vendemos infraestrutura própria neste momento.
             </p>
             <div class="hero__actions" aria-label="Ações principais">
-              <a class="button button--primary" href="#contato">Vamos construir isso junto</a>
+              <a class="button button--primary" href="#contato">Vamos conversar</a>
               <a class="button button--secondary" href="#proximidade">Entender a abordagem</a>
             </div>
+            <p class="hero__tagline">Tecnologia forte, feita perto da operação.</p>
           </div>
 
-          <aside class="hero-panel" aria-label="Resumo do posicionamento ABTECH">
-            <div class="hero-panel__top">
-              <span class="status-dot" aria-hidden="true"></span>
-              <span>Tecnologia sem afastar pessoas</span>
+          <div class="hero__visual">
+            <div class="media-frame media-frame--hero">
+              <img
+                src="assets/images/hero-consultoria.jpg"
+                alt="Equipe em reunião consultiva em ambiente corporativo moderno"
+                width="700"
+                height="520"
+                loading="eager"
+              >
+              <div class="media-frame__overlay" aria-hidden="true"></div>
+              <div class="honeycomb honeycomb--float" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
-            <div class="honeycomb honeycomb--hero" aria-hidden="true">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <p class="hero-panel__statement">
-              A transformação funciona melhor quando alguém caminha perto: escutando a operação,
-              simplificando decisões e acompanhando a evolução no ritmo certo.
-            </p>
-            <dl class="signal-grid">
-              <div>
-                <dt>Escuta real</dt>
-                <dd>Antes da solução, entendemos a rotina e o problema.</dd>
+            <aside class="hero-panel hero-panel--overlay" aria-label="Pessoas antes da ferramenta">
+              <div class="hero-panel__top">
+                <span class="status-dot" aria-hidden="true"></span>
+                <span>Pessoas antes da ferramenta</span>
               </div>
-              <div>
-                <dt>Clareza prática</dt>
-                <dd>Traduzimos tecnologia em decisões possíveis.</dd>
-              </div>
-              <div>
-                <dt>Continuidade</dt>
-                <dd>Acompanhamento para a operação evoluir sem perder controle.</dd>
-              </div>
-            </dl>
-          </aside>
+              <p class="hero-panel__statement">
+                Começamos pela realidade do negócio — processos, equipe e decisões — e só então
+                conectamos cloud, IA, integração de sistemas e automação com critério.
+              </p>
+            </aside>
+          </div>
         </div>
       </section>
 
-      <section class="trust-strip" aria-label="Pilares ABTECH">
+      <section class="trust-strip" aria-label="Capacidades BTECH Consultoria">
         <div class="container trust-strip__inner">
-          <span>Clareza</span>
-          <span>Continuidade</span>
+          <span>Consultoria em cloud</span>
           <span>IA aplicada</span>
-          <span>Cloud acompanhada</span>
-          <span>Relacionamento</span>
+          <span>Automação empresarial</span>
+          <span>Arquitetura cloud</span>
+          <span>Continuidade operacional</span>
+          <span>Transformação digital</span>
         </div>
       </section>
 
-      <section class="section intro-section" id="proximidade">
+      <section class="section section--manifesto" id="proximidade">
         <div class="container two-column two-column--intro">
           <div>
-            <p class="eyebrow">Ideia central</p>
+            <p class="eyebrow eyebrow--on-dark">Ideia central</p>
             <h2>A tecnologia não deveria afastar pessoas. Deveria aproximar operação, clareza e crescimento.</h2>
           </div>
-          <div class="rich-text principle-panel">
+          <div class="rich-text principle-panel principle-panel--dark">
             <p>
-              O trabalho da ABTECH começa perto da realidade do cliente: conversas, processos,
-              gargalos, dúvidas, ferramentas já usadas e decisões que ficaram difíceis demais.
+              O trabalho da <span class="brand-highlight">BTECH</span> Consultoria começa perto da operação:
+              conversas, processos, gargalos e decisões que ficaram difíceis demais.
             </p>
             <p>
-              A partir daí, conectamos cloud, IA, automação, gestão e relacionamento de um jeito
-              simples de acompanhar. Não é sobre empurrar tecnologia. É sobre reduzir ruído,
-              organizar a transição e criar uma base mais preparada para crescer.
+              Conectamos consultoria em cloud, arquitetura cloud, IA aplicada, automação de processos,
+              integração de sistemas, governança e gestão de tecnologia — com linguagem acessível para
+              gestores e profundidade para quem é da área.
             </p>
           </div>
         </div>
       </section>
 
-      <section class="section section--soft" id="quem-somos">
-        <div class="container two-column two-column--intro">
+      <section class="section" id="quem-somos">
+        <div class="container two-column two-column--media">
+          <div class="media-frame media-frame--section">
+            <img
+              src="assets/images/equipe-trabalho.jpg"
+              alt="Profissionais colaborando em ambiente de trabalho"
+              width="640"
+              height="480"
+              loading="lazy"
+            >
+            <div class="media-frame__overlay media-frame__overlay--soft" aria-hidden="true"></div>
+          </div>
           <div>
             <p class="eyebrow">Quem somos</p>
-            <h2>Uma operação consultiva que entra na conversa e fica perto da construção.</h2>
-          </div>
-          <div class="rich-text">
-            <p>
-              A ABTECH nasce da experiência prática em gestão, atendimento, comunicação,
-              tecnologia, operação e crescimento. Nosso papel é ajudar empresas a entender o que
-              precisa ser organizado antes de transformar qualquer ferramenta em promessa.
-            </p>
-            <p>
-              Trabalhamos com diagnóstico, arquitetura, IA, automação, cloud, relacionamento e
-              marketing de forma integrada. A diferença está na forma: menos distância, menos
-              buzzword e mais presença para transformar necessidade em estrutura sustentável.
-            </p>
+            <h2>Consultoria em tecnologia, próxima da operação e preparada para crescer.</h2>
+            <div class="rich-text">
+              <p>
+                A <span class="brand-highlight">BTECH</span> Consultoria nasce da prática em gestão,
+                atendimento, comunicação e tecnologia. Não somos software house genérica nem provedor
+                de infraestrutura — somos parceiros estratégicos para organizar o que importa antes de
+                acelerar ferramentas.
+              </p>
+              <p>
+                Atuamos com diagnóstico, arquitetura, segurança, LGPD, observabilidade e
+                transformação digital de forma integrada: humana quando precisa, técnica quando
+                necessário.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section section--soft" id="pessoas">
         <div class="container people-section">
           <div class="section-heading section-heading--center">
             <p class="eyebrow">Pessoas à frente</p>
-            <h2>Duas frentes fortes para pensar, organizar e executar junto.</h2>
+            <h2>Liderança consultiva para pensar, organizar e executar junto.</h2>
             <p>
-              A ABTECH não precisa parecer gigante para transmitir confiança. Ela precisa mostrar
-              quem está perto da decisão, da operação e da evolução dos projetos.
+              Quem está perto da decisão, da operação e da evolução dos projetos — sem parecer
+              currículo, sem parecer gigante.
             </p>
           </div>
 
           <div class="people-grid">
-            <article class="person-card">
-              <div class="person-card__avatar" aria-hidden="true">E</div>
+            <article class="person-card person-card--rich">
+              <div class="person-card__media" aria-hidden="true">
+                <span class="person-card__initial">E</span>
+              </div>
               <p class="person-card__role">Gestão, relacionamento e estratégia operacional</p>
-              <h3>Erico</h3>
+              <h3>Erico Teixeira</h3>
               <p>
-                Conecta estratégia, operação, comunicação e relacionamento para transformar
-                necessidades dispersas em caminhos mais claros. Atua na leitura do cliente, na
-                organização de prioridades e na criação de estruturas sustentáveis para a evolução
-                tecnológica fazer sentido no dia a dia.
+                Conecta visão de negócio, comunicação, relacionamento e organização para transformar
+                necessidades dispersas em caminhos mais claros e executáveis.
               </p>
             </article>
 
-            <article class="person-card">
-              <div class="person-card__avatar" aria-hidden="true">A</div>
-              <p class="person-card__role">IA, cloud e inteligência operacional</p>
+            <article class="person-card person-card--rich">
+              <div class="person-card__media person-card__media--alt" aria-hidden="true">
+                <span class="person-card__initial">A</span>
+              </div>
+              <p class="person-card__role">Cloud, IA e inteligência operacional</p>
               <h3>Alexandre</h3>
               <p>
-                Identifica gargalos, oportunidades e pontos de melhoria dentro da operação.
-                Desenha caminhos com IA, automação, cloud e arquitetura para tornar ambientes
-                mais inteligentes, eficientes e preparados para crescer sem complicar a rotina.
+                Identifica gargalos, oportunidades e caminhos técnicos para conectar automação, cloud,
+                IA, APIs e infraestrutura em nuvem à realidade da operação.
               </p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section section--soft" id="atuacao">
+      <section class="section" id="atuacao">
         <div class="container">
           <div class="section-heading">
             <p class="eyebrow">Como ajudamos</p>
             <h2>Menos tecnologia solta. Mais operação organizada.</h2>
             <p>
-              A ABTECH atua onde a tecnologia encontra a rotina: decisões de cloud, IA aplicada,
-              automações, gestão, atendimento, comunicação e crescimento. Sempre com acompanhamento,
-              clareza e cuidado para não transformar mudança em confusão.
+              Consultoria em tecnologia para empresas que precisam de clareza em cloud, IA,
+              automação de atendimento, backup, monitoramento e integração de sistemas — sem
+              transformar mudança em confusão.
             </p>
           </div>
 
           <div class="capability-grid">
             <article class="capability-card capability-card--featured">
+              <span class="capability-card__icon" aria-hidden="true"></span>
               <span class="capability-card__number">01</span>
-              <h3>Cloud & Arquitetura</h3>
+              <h3>Cloud &amp; Arquitetura</h3>
               <p>
-                Ajudamos a escolher provedores, desenhar arquitetura e acompanhar decisões de cloud
-                sem vender infraestrutura própria e sem deixar o cliente sozinho no processo.
+                Consultoria em cloud e arquitetura cloud: escolha de provedores, infraestrutura em
+                nuvem, migração, backup, monitoramento e acompanhamento — sem vender infraestrutura
+                própria.
               </p>
-              <a href="cloud.html">Ver cloud acompanhada</a>
+              <a href="#cloud-acompanhada">Ver cloud acompanhada</a>
             </article>
 
-            <article class="capability-card">
+            <article class="capability-card capability-card--violet">
+              <span class="capability-card__icon" aria-hidden="true"></span>
               <span class="capability-card__number">02</span>
-              <h3>IA & Automação</h3>
+              <h3>IA &amp; Automação</h3>
               <p>
-                Aplicamos IA e automação para reduzir atrito, encontrar oportunidades e melhorar
-                atendimento, gestão e processos sem criar complexidade desnecessária.
+                IA aplicada, automação empresarial e automação de atendimento para reduzir atrito e
+                apoiar gestão — com governança e critério.
               </p>
+              <a href="#ia-automacao">Ver IA e automação</a>
             </article>
 
-            <article class="capability-card">
+            <article class="capability-card capability-card--mint">
+              <span class="capability-card__icon" aria-hidden="true"></span>
               <span class="capability-card__number">03</span>
-              <h3>Gestão & Operação</h3>
+              <h3>Gestão &amp; Operação</h3>
               <p>
-                Organizamos prioridades, fluxos, rotinas e indicadores práticos para que a empresa
-                tenha mais clareza sobre o que precisa mudar e por onde começar.
+                Gestão de tecnologia, continuidade operacional, indicadores e prioridades para saber
+                por onde começar a transformação digital.
               </p>
             </article>
 
-            <article class="capability-card">
+            <article class="capability-card capability-card--amber">
+              <span class="capability-card__icon" aria-hidden="true"></span>
               <span class="capability-card__number">04</span>
-              <h3>Relacionamento & Growth</h3>
+              <h3>Relacionamento &amp; Growth</h3>
               <p>
-                Conectamos comunicação, marketing e relacionamento com clientes internos e externos
-                para apoiar crescimento com mais coerência e menos ruído operacional.
+                Comunicação e relacionamento alinhados à operação para crescer com coerência e menos
+                ruído entre áreas.
               </p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section section--gradient-soft">
         <div class="container">
           <div class="section-heading">
             <p class="eyebrow">Forma de trabalho</p>
             <h2>Não é “faça tudo sozinho”. É “vamos construir isso junto”.</h2>
             <p>
-              A proximidade operacional aparece no jeito de conduzir: entender, organizar,
-              direcionar e acompanhar. A tecnologia entra como meio para dar clareza e continuidade.
+              Proximidade operacional: entender, organizar, direcionar e acompanhar. A tecnologia entra
+              como meio — não como protagonista frio.
             </p>
           </div>
 
           <div class="process-grid">
-            <article class="process-card">
+            <article class="process-card process-card--accent">
               <span>01</span>
               <h3>Escutar a rotina</h3>
-              <p>Entendemos o que trava a operação, onde há ruído e quais decisões precisam ficar mais claras.</p>
+              <p>Diagnóstico da operação, ruídos e decisões que precisam de clareza.</p>
             </article>
-            <article class="process-card">
+            <article class="process-card process-card--accent">
               <span>02</span>
               <h3>Organizar o caminho</h3>
-              <p>Separamos urgência de prioridade e transformamos necessidades em um plano possível de executar.</p>
+              <p>Prioridades, segurança, LGPD e plano possível de executar.</p>
             </article>
-            <article class="process-card">
+            <article class="process-card process-card--accent">
               <span>03</span>
               <h3>Aplicar tecnologia</h3>
-              <p>Conectamos cloud, IA, automação e ferramentas com a realidade da equipe e do cliente.</p>
+              <p>Cloud, IA, APIs, integração de sistemas e automação no ritmo certo.</p>
             </article>
-            <article class="process-card">
+            <article class="process-card process-card--accent">
               <span>04</span>
               <h3>Acompanhar a evolução</h3>
-              <p>Seguimos perto para ajustar, simplificar e garantir que a mudança vire continuidade.</p>
+              <p>Observabilidade, ajustes e continuidade após a mudança.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section cloud-preview" id="cloud">
+      <section class="section cloud-preview" id="cloud-acompanhada">
         <div class="container cloud-preview__inner">
-          <div class="cloud-preview__visual" aria-hidden="true">
-            <img src="assets/abtech-mark.svg" alt="" width="96" height="82">
-            <div class="cloud-preview__line"></div>
+          <div class="cloud-preview__visual">
+            <img
+              src="assets/images/reuniao-estrategia.jpg"
+              alt="Consultores e cliente em conversa sobre decisões de tecnologia"
+              width="480"
+              height="360"
+              loading="lazy"
+              class="cloud-preview__photo"
+            >
             <div class="cloud-preview__nodes">
               <span>Escolha</span>
               <span>Arquitetura</span>
@@ -278,50 +359,172 @@
             </div>
           </div>
           <div>
-            <p class="eyebrow">Cloud sem labirinto</p>
-            <h2>Você não precisa virar especialista em cloud para tomar decisões melhores.</h2>
+            <p class="eyebrow">Cloud acompanhada</p>
+            <h2>Cloud para empresas — com critério, sem labirinto e sem infraestrutura própria nossa.</h2>
             <p>
-              A ABTECH ajuda a comparar caminhos, escolher provedores, desenhar arquitetura e acompanhar
-              a operação. Sem vender infraestrutura própria. Sem transformar cloud em vitrine técnica.
-              Com foco no que sustenta a rotina e reduz risco.
+              Consultoria em cloud: comparamos caminhos, desenhamos arquitetura cloud, organizamos
+              backup, monitoramento e transição. Você decide com apoio; não compra datacenter da
+              <span class="brand-highlight">BTECH</span>.
             </p>
-            <a class="button button--primary" href="cloud.html">Conhecer cloud acompanhada</a>
+            <ul class="check-list check-list--light">
+              <li>Sem infraestrutura própria para empurrar</li>
+              <li>Arquitetura compreensível e alinhada à operação</li>
+              <li>Acompanhamento antes, durante e depois da mudança</li>
+            </ul>
+            <a class="button button--primary" href="#contato">Conversar sobre cloud</a>
           </div>
         </div>
       </section>
 
-      <section class="section" id="experiencias">
+      <section class="section section--soft" id="ia-automacao">
+        <div class="container two-column two-column--media two-column--reverse">
+          <div>
+            <p class="eyebrow">IA e automação</p>
+            <h2>Inteligência artificial para empresas — aplicada, não exibida.</h2>
+            <div class="rich-text">
+              <p>
+                Consultoria de IA e automação empresarial para quem precisa de resultado na operação:
+                automação de processos, automação de atendimento, integração via APIs e governança
+                desde o desenho.
+              </p>
+              <p>
+                Mostramos onde a IA ajuda, onde não ajuda ainda e como evoluir com segurança,
+                observabilidade e continuidade operacional.
+              </p>
+            </div>
+            <a class="button button--secondary" href="#contato">Explorar IA na sua operação</a>
+          </div>
+          <div class="media-frame media-frame--section">
+            <img
+              src="assets/images/diagnostico.jpg"
+              alt="Profissionais analisando informações juntos em uma tela"
+              width="640"
+              height="480"
+              loading="lazy"
+            >
+            <div class="media-frame__overlay media-frame__overlay--violet" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="container feature-list feature-list--grid">
+          <article>
+            <h3>Automação de processos</h3>
+            <p>Reduzir trabalho manual repetitivo com critério e integração de sistemas.</p>
+          </article>
+          <article>
+            <h3>Automação de atendimento</h3>
+            <p>Apoiar equipes sem perder o humano onde o relacionamento importa.</p>
+          </article>
+          <article>
+            <h3>IA aplicada com governança</h3>
+            <p>Decisões, dados, LGPD e segurança pensados junto com a solução.</p>
+          </article>
+          <article>
+            <h3>Observabilidade</h3>
+            <p>Enxergar o que mudou na operação depois que a tecnologia entrou.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="onde-atuamos">
         <div class="container two-column">
           <div>
-            <p class="eyebrow">Experiências</p>
-            <h2>Projetos reais pedem escuta, contexto e responsabilidade.</h2>
-          </div>
-          <div class="experience-panel">
-            <p>
-              Este espaço está preparado para reunir segmentos, clientes, aprendizados e cases conforme
-              a ABTECH consolidar sua história pública. A lógica continua a mesma: comunicar experiência
-              real sem inflar tamanho, prometer demais ou esconder a fase atual da operação.
+            <p class="eyebrow">Onde podemos atuar</p>
+            <h2>Experiência dos fundadores, comunicada com cuidado para a marca em construção.</h2>
+            <p class="rich-text">
+              Ainda estamos consolidando a história pública da <span class="brand-highlight">BTECH</span>
+              Consultoria. Por isso, falamos de contextos e perfis — não de “cases” fechados que ainda
+              não publicamos.
             </p>
-            <div class="tag-list" aria-label="Segmentos e experiências futuras">
-              <span>Operações locais</span>
+          </div>
+          <div class="experience-panel experience-panel--tags">
+            <div class="tag-list" aria-label="Perfis e contextos de atuação">
+              <span>Empresas em crescimento</span>
               <span>Negócios digitais</span>
-              <span>Atendimento</span>
-              <span>Cloud e IA</span>
-              <span>Projetos sob medida</span>
+              <span>Operações locais</span>
+              <span>Equipes com processos manuais</span>
+              <span>Empresas avaliando cloud</span>
+              <span>Empresas querendo aplicar IA</span>
+              <span>Atendimento e relacionamento</span>
+              <span>Gestão e automação</span>
             </div>
           </div>
         </div>
       </section>
 
+      <section class="section section--faq" id="faq">
+        <div class="container">
+          <div class="section-heading section-heading--center">
+            <p class="eyebrow">Perguntas frequentes</p>
+            <h2>Dúvidas comuns sobre consultoria em tecnologia</h2>
+          </div>
+
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary>A BTECH vende infraestrutura cloud?</summary>
+              <p>
+                Não. Somos consultoria em tecnologia e cloud acompanhada. Ajudamos a escolher
+                provedores e desenhar arquitetura; não vendemos infraestrutura própria neste momento.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>O que é consultoria em cloud?</summary>
+              <p>
+                É apoio estratégico e técnico para decisões de infraestrutura em nuvem, migração,
+                backup, monitoramento e continuidade — com linguagem clara para gestores.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>Como a IA pode ajudar uma empresa?</summary>
+              <p>
+                Quando aplicada com contexto: automação de processos, apoio ao atendimento, análise
+                de operação e integração com sistemas existentes — sempre com governança e critério.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>Quando automatizar processos?</summary>
+              <p>
+                Quando a rotina está clara, o gargalo é repetitivo e há valor em liberar pessoas para
+                decisões que exigem julgamento humano.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>Como saber se minha empresa precisa rever tecnologia?</summary>
+              <p>
+                Sinais comuns: decisões difíceis sobre cloud, processos manuais demais, ferramentas
+                que não conversam, insegurança sobre backup ou dúvida sobre onde aplicar IA.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>A BTECH atende empresas pequenas e médias?</summary>
+              <p>
+                Sim. Nosso formato consultivo se adapta ao tamanho e ao momento — com proximidade e
+                plano proporcional à operação.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
       <section class="section contact-section" id="contato">
-        <div class="container contact-card">
-          <div>
+        <div class="container contact-card contact-card--warm">
+          <div class="contact-card__copy">
             <p class="eyebrow">Primeira conversa</p>
-            <h2>Conte onde a operação está pesada. A gente ajuda a organizar o próximo passo.</h2>
+            <h2>Conte onde a operação está pesada. Organizamos o próximo passo juntos.</h2>
             <p>
-              Não precisa chegar com a solução pronta. Traga o cenário, a dúvida ou o gargalo.
-              A conversa começa por entender a realidade antes de indicar tecnologia.
+              Não precisa chegar com a solução pronta. Traga o cenário — cloud, IA, automação,
+              integração ou gestão. Começamos pela realidade do negócio.
             </p>
+            <div class="media-frame media-frame--contact">
+              <img
+                src="assets/images/reuniao-estrategia.jpg"
+                alt=""
+                width="400"
+                height="260"
+                loading="lazy"
+                aria-hidden="true"
+              >
+            </div>
           </div>
 
           <form class="contact-form">
@@ -335,7 +538,7 @@
             </label>
             <label>
               O que você quer organizar?
-              <textarea name="message" rows="4" placeholder="Ex.: cloud, IA, atendimento, gestão, automação, relacionamento..." required></textarea>
+              <textarea name="message" rows="4" placeholder="Ex.: cloud, IA, automação, integração, gestão..." required></textarea>
             </label>
             <button class="button button--primary" type="submit">Começar a conversa</button>
             <p class="form-note" role="status" aria-live="polite"></p>
@@ -346,15 +549,71 @@
 
     <footer class="site-footer">
       <div class="container site-footer__content">
-        <a class="brand brand--footer" href="index.html" aria-label="ABTECH - início">
+        <a class="brand brand--footer" href="#inicio" aria-label="BTECH Consultoria - início">
           <img class="brand__mark" src="assets/abtech-mark.svg" alt="" width="42" height="36">
-          <span class="brand__name">ABTECH</span>
+          <span class="brand__name"><span class="brand-highlight">BTECH</span> Consultoria</span>
         </a>
-        <p>&copy; <span id="current-year"></span> ABTECH. Tecnologia forte sem perder humanidade.</p>
+        <p>&copy; <span id="current-year"></span> <span class="brand-highlight">BTECH</span> Consultoria. Tecnologia forte, feita perto da operação.</p>
         <a href="#inicio">Voltar ao topo</a>
       </div>
     </footer>
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "A BTECH vende infraestrutura cloud?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não. Somos consultoria em tecnologia e cloud acompanhada. Ajudamos a escolher provedores e desenhar arquitetura; não vendemos infraestrutura própria neste momento."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O que é consultoria em cloud?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "É apoio estratégico e técnico para decisões de infraestrutura em nuvem, migração, backup, monitoramento e continuidade — com linguagem clara para gestores."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como a IA pode ajudar uma empresa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Quando aplicada com contexto: automação de processos, apoio ao atendimento, análise de operação e integração com sistemas existentes — sempre com governança e critério."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quando automatizar processos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Quando a rotina está clara, o gargalo é repetitivo e há valor em liberar pessoas para decisões que exigem julgamento humano."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como saber se minha empresa precisa rever tecnologia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sinais comuns: decisões difíceis sobre cloud, processos manuais demais, ferramentas que não conversam, insegurança sobre backup ou dúvida sobre onde aplicar IA."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A BTECH atende empresas pequenas e médias?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. Nosso formato consultivo se adapta ao tamanho e ao momento — com proximidade e plano proporcional à operação."
+          }
+        }
+      ]
+    }
+    </script>
     <script src="script.js"></script>
   </body>
 </html>

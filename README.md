@@ -1,6 +1,6 @@
-# Site ABTECH
+# Site BTECH Consultoria
 
-Site institucional estático para a ABTECH, criado com HTML, CSS e JavaScript puro.
+Landing page institucional estática para a **BTECH Consultoria**, criada com HTML, CSS e JavaScript puro.
 
 A proposta visual segue o manual de identidade enviado: uso de colmeia, tipografia com referência à Century Gothic, paleta reduzida da marca e uma comunicação consultiva, humana e operacional.
 
@@ -8,8 +8,8 @@ O conceito central do site é **proximidade operacional**: tecnologia forte sem 
 
 ## Estrutura
 
-- `index.html`: home institucional com proximidade operacional, quem somos, atuação, forma de trabalho, experiências e contato.
-- `cloud.html`: página dedicada para cloud acompanhada, posicionada como escolha, arquitetura e acompanhamento consultivo sem infraestrutura própria.
+- `index.html`: landing única com hero, ideia central, quem somos, pessoas, como ajudamos, forma de trabalho, cloud acompanhada, IA e automação, onde atuamos, FAQ e contato.
+- `cloud.html`: redireciona para `index.html#cloud-acompanhada`.
 - `styles.css`: sistema visual, responsividade, componentes e aplicação da identidade ABTECH.
 - `script.js`: menu mobile, ano automático e feedback do formulário.
 - `assets/abtech-mark.svg`: elemento de colmeia inspirado na identidade visual da marca.
