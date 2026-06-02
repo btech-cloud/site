@@ -1,6 +1,6 @@
 :root {
   color-scheme: light dark;
-  --brand-gradient: linear-gradient(135deg, var(--blue) 0%, var(--violet) 38%, var(--magenta) 72%, var(--amber) 100%);
+  --brand-blue: #143cff;
   --ink: #0a1432;
   --ink-soft: #24324f;
   --muted: #667089;
@@ -139,16 +139,17 @@ textarea {
   font-size: 0.98rem;
 }
 
-.brand-highlight,
-.brand-inline .brand-highlight {
-  background: var(--brand-gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+.brand--horizontal {
+  gap: 0;
 }
 
-.brand-inline {
-  font-weight: 800;
+.brand__logo {
+  width: min(210px, 52vw);
+  height: auto;
+}
+
+.brand__logo--footer {
+  width: min(180px, 46vw);
 }
 
 .honeycomb-bg {
@@ -156,11 +157,12 @@ textarea {
   inset: 0;
   z-index: -2;
   pointer-events: none;
-  opacity: 0.55;
-  background-image:
+  opacity: 0.35;
+  background:
+    url("assets/visuals/pattern-colmeia.svg") 92% 8% / 360px auto no-repeat,
+    url("assets/visuals/pattern-colmeia.svg") 4% 72% / 280px auto no-repeat,
     radial-gradient(circle at 8% 12%, rgba(20, 60, 255, 0.12), transparent 22rem),
-    radial-gradient(circle at 92% 8%, rgba(200, 0, 210, 0.1), transparent 18rem),
-    radial-gradient(circle at 50% 100%, rgba(0, 225, 180, 0.08), transparent 24rem);
+    radial-gradient(circle at 92% 8%, rgba(200, 0, 210, 0.1), transparent 18rem);
 }
 
 .brand--footer .brand__mark {
@@ -304,25 +306,42 @@ textarea {
   text-transform: uppercase;
 }
 
-.hero__hex {
+.section-deco {
   position: absolute;
-  z-index: -1;
-  width: 140px;
-  height: 121px;
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-  opacity: 0.2;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.55;
 }
 
-.hero__hex--one {
+.section-deco--hero {
   top: 120px;
-  left: 4%;
-  background: linear-gradient(135deg, var(--cyan), var(--blue));
+  right: 2%;
+  width: min(280px, 34vw);
 }
 
-.hero__hex--two {
-  right: 8%;
-  bottom: 40px;
-  background: linear-gradient(135deg, var(--magenta), var(--amber));
+.section-deco--hero-side {
+  position: absolute;
+  right: -12px;
+  bottom: 80px;
+  z-index: 2;
+  width: min(220px, 40vw);
+  opacity: 0.75;
+}
+
+.section-deco--manifesto {
+  top: 40px;
+  right: 4%;
+  width: min(300px, 36vw);
+  opacity: 0.28;
+}
+
+.section-deco--ia {
+  position: absolute;
+  top: 48px;
+  left: 50%;
+  width: min(420px, 52vw);
+  opacity: 0.2;
+  transform: translateX(-50%);
 }
 
 .hero__visual {
@@ -366,13 +385,24 @@ textarea {
   background: linear-gradient(135deg, rgba(110, 30, 230, 0.28), transparent 50%);
 }
 
-.honeycomb--float {
+.media-frame--hex img {
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+}
+
+.colmeia-badge {
   position: absolute;
-  top: 18px;
-  right: 18px;
-  width: 150px;
-  height: 130px;
-  opacity: 0.95;
+  z-index: 3;
+  filter: drop-shadow(0 12px 28px rgba(10, 20, 50, 0.18));
+}
+
+.colmeia-badge--hero {
+  top: 20px;
+  right: 20px;
+}
+
+.colmeia-badge--cloud {
+  top: 16px;
+  right: 16px;
 }
 
 .hero-panel--overlay {
@@ -449,17 +479,10 @@ textarea {
     radial-gradient(circle at 100% 0%, rgba(0, 255, 255, 0.12), transparent 10rem);
 }
 
-.capability-card__icon {
-  display: block;
-  width: 42px;
-  height: 36px;
-  margin-bottom: 18px;
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-  background: var(--brand-gradient);
-}
-
-.capability-card--featured .capability-card__icon {
-  background: linear-gradient(135deg, var(--cyan), var(--mint));
+.capability-card__colmeia {
+  width: 56px;
+  height: auto;
+  margin-bottom: 16px;
 }
 
 .capability-card--violet {
@@ -480,18 +503,6 @@ textarea {
     rgba(255, 255, 255, 0.9);
 }
 
-.capability-card--violet .capability-card__icon {
-  background: linear-gradient(135deg, var(--violet), var(--magenta));
-}
-
-.capability-card--mint .capability-card__icon {
-  background: linear-gradient(135deg, var(--mint), var(--cyan));
-}
-
-.capability-card--amber .capability-card__icon {
-  background: linear-gradient(135deg, var(--amber), var(--orange));
-}
-
 .capability-card a {
   color: var(--blue);
   font-weight: 900;
@@ -507,10 +518,27 @@ textarea {
 }
 
 .person-card__media {
+  position: relative;
   display: grid;
   min-height: 120px;
   place-items: center;
+  overflow: hidden;
   background: linear-gradient(135deg, var(--blue), var(--violet));
+}
+
+.person-card__media img {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 72px;
+  opacity: 0.35;
+}
+
+.person-card__media--hex::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(180deg, transparent, rgba(10, 20, 50, 0.2));
 }
 
 .person-card__media--alt {
@@ -518,6 +546,8 @@ textarea {
 }
 
 .person-card__initial {
+  position: relative;
+  z-index: 1;
   color: white;
   font-size: 2.4rem;
   font-weight: 900;
@@ -537,19 +567,68 @@ textarea {
   padding-bottom: 26px;
 }
 
-.cloud-preview__photo {
+.cloud-preview__visual--layered {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 380px;
+}
+
+.cloud-preview__hex-art {
   position: absolute;
   inset: 0;
+  z-index: 0;
   width: 100%;
   height: 100%;
-  min-height: 100%;
   object-fit: cover;
-  opacity: 0.72;
+  border-radius: 28px;
+  opacity: 0.42;
+}
+
+.media-frame--cloud {
+  position: relative;
+  z-index: 1;
+  width: 72%;
+  margin-top: 48px;
+  box-shadow: var(--shadow-soft);
+}
+
+.media-frame--cloud img {
+  min-height: 220px;
 }
 
 .cloud-preview__visual {
   min-height: 340px;
   overflow: hidden;
+}
+
+.section--manifesto,
+.section--soft,
+#ia-automacao {
+  position: relative;
+  overflow: hidden;
+}
+
+.section--with-colmeia::before {
+  position: absolute;
+  top: 28px;
+  right: 5%;
+  width: 140px;
+  height: 120px;
+  content: "";
+  background: url("assets/btech-colmeia.svg") center / contain no-repeat;
+  opacity: 0.14;
+  pointer-events: none;
+}
+
+#atuacao .section-heading::after {
+  display: block;
+  width: 120px;
+  height: 103px;
+  margin-top: 18px;
+  content: "";
+  background: url("assets/btech-colmeia.svg") center / contain no-repeat;
+  opacity: 0.85;
 }
 
 .check-list--light li {
@@ -945,12 +1024,11 @@ h3 {
   position: absolute;
   top: 24px;
   right: 24px;
-  width: 52px;
-  height: 45px;
+  width: 72px;
+  height: 62px;
   content: "";
-  background: linear-gradient(135deg, var(--cyan), var(--blue));
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-  opacity: 0.18;
+  background: url("assets/btech-colmeia.svg") center / contain no-repeat;
+  opacity: 0.35;
 }
 
 .people-section {
@@ -1439,20 +1517,11 @@ h3 {
     font-size: 1.16rem;
   }
 
-  .honeycomb {
-    top: 88px;
-    left: 24px;
-    width: 168px;
-    height: 145px;
-  }
-
-  .honeycomb span {
-    width: 82px;
-    height: 71px;
-  }
-
-  .honeycomb span:nth-child(3) {
-    right: 43px;
+  .section-deco--hero,
+  .section-deco--hero-side,
+  .section-deco--manifesto,
+  .section-deco--ia {
+    display: none;
   }
 
   .capability-grid,

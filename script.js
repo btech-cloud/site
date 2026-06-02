@@ -27,7 +27,7 @@ if (menuButton && menu) {
 if (contactForm && formNote) {
   contactForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    formNote.textContent = "Mensagem registrada. Configure o envio do formulário para iniciar as conversas com a BTECH Consultoria.";
+    formNote.textContent = "Mensagem registrada. Configure o envio do formulário para iniciar as conversas com a BTech Consultoria.";
     contactForm.reset();
   });
 }

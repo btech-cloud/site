@@ -1,0 +1,27 @@
+<svg width="320" height="280" viewBox="0 0 320 280" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <linearGradient id="gA" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#143CFF"/><stop offset="1" stop-color="#6E1EE6"/></linearGradient>
+    <linearGradient id="gB" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#C800D2"/><stop offset="1" stop-color="#FFAF3C"/></linearGradient>
+    <linearGradient id="gC" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00FFFF"/><stop offset="1" stop-color="#00E1B4"/></linearGradient>
+  </defs>
+  <g transform="translate(8 8) scale(0.55)">
+    <path d="M25 5.5L45.8 17.5V41.5L25 53.5L4.2 41.5V17.5L25 5.5Z" fill="url(#gA)" fill-opacity="0.7"/>
+    <path d="M68 5.5L88.8 17.5V41.5L68 53.5L47.2 41.5V17.5L68 5.5Z" fill="url(#gB)" fill-opacity="0.65"/>
+    <path d="M46.5 30.5L67.3 42.5V66.5L46.5 78.5L25.7 66.5V42.5L46.5 30.5Z" fill="url(#gC)" fill-opacity="0.62"/>
+  </g>
+  <g transform="translate(120 0) scale(0.48)">
+    <path d="M25 5.5L45.8 17.5V41.5L25 53.5L4.2 41.5V17.5L25 5.5Z" fill="url(#gB)" fill-opacity="0.55"/>
+    <path d="M68 5.5L88.8 17.5V41.5L68 53.5L47.2 41.5V17.5L68 5.5Z" fill="url(#gC)" fill-opacity="0.5"/>
+    <path d="M46.5 30.5L67.3 42.5V66.5L46.5 78.5L25.7 66.5V42.5L46.5 30.5Z" fill="url(#gA)" fill-opacity="0.52"/>
+  </g>
+  <g transform="translate(200 90) scale(0.62)">
+    <path d="M25 5.5L45.8 17.5V41.5L25 53.5L4.2 41.5V17.5L25 5.5Z" fill="url(#gC)" fill-opacity="0.68"/>
+    <path d="M68 5.5L88.8 17.5V41.5L68 53.5L47.2 41.5V17.5L68 5.5Z" fill="url(#gA)" fill-opacity="0.66"/>
+    <path d="M46.5 30.5L67.3 42.5V66.5L46.5 78.5L25.7 66.5V42.5L46.5 30.5Z" fill="url(#gB)" fill-opacity="0.64"/>
+  </g>
+  <g transform="translate(40 150) scale(0.5)">
+    <path d="M25 5.5L45.8 17.5V41.5L25 53.5L4.2 41.5V17.5L25 5.5Z" fill="url(#gA)" fill-opacity="0.45"/>
+    <path d="M68 5.5L88.8 17.5V41.5L68 53.5L47.2 41.5V17.5L68 5.5Z" fill="url(#gB)" fill-opacity="0.42"/>
+    <path d="M46.5 30.5L67.3 42.5V66.5L46.5 78.5L25.7 66.5V42.5L46.5 30.5Z" fill="url(#gC)" fill-opacity="0.4"/>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg width="560" height="400" viewBox="0 0 560 400" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <linearGradient id="cA" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#143CFF"/><stop offset="1" stop-color="#6E1EE6"/></linearGradient>
+    <linearGradient id="cB" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00FFFF"/><stop offset="1" stop-color="#00E1B4"/></linearGradient>
+    <linearGradient id="cC" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#C800D2"/><stop offset="1" stop-color="#FFAF3C"/></linearGradient>
+  </defs>
+  <rect width="560" height="400" rx="32" fill="#0A1432"/>
+  <circle cx="480" cy="60" r="120" fill="#143CFF" fill-opacity="0.2"/>
+  <circle cx="80" cy="340" r="100" fill="#00FFFF" fill-opacity="0.12"/>
+  <g transform="translate(200 120) scale(2.2)">
+    <path d="M25 5.5L45.8 17.5V41.5L25 53.5L4.2 41.5V17.5L25 5.5Z" fill="url(#cA)" fill-opacity="0.9"/>
+    <path d="M68 5.5L88.8 17.5V41.5L68 53.5L47.2 41.5V17.5L68 5.5Z" fill="url(#cC)" fill-opacity="0.88"/>
+    <path d="M46.5 30.5L67.3 42.5V66.5L46.5 78.5L25.7 66.5V42.5L46.5 30.5Z" fill="url(#cB)" fill-opacity="0.86"/>
+  </g>
+  <text x="40" y="52" fill="#00FFFF" font-family="Century Gothic, sans-serif" font-size="13" font-weight="700" letter-spacing="0.14em">CLOUD ACOMPANHADA</text>
+  <text x="40" y="330" fill="white" font-family="Century Gothic, sans-serif" font-size="26" font-weight="700">Escolha · Arquitetura · Acompanhamento</text>
+</svg>
