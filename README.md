@@ -12,9 +12,9 @@ O conceito central do site é **proximidade operacional**: tecnologia forte sem 
 - `cloud.html`: redireciona para `index.html#cloud-acompanhada`.
 - `styles.css`: sistema visual, responsividade, componentes e aplicação da identidade ABTech.
 - `script.js`: menu mobile, ano automático e feedback do formulário.
-- `assets/logo-btech-horizontal-oficial.png`: logotipo horizontal oficial (símbolo do manual + **B**TECH).
-- `assets/logo-btech-stacked-oficial.png`: logotipo empilhado oficial.
-- `assets/logo-symbol-oficial.png`: símbolo hexagonal extraído do manual de marca.
+- `assets/source/logo-btech-canva.pdf`: PDF oficial (Canva) — fonte dos lockups.
+- `scripts/build-logos.py`: extrai PNGs do PDF (`npm` não necessário; usa `pdftoppm`).
+- `assets/logo-btech-stacked-oficial.png` / `logo-btech-horizontal-oficial.png`: raster exportado do PDF (tipografia exata).
 - `assets/visuals/`: padrões e painéis com colmeia/hexágonos conforme o manual.
 
 ## Como abrir localmente

@@ -1,168 +1,120 @@
 #!/usr/bin/env python3
-"""Gera lockups BTECH com símbolo oficial + Century Gothic (B negrito, TECH regular)."""
+"""Extrai lockups BTECH do PDF oficial (Canva) — fonte única da verdade."""
 from __future__ import annotations
 
+import sys
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFont
+import numpy as np
+from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "assets"
-FONTS = ASSETS / "fonts"
-SYMBOL_PATH = ASSETS / "logo-symbol-oficial.png"
-FONT_REG = FONTS / "GOTHIC.ttf"
-FONT_BOLD = FONTS / "GOTHICB.ttf"
+SOURCE = ASSETS / "source" / "logo-btech-canva.pdf"
+FALLBACK_PDF = Path(
+    "/home/ubuntu/.cursor/projects/workspace/uploads/Design_sem_nome_1_6595.pdf"
+)
 
 
-def fonts(size: int) -> tuple[ImageFont.FreeTypeFont, ImageFont.FreeTypeFont]:
+def render_pdf(pdf: Path, dpi: int = 300) -> Image.Image:
+    import subprocess
+    import tempfile
+
+    tmp = Path(tempfile.mkdtemp())
+    out = tmp / "page"
+    subprocess.run(
+        ["pdftoppm", "-png", "-r", str(dpi), str(pdf), str(out)],
+        check=True,
+        capture_output=True,
+    )
+    page = Image.open(f"{out}-1.png").convert("RGBA")
+    return page
+
+
+def content_bbox(im: Image.Image, threshold: int = 250, margin: int = 40) -> tuple[int, int, int, int]:
+    arr = np.array(im.convert("RGB"))
+    mask = (arr < threshold).any(axis=2)
+    ys, xs = np.where(mask)
+    if len(xs) == 0:
+        return 0, 0, im.width, im.height
     return (
-        ImageFont.truetype(FONT_BOLD, size),
-        ImageFont.truetype(FONT_REG, size),
+        max(0, int(xs.min()) - margin),
+        max(0, int(ys.min()) - margin),
+        min(im.width, int(xs.max()) + margin),
+        min(im.height, int(ys.max()) + margin),
     )
 
 
-def measure_btech(
-    draw: ImageDraw.ImageDraw, size: int, bold_all: bool = False
-) -> tuple[int, int]:
-    b_font, r_font = fonts(size)
-    if bold_all:
-        w = int(draw.textlength("BTECH", font=b_font))
-    else:
-        w = int(draw.textlength("B", font=b_font) + draw.textlength("TECH", font=r_font))
-    return w, size + int(size * 0.15)
+def extract_from_page(page: Image.Image) -> tuple[Image.Image, Image.Image, Image.Image]:
+    stacked = page.crop(content_bbox(page))
+    w, h = stacked.size
+    rgb = np.array(stacked.convert("RGB"))
+    y0 = int(h * 0.78)
+    region = rgb[y0:]
+    col_has = (region < 100).any(axis=0)
+    row_has = (region < 100).any(axis=1)
+    cols = np.where(col_has)[0]
+    rows = np.where(row_has)[0]
+    pad = 12
+    word = stacked.crop(
+        (
+            int(cols[0]) - pad,
+            y0 + int(rows[0]) - pad,
+            int(cols[-1]) + pad,
+            y0 + int(rows[-1]) + pad,
+        )
+    )
+    sym = stacked.crop((0, 0, w, y0 - 20))
+    sym = sym.crop(content_bbox(sym, margin=8))
+    return stacked, sym, word
 
 
-def draw_btech(
-    draw: ImageDraw.ImageDraw,
-    x: int,
-    y: int,
-    size: int,
-    fill: tuple[int, int, int, int] = (0, 0, 0, 255),
-    bold_all: bool = False,
-    anchor: str = "lt",
-) -> None:
-    b_font, r_font = fonts(size)
-    if bold_all:
-        draw.text((x, y), "BTECH", font=b_font, fill=fill, anchor=anchor)
-        return
-    if anchor != "lt":
-        w, _ = measure_btech(draw, size, False)
-        if anchor == "mm":
-            x -= w // 2
-        elif anchor == "ma":
-            x -= w // 2
-    draw.text((x, y), "B", font=b_font, fill=fill)
-    draw.text((x + draw.textlength("B", font=b_font), y), "TECH", font=r_font, fill=fill)
+def compose_horizontal(sym: Image.Image, word: Image.Image, word_h: int = 56) -> Image.Image:
+    word_s = word.resize(
+        (int(word.width * word_h / word.height), word_h),
+        Image.Resampling.LANCZOS,
+    )
+    sym_h = int(word_h * 1.12)
+    sym_s = sym.resize(
+        (int(sym.width * sym_h / sym.height), sym_h),
+        Image.Resampling.LANCZOS,
+    )
+    gap = 20
+    w = sym_s.width + gap + word_s.width
+    h = max(sym_s.height, word_s.height)
+    out = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    out.paste(sym_s, (0, (h - sym_s.height) // 2), sym_s)
+    out.paste(word_s, (sym_s.width + gap, (h - word_s.height) // 2), word_s)
+    return out
 
 
-def _measure_consultoria(
-    draw: ImageDraw.ImageDraw, size: int, tracking: float = 0.38
-) -> int:
-    font = ImageFont.truetype(FONT_REG, size)
-    gap = size * tracking
-    cx = 0
-    for ch in "CONSULTORIA":
-        cx += draw.textlength(ch, font=font) + gap
-    return int(cx - gap)
+def save_all(pdf: Path) -> None:
+    page = render_pdf(pdf)
+    stacked, sym, word = extract_from_page(page)
+    horiz = compose_horizontal(sym, word)
 
+    stacked.save(ASSETS / "logo-btech-stacked-oficial.png")
+    stacked.resize((stacked.width * 2, stacked.height * 2), Image.Resampling.LANCZOS).save(
+        ASSETS / "logo-btech-stacked-oficial@2x.png"
+    )
+    horiz.save(ASSETS / "logo-btech-horizontal-oficial.png")
+    horiz.resize((horiz.width * 2, horiz.height * 2), Image.Resampling.LANCZOS).save(
+        ASSETS / "logo-btech-horizontal-oficial@2x.png"
+    )
+    sym.save(ASSETS / "logo-symbol-oficial.png")
 
-def draw_consultoria(
-    draw: ImageDraw.ImageDraw,
-    x: int,
-    y: int,
-    size: int,
-    fill: tuple[int, int, int, int],
-    tracking: float = 0.38,
-) -> int:
-    """Desenha CONSULTORIA com tracking; retorna largura total."""
-    font = ImageFont.truetype(FONT_REG, size)
-    word = "CONSULTORIA"
-    gap = size * tracking
-    cx = x
-    for ch in word:
-        draw.text((cx, y), ch, font=font, fill=fill)
-        cx += draw.textlength(ch, font=font) + gap
-    return int(cx - x - gap)
+    sym_icon = sym.copy()
+    sym_icon.thumbnail((480, 480), Image.Resampling.LANCZOS)
+    icon = Image.new("RGBA", (512, 512), (0, 0, 0, 0))
+    icon.paste(sym_icon, ((512 - sym_icon.width) // 2, (512 - sym_icon.height) // 2), sym_icon)
+    icon.save(ASSETS / "logo-icon-oficial.png")
 
-
-def load_symbol(target_width: int) -> Image.Image:
-    sym = Image.open(SYMBOL_PATH).convert("RGBA")
-    scale = target_width / sym.width
-    h = int(sym.height * scale)
-    return sym.resize((target_width, h), Image.Resampling.LANCZOS)
-
-
-def stacked(
-    symbol_w: int = 200,
-    text_size: int = 52,
-    gap: int | None = None,
-    dark: bool = False,
-) -> Image.Image:
-    sym = load_symbol(symbol_w)
-    gap = gap if gap is not None else int(text_size * 0.28)
-    dummy = Image.new("RGBA", (10, 10))
-    d = ImageDraw.Draw(dummy)
-    tw, th = measure_btech(d, text_size, bold_all=dark)
-    consult_h = 0
-    if dark:
-        consult_h = int(text_size * 0.42) + int(text_size * 0.2)
-
-    w = max(sym.width, tw) + 16
-    h = sym.height + gap + th + consult_h + 16
-    canvas = Image.new("RGBA", (w, h), (0, 0, 0, 0))
-    draw = ImageDraw.Draw(canvas)
-    sx = (w - sym.width) // 2
-    canvas.paste(sym, (sx, 8), sym)
-    ty = 8 + sym.height + gap
-    fill = (255, 255, 255, 255) if dark else (0, 0, 0, 255)
-    draw_btech(draw, w // 2, ty, text_size, fill=fill, bold_all=dark, anchor="ma")
-    if dark:
-        sub_size = int(text_size * 0.38)
-        sub_y = ty + th + int(text_size * 0.12)
-        sub_w = _measure_consultoria(draw, sub_size, tracking=0.32)
-        draw_consultoria(draw, (w - sub_w) // 2, sub_y, sub_size, fill, tracking=0.32)
-    return canvas
-
-
-def horizontal(text_size: int = 44, symbol_h: int | None = None) -> Image.Image:
-    sym = Image.open(SYMBOL_PATH).convert("RGBA")
-    dummy = Image.new("RGBA", (10, 10))
-    d = ImageDraw.Draw(dummy)
-    tw, th = measure_btech(d, text_size)
-    symbol_h = symbol_h or th
-    scale = symbol_h / sym.height
-    sym_s = sym.resize((int(sym.width * scale), symbol_h), Image.Resampling.LANCZOS)
-    gap = int(text_size * 0.45)
-    w = sym_s.width + gap + tw
-    h = max(sym_s.height, th)
-    canvas = Image.new("RGBA", (w, h), (0, 0, 0, 0))
-    draw = ImageDraw.Draw(canvas)
-    canvas.paste(sym_s, (0, (h - sym_s.height) // 2), sym_s)
-    draw_btech(draw, sym_s.width + gap, (h - th) // 2, text_size)
-    return canvas
-
-
-def icon(size: int = 512) -> Image.Image:
-    sym = load_symbol(size - 32)
-    canvas = Image.new("RGBA", (size, size), (0, 0, 0, 0))
-    canvas.paste(sym, ((size - sym.width) // 2, (size - sym.height) // 2), sym)
-    return canvas
-
-
-def save_all() -> None:
-    outputs = {
-        "logo-btech-stacked-oficial.png": stacked(200, 52),
-        "logo-btech-stacked-oficial@2x.png": stacked(400, 104),
-        "logo-btech-stacked-dark.png": stacked(200, 48, dark=True),
-        "logo-btech-horizontal-oficial.png": horizontal(44),
-        "logo-btech-horizontal-oficial@2x.png": horizontal(88),
-        "logo-icon-oficial.png": icon(512),
-    }
-    for name, img in outputs.items():
-        path = ASSETS / name
-        img.save(path, optimize=True)
-        print("wrote", path, img.size)
+    print("PDF:", pdf)
+    print("stacked", stacked.size, "horizontal", horiz.size, "symbol", sym.size)
 
 
 if __name__ == "__main__":
-    save_all()
+    pdf = SOURCE if SOURCE.exists() else FALLBACK_PDF
+    if not pdf.exists():
+        sys.exit(f"PDF não encontrado: {pdf}")
+    save_all(pdf)
