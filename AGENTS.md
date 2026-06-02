@@ -31,13 +31,13 @@ There are **no** configured linters, unit tests, or build commands in this repo.
 
 ### Logo assets
 
-Official lockups are raster exports from `assets/source/logo-btech-canva.pdf`. Regenerate with:
+Official lockups are built from `assets/source/manual-abtech.pdf` (ABTECH manual → BTECH: same symbol/colors/font, drop the A). Regenerate:
 
 ```bash
 python3 scripts/build-logos.py
 ```
 
-(requires `pdftoppm` from poppler-utils)
+(requires `pdftoppm` and `rsvg-convert` / librsvg2-bin)
 | Browser | **Required** for UI checks |
 
 No environment variables or secrets are used.

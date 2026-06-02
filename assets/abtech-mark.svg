@@ -1,5 +1,5 @@
-<!-- Alias do símbolo oficial ? use logo-icon.svg ou logo-btech-stacked.svg -->
-<svg width="100" height="115" viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="BTECH">
+<!-- Símbolo oficial do manual de marca (hexágono + degradês) -->
+<svg width="100" height="115" viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="BTECH symbol">
   <defs>
     <clipPath id="hexClip">
       <path d="M50 2.5 92.5 27.1V77.9L50 102.5 7.5 77.9V27.1L50 2.5Z"/>
