@@ -1,18 +1,23 @@
-# Site ABTECH
+# Site BTECH
 
-Site institucional estático para a ABTECH, criado com HTML, CSS e JavaScript puro.
+Site institucional estático para a BTECH, criado com HTML, CSS e JavaScript puro.
 
 A proposta visual segue o manual de identidade enviado: uso de colmeia, tipografia com referência à Century Gothic, paleta reduzida da marca e uma comunicação consultiva, humana e operacional.
 
-O conceito central do site é **proximidade operacional**: tecnologia forte sem perder humanidade, com clareza, acompanhamento e construção conjunta.
+O conceito central do site é **tecnologia forte sem perder proximidade**: cloud, IA, automação e infraestrutura para evoluir operações sem aumentar a complexidade.
 
 ## Estrutura
 
-- `index.html`: home institucional com proximidade operacional, quem somos, atuação, forma de trabalho, experiências e contato.
-- `cloud.html`: página dedicada para cloud acompanhada, posicionada como escolha, arquitetura e acompanhamento consultivo sem infraestrutura própria.
-- `styles.css`: sistema visual, responsividade, componentes e aplicação da identidade ABTECH.
+- `index.html`: home institucional com hero, quem somos, pessoas, como ajudamos, áreas de atuação, experiências, cloud, IA e contato.
+- `cloud.html`: página dedicada para Cloud & Infraestrutura como uma das capacidades da BTECH.
+- `styles.css`: sistema visual, responsividade, componentes e aplicação da identidade BTECH.
 - `script.js`: menu mobile, ano automático e feedback do formulário.
-- `assets/abtech-mark.svg`: elemento de colmeia inspirado na identidade visual da marca.
+- `assets/btech-mark.svg`: elemento de colmeia inspirado na identidade visual da marca.
+- `assets/btech-mark-exact.png`: recorte do hexágono original do manual para preservar a forma da marca.
+- `assets/btech-logo.svg`: logotipo horizontal BTECH com colmeia e tipografia inspirada no manual.
+- `assets/btech-people-workshop.png`: imagem editorial de pessoas em contexto de tecnologia e operação.
+- `assets/btech-operations-team.png`: imagem editorial de equipe revisando operação e execução.
+- `assets/btech-client-conversation.png`: imagem editorial de conversa com cliente e planejamento operacional.
 
 ## Como abrir localmente
 
@@ -26,7 +31,7 @@ Depois acesse `http://localhost:8000`.
 
 ## Próximos ajustes recomendados
 
-1. Substituir o SVG temporário pelo logotipo oficial em arquivo vetorial, se disponível.
+1. Revisar o logotipo BTECH final com designer, se houver arquivo vetorial oficial.
 2. Conectar o formulário de contato a um serviço de envio.
-3. Inserir clientes, segmentos, cases e logos conforme a ABTECH consolidar esses materiais.
+3. Inserir clientes, segmentos, cases e logos conforme a BTECH consolidar esses materiais.
 4. Revisar textos finais com os responsáveis Erico e Alexandre antes da publicação.
