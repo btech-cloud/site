@@ -112,10 +112,17 @@
 }
 
 .hero-panel--float .hero-panel__brand img {
-  width: 88px;
-  height: auto;
-  margin: 0 auto 12px;
   display: block;
+  width: 100px;
+  height: auto;
+  margin: 0 auto 16px;
+}
+
+.brand__logo {
+  width: auto;
+  max-width: 168px;
+  height: 42px;
+  object-fit: contain;
 }
 
 .pessoas-bridge {
