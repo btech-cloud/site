@@ -1,0 +1,25 @@
+<svg width="280" height="64" viewBox="0 0 280 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">BTech Consultoria</title>
+  <desc id="logoDesc">Logotipo horizontal: colmeia e tipografia BTech conforme manual de identidade visual.</desc>
+  <defs>
+    <linearGradient id="lgA" x1="8" y1="6" x2="38" y2="38" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#143CFF"/>
+      <stop offset="1" stop-color="#6E1EE6"/>
+    </linearGradient>
+    <linearGradient id="lgB" x1="26" y1="3" x2="56" y2="38" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C800D2"/>
+      <stop offset="1" stop-color="#FFAF3C"/>
+    </linearGradient>
+    <linearGradient id="lgC" x1="16" y1="24" x2="48" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00FFFF"/>
+      <stop offset="1" stop-color="#00E1B4"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(0 4) scale(0.62)">
+    <path d="M25 5.5L45.8 17.5V41.5L25 53.5L4.2 41.5V17.5L25 5.5Z" fill="url(#lgA)" fill-opacity="0.94"/>
+    <path d="M68 5.5L88.8 17.5V41.5L68 53.5L47.2 41.5V17.5L68 5.5Z" fill="url(#lgB)" fill-opacity="0.92"/>
+    <path d="M46.5 30.5L67.3 42.5V66.5L46.5 78.5L25.7 66.5V42.5L46.5 30.5Z" fill="url(#lgC)" fill-opacity="0.88"/>
+  </g>
+  <text x="72" y="38" fill="#143CFF" font-family="Century Gothic, CenturyGothic, AppleGothic, sans-serif" font-size="28" font-weight="700" letter-spacing="0.04em">BTech</text>
+  <text x="72" y="54" fill="#24324f" font-family="Century Gothic, CenturyGothic, AppleGothic, sans-serif" font-size="11" font-weight="400" letter-spacing="0.22em">CONSULTORIA</text>
+</svg>
