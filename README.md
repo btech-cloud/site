@@ -13,7 +13,7 @@ O conceito central do site é **proximidade operacional**: tecnologia forte sem 
 - `styles.css`: sistema visual, responsividade, componentes e aplicação da identidade ABTech.
 - `script.js`: menu mobile, ano automático e feedback do formulário.
 - `assets/logo-btech-horizontal.svg`: logotipo horizontal (colmeia + BTech Consultoria).
-- `assets/btech-colmeia.svg`: colmeia oficial (3 células em degradê).
+- `assets/logo-icon.svg`: símbolo oficial (hexágono com elementos orgânicos em degradê).
 - `assets/visuals/`: padrões e painéis com colmeia/hexágonos conforme o manual.
 
 ## Como abrir localmente

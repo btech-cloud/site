@@ -157,12 +157,58 @@ textarea {
   inset: 0;
   z-index: -2;
   pointer-events: none;
-  opacity: 0.35;
+  opacity: 0.22;
   background:
-    url("assets/visuals/pattern-colmeia.svg") 92% 8% / 360px auto no-repeat,
-    url("assets/visuals/pattern-colmeia.svg") 4% 72% / 280px auto no-repeat,
-    radial-gradient(circle at 8% 12%, rgba(20, 60, 255, 0.12), transparent 22rem),
-    radial-gradient(circle at 92% 8%, rgba(200, 0, 210, 0.1), transparent 18rem);
+    url("assets/logo-icon.svg") 94% 6% / 140px auto no-repeat,
+    url("assets/logo-icon.svg") 2% 78% / 110px auto no-repeat,
+    url("assets/logo-icon.svg") 48% 42% / 90px auto no-repeat;
+}
+
+.section--tint-violet {
+  background:
+    radial-gradient(circle at 100% 0%, rgba(110, 30, 230, 0.14), transparent 18rem),
+    radial-gradient(circle at 0% 100%, rgba(200, 0, 210, 0.08), transparent 14rem),
+    rgba(243, 239, 232, 0.85);
+}
+
+.section--tint-warm {
+  background:
+    radial-gradient(circle at 0% 0%, rgba(255, 175, 60, 0.2), transparent 16rem),
+    radial-gradient(circle at 100% 100%, rgba(20, 60, 255, 0.1), transparent 14rem),
+    var(--paper-warm);
+}
+
+.section--tint-mint {
+  background:
+    radial-gradient(circle at 100% 0%, rgba(0, 255, 255, 0.12), transparent 15rem),
+    radial-gradient(circle at 0% 100%, rgba(0, 225, 180, 0.12), transparent 14rem),
+    rgba(247, 249, 255, 0.95);
+}
+
+.site-footer--dark {
+  margin-top: 24px;
+  color: rgba(255, 255, 255, 0.72);
+  background:
+    radial-gradient(circle at 20% 0%, rgba(20, 60, 255, 0.35), transparent 20rem),
+    radial-gradient(circle at 90% 100%, rgba(200, 0, 210, 0.2), transparent 16rem),
+    var(--ink);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.site-footer--dark a:last-child {
+  color: var(--cyan);
+}
+
+.hero-panel {
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(247, 249, 255, 0.92)),
+    radial-gradient(circle at 100% 0%, rgba(0, 255, 255, 0.2), transparent 14rem),
+    radial-gradient(circle at 0% 100%, rgba(255, 175, 60, 0.14), transparent 12rem);
+}
+
+.hero-panel__colmeia {
+  width: 100px;
+  margin: 0 0 16px auto;
 }
 
 .brand--footer .brand__mark {
@@ -606,22 +652,12 @@ textarea {
   position: absolute;
   top: 28px;
   right: 5%;
-  width: 140px;
-  height: 120px;
+  width: 100px;
+  height: 115px;
   content: "";
-  background: url("assets/btech-colmeia.svg") center / contain no-repeat;
-  opacity: 0.14;
+  background: url("assets/logo-icon.svg") center / contain no-repeat;
+  opacity: 0.12;
   pointer-events: none;
-}
-
-#atuacao .section-heading::after {
-  display: block;
-  width: 120px;
-  height: 103px;
-  margin-top: 18px;
-  content: "";
-  background: url("assets/btech-colmeia.svg") center / contain no-repeat;
-  opacity: 0.85;
 }
 
 .check-list--light li {
@@ -1022,11 +1058,11 @@ h3 {
   position: absolute;
   top: 24px;
   right: 24px;
-  width: 72px;
-  height: 62px;
+  width: 56px;
+  height: 64px;
   content: "";
-  background: url("assets/btech-colmeia.svg") center / contain no-repeat;
-  opacity: 0.35;
+  background: url("assets/logo-icon.svg") center / contain no-repeat;
+  opacity: 0.4;
 }
 
 .people-section {
