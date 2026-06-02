@@ -27,17 +27,36 @@
   --cream-surface: #fbfaf7;
 }
 
+@font-face {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/GOTHIC.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/fonts/GOTHICB.woff") format("woff");
+}
+
 .brand-word {
   white-space: nowrap;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  letter-spacing: 0;
+  text-transform: uppercase;
 }
 
 .brand-word__b {
-  color: var(--blue);
+  color: #0a0a0a;
   font-weight: 700;
 }
 
 .brand-word__tech {
-  color: var(--violet);
+  color: #0a0a0a;
   font-weight: 400;
 }
 
