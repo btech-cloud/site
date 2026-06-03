@@ -227,7 +227,6 @@
 .hex-photo {
   position: absolute;
   overflow: hidden;
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
   box-shadow: 0 20px 50px rgba(26, 11, 64, 0.15);
 }
 

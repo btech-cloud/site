@@ -492,9 +492,7 @@ textarea {
   background: linear-gradient(135deg, rgba(110, 30, 230, 0.28), transparent 50%);
 }
 
-.media-frame--hex img {
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-}
+/* hex clip: styles-hex.css */
 
 .colmeia-badge {
   position: absolute;
@@ -1034,8 +1032,9 @@ h3 {
 .honeycomb span {
   position: absolute;
   width: 92px;
-  height: 80px;
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  aspect-ratio: var(--hex-aspect);
+  height: auto;
+  clip-path: var(--hex-clip);
 }
 
 .honeycomb span:nth-child(1) {

@@ -31,13 +31,15 @@ There are **no** configured linters, unit tests, or build commands in this repo.
 
 ### Logo assets
 
-Official lockups are built from `assets/source/manual-abtech.pdf` (ABTECH manual → BTECH: same symbol/colors/font, drop the A). Regenerate:
+Official lockups use **`assets/btech-mark-exact.png`** (hexágono aprovado) + wordmark **B** (Gothic Bold) + **TECH** (Gothic Regular). Regenerate PNGs/SVG:
 
 ```bash
 python3 scripts/build-logos.py
 ```
 
-(requires `pdftoppm` and `rsvg-convert` / librsvg2-bin)
+(requires `rsvg-convert` / librsvg2-bin, `Pillow`, fonts in `assets/fonts/`)
+
+Hexágonos decorativos no site usam a mesma geometria do símbolo via `styles-hex.css` (`--hex-clip`, ratio 100:115).
 | Browser | **Required** for UI checks |
 
 No environment variables or secrets are used.

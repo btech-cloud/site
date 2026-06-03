@@ -103,7 +103,6 @@
 .hex-photo {
   position: absolute;
   overflow: hidden;
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
   box-shadow: var(--shadow-soft);
 }
 
@@ -228,7 +227,8 @@
   height: 100%;
   object-fit: cover;
   opacity: 0.92;
-  clip-path: polygon(0 0, 100% 0, 100% 78%, 50% 100%, 0 78%);
+  clip-path: var(--hex-clip);
+  aspect-ratio: var(--hex-aspect);
 }
 
 .person-card--lead .person-card__body {
