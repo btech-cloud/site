@@ -294,10 +294,6 @@
 /* —— Human / hex collage (mockup) —— */
 .section--human-mockup {
   padding: 72px 0;
-  background:
-    radial-gradient(circle at 0% 100%, rgba(0, 225, 180, 0.12), transparent 42%),
-    radial-gradient(circle at 100% 0%, rgba(250, 232, 247, 0.9), transparent 48%),
-    linear-gradient(135deg, #fae8f7 0%, #eef2ff 52%, #e2f9f4 100%);
 }
 
 .human-mockup-grid {
@@ -312,46 +308,7 @@
   margin: 0 0 16px;
 }
 
-.hex-collage {
-  position: relative;
-  min-height: 340px;
-}
-
-.hex-photo {
-  position: absolute;
-  overflow: hidden;
-  box-shadow: 0 20px 50px rgba(26, 11, 64, 0.15);
-}
-
-.hex-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.hex-collage .hex-photo--main {
-  top: 0;
-  right: 0;
-  z-index: 2;
-  width: 58%;
-  height: 72%;
-}
-
-.hex-collage .hex-photo--b {
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  width: 48%;
-  height: 55%;
-}
-
-.hex-collage .hex-photo--c {
-  top: 28%;
-  left: 8%;
-  z-index: 3;
-  width: 38%;
-  height: 42%;
-}
+/* hex-collage: ver styles-hex.css */
 
 /* —— Como ajudamos —— */
 .section-heading--ajuda {
@@ -380,28 +337,12 @@
 
 .ajuda-showcase--split {
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.95fr);
-  gap: clamp(24px, 4vw, 40px);
+  grid-template-columns: minmax(0, 1.08fr) minmax(300px, 0.92fr);
   align-items: stretch;
-  padding: clamp(20px, 3vw, 28px);
-  background: #fff;
-  border: 1px solid rgba(10, 20, 50, 0.08);
-  border-radius: var(--radius-xl);
-  box-shadow: 0 28px 70px rgba(26, 11, 64, 0.1);
-}
-
-.ajuda-showcase__visual {
   overflow: hidden;
-  min-height: 280px;
-  border-radius: var(--radius-lg);
-}
-
-.ajuda-showcase__visual img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  min-height: 280px;
-  object-fit: cover;
+  border: 1px solid rgba(110, 30, 230, 0.14);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 32px 80px rgba(26, 11, 64, 0.12);
 }
 
 .ajuda-showcase__body {
@@ -611,9 +552,6 @@
 /* —— Quem somos —— */
 .section--quem-mockup {
   padding: 72px 0;
-  background:
-    radial-gradient(circle at 100% 0%, rgba(255, 175, 60, 0.08), transparent 38%),
-    linear-gradient(180deg, #fbfaf7 0%, #fff 100%);
 }
 
 .quem-intro {
@@ -680,9 +618,6 @@
 /* —— Pessoas mockup —— */
 .section--pessoas-mockup {
   padding: 72px 0;
-  background:
-    radial-gradient(circle at 100% 0%, rgba(250, 232, 247, 0.8), transparent 45%),
-    linear-gradient(180deg, #fafbff 0%, #fff 100%);
 }
 
 .section--pessoas-mockup .section-heading h2 {
@@ -745,9 +680,6 @@
 /* —— Como ajudamos —— */
 .section--ajuda-mockup {
   padding: 72px 0;
-  background:
-    radial-gradient(circle at 0% 0%, rgba(20, 60, 255, 0.08), transparent 40%),
-    linear-gradient(180deg, #f7f9ff 0%, #fff 100%);
 }
 
 
@@ -795,7 +727,6 @@
 /* —— Experiências —— */
 .section--experiencias {
   padding: 72px 0;
-  background: var(--paper-warm);
 }
 
 .experience-panel--mockup {
@@ -827,7 +758,6 @@
 /* —— Cloud bloco —— */
 .section--cloud-mockup {
   padding: 56px 0;
-  background: #f7f9ff;
 }
 
 .cloud-block {
@@ -861,7 +791,6 @@
 /* —— IA mockup —— */
 .section--ia-mockup {
   padding: 72px 0;
-  background: #fff;
 }
 
 .ia-mockup-layout {
