@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="styles-vivid.css">
     <link rel="stylesheet" href="styles-mockup.css">
     <link rel="stylesheet" href="styles-instagram.css">
+    <link rel="stylesheet" href="styles-pro.css">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -49,7 +50,7 @@
   <body>
     <div class="honeycomb-bg" aria-hidden="true"></div>
 
-    <header class="site-header" data-header>
+    <header class="site-header site-header--pro" data-header>
       <nav class="nav nav--mockup container" aria-label="Navegação principal">
         <a class="brand brand--horizontal" href="#inicio" aria-label="BTech Consultoria - início">
           <img
@@ -84,6 +85,7 @@
           <div class="hero__ig-hex-mesh"></div>
           <div class="hero__ig-orb hero__ig-orb--1"></div>
           <div class="hero__ig-orb hero__ig-orb--2"></div>
+          <div class="hero__ig-orb hero__ig-orb--3"></div>
           <div class="hero__photo-veil"></div>
         </div>
         <img class="hero__float-hex hero__float-hex--1" src="assets/visuals/pattern-colmeia.svg" alt="" width="180" height="156" aria-hidden="true">
@@ -107,7 +109,8 @@
             </div>
           </div>
 
-          <aside class="hero-panel hero-panel--float" aria-label="Resumo do posicionamento">
+          <aside class="hero-panel hero-panel--float hero-panel--pro" aria-label="Resumo do posicionamento">
+            <p class="hero-panel__badge"><span class="status-dot" aria-hidden="true"></span> Consultoria com proximidade</p>
             <img class="hero-panel__symbol" src="assets/logo-icon.svg" alt="" width="52" height="60" aria-hidden="true">
             <h3 class="hero-panel__title">Entre a ideia e a operação, existe um caminho possível.</h3>
             <ul class="hero-checklist">
@@ -128,43 +131,63 @@
         </div>
       </div>
 
-      <div class="pillar-strip" aria-label="Pilares de atuação">
+      <section class="section section--conversa-ig" aria-labelledby="conversa-ig-title">
+        <div class="conversa-ig conversa-ig--pro">
+          <div class="container conversa-ig__grid">
+            <div class="conversa-ig__copy">
+              <p class="eyebrow">Primeiro passo</p>
+              <h2 id="conversa-ig-title">
+                Toda transformação começa por uma <span class="hl-key hl-key--conversa">conversa</span>.
+              </h2>
+              <hr class="gradient-rule" aria-hidden="true">
+              <p class="hero__sub-ig">A tecnologia vem depois.</p>
+              <p class="conversa-ig__lead">
+                Entendemos o cenário, organizamos prioridades e só então desenhamos cloud, IA e automação
+                com critério — sempre perto de quem opera o negócio.
+              </p>
+              <a class="button button--primary" href="#contato">Agendar uma conversa</a>
+            </div>
+            <div class="conversa-ig__visual" aria-hidden="true">
+              <img
+                src="assets/images/hero-consultoria.jpg"
+                alt=""
+                width="900"
+                height="600"
+                loading="eager"
+                decoding="async"
+              >
+              <div class="conversa-ig__visual-veil"></div>
+              <div class="conversa-ig__hex"></div>
+              <div class="conversa-ig__glow"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="pillar-strip pillar-strip--pro" aria-label="Pilares de atuação">
+        <p class="pillar-strip__label">O que conectamos na prática</p>
         <div class="pillar-strip__inner">
           <div class="pillar-strip__item pillar-strip__item--cloud">
-            <img src="assets/visuals/pillar-cloud.svg" alt="" width="44" height="44">
+            <img src="assets/visuals/pillar-cloud.svg" alt="" width="48" height="48">
             <span>Cloud</span>
           </div>
           <div class="pillar-strip__sep" aria-hidden="true"></div>
           <div class="pillar-strip__item pillar-strip__item--ia">
-            <img src="assets/visuals/pillar-ia.svg" alt="" width="44" height="44">
+            <img src="assets/visuals/pillar-ia.svg" alt="" width="48" height="48">
             <span>IA</span>
           </div>
           <div class="pillar-strip__sep" aria-hidden="true"></div>
           <div class="pillar-strip__item pillar-strip__item--auto">
-            <img src="assets/visuals/pillar-automation.svg" alt="" width="44" height="44">
+            <img src="assets/visuals/pillar-automation.svg" alt="" width="48" height="48">
             <span>Automação</span>
           </div>
           <div class="pillar-strip__sep" aria-hidden="true"></div>
           <div class="pillar-strip__item pillar-strip__item--ops">
-            <img src="assets/visuals/pillar-ops.svg" alt="" width="44" height="44">
+            <img src="assets/visuals/pillar-ops.svg" alt="" width="48" height="48">
             <span>Operação</span>
           </div>
         </div>
       </div>
-
-      <section class="section section--conversa-ig" aria-labelledby="conversa-ig-title">
-        <div class="conversa-ig">
-          <div class="conversa-ig__bg" aria-hidden="true"></div>
-          <div class="conversa-ig__hex" aria-hidden="true"></div>
-          <div class="conversa-ig__copy">
-            <h2 id="conversa-ig-title">
-              Toda transformação começa por uma <span class="hl-key hl-key--conversa">conversa</span>.
-            </h2>
-            <hr class="gradient-rule" aria-hidden="true">
-            <p class="hero__sub-ig">A tecnologia vem depois.</p>
-          </div>
-        </div>
-      </section>
 
       <section class="section section--quem-mockup" id="quem-somos">
         <div class="container">
