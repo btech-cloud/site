@@ -114,7 +114,7 @@
   opacity: 0.34;
   background:
     linear-gradient(105deg, #fff 0%, transparent 42%),
-    url("assets/images/hero-consultoria.jpg") center / cover no-repeat;
+    url("assets/images/meeting-wide.jpg") center / cover no-repeat;
   mask-image: linear-gradient(105deg, transparent 0%, #000 38%);
 }
 
@@ -279,7 +279,7 @@
 }
 
 /* —— Seções com mesh hex —— */
-.section--tech-mockup::before {
+.section--tech-depth::before {
   position: absolute;
   inset: 0;
   opacity: 0.2;
@@ -288,12 +288,12 @@
   pointer-events: none;
 }
 
-.section--tech-mockup {
+.section--tech-depth {
   position: relative;
   overflow: hidden;
 }
 
-.section--tech-mockup > .container {
+.section--tech-depth > .container {
   position: relative;
   z-index: 1;
 }

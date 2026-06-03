@@ -378,6 +378,48 @@
   border-radius: 999px;
 }
 
+.tech-depth-card:not(.tech-depth-card--accent) .tech-depth-card__tag {
+  color: var(--amber);
+  background: rgba(255, 175, 60, 0.14);
+}
+
+.tech-depth-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-depth-card::after {
+  position: absolute;
+  right: -8px;
+  bottom: -12px;
+  width: 76px;
+  height: 87px;
+  opacity: 0.22;
+  background: url("assets/logo-symbol-oficial.png") center / contain no-repeat;
+  content: "";
+  pointer-events: none;
+}
+
+.tech-depth-card--accent::after {
+  opacity: 0.35;
+}
+
+.tech-depth-card__link {
+  display: inline-flex;
+  margin-top: 16px;
+  color: #fff;
+  font-size: 0.88rem;
+  font-weight: 800;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+  transition: border-color 160ms ease, color 160ms ease;
+}
+
+.tech-depth-card__link:hover {
+  color: var(--cyan);
+  border-bottom-color: var(--cyan);
+}
+
 /* —— Parceiros —— */
 .section--partners {
   background:
