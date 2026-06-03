@@ -28,6 +28,7 @@ There are **no** configured linters, unit tests, or build commands in this repo.
 | Service | Notes |
 |--------|--------|
 | Static HTTP server | **Required** for dev/E2E — e.g. `python3 -m http.server 8000` |
+| Browser | **Required** for UI checks |
 
 ### Logo assets
 
@@ -40,7 +41,6 @@ python3 scripts/build-logos.py
 (requires `rsvg-convert` / librsvg2-bin, `Pillow`, fonts in `assets/fonts/`)
 
 Hexágonos decorativos no site usam a mesma geometria do símbolo via `styles-hex.css` (`--hex-clip`, ratio 100:115).
-| Browser | **Required** for UI checks |
 
 No environment variables or secrets are used.
 
