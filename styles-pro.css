@@ -216,14 +216,14 @@
 
 /* —— Pilares (após conversa) —— */
 .pillar-strip--pro {
-  padding: 40px clamp(20px, 4vw, 40px) 44px;
+  padding: 16px clamp(16px, 4vw, 28px) 18px;
   box-shadow: 0 -24px 60px rgba(5, 5, 16, 0.35);
 }
 
 .pillar-strip__label {
   position: relative;
   z-index: 1;
-  margin: 0 auto 20px;
+  margin: 0 auto 10px;
   color: rgba(255, 255, 255, 0.55);
   font-size: 0.72rem;
   font-weight: 800;
@@ -233,7 +233,8 @@
 }
 
 .pillar-strip--pro .pillar-strip__item {
-  padding: 12px 20px;
+  padding: 4px 16px;
+  gap: 8px;
   border-radius: var(--radius-md);
   transition:
     transform 200ms ease,
@@ -246,8 +247,8 @@
 }
 
 .pillar-strip--pro .pillar-strip__item img {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   filter: drop-shadow(0 0 12px currentColor);
 }
 
@@ -255,6 +256,11 @@
 .pillar-strip--pro .pillar-strip__item--ia img { filter: drop-shadow(0 0 14px rgba(232, 121, 255, 0.55)); }
 .pillar-strip--pro .pillar-strip__item--auto img { filter: drop-shadow(0 0 14px rgba(255, 175, 60, 0.55)); }
 .pillar-strip--pro .pillar-strip__item--ops img { filter: drop-shadow(0 0 14px rgba(90, 232, 56, 0.55)); }
+
+.pillar-strip--pro .pillar-strip__item span {
+  font-size: 0.9rem;
+  letter-spacing: 0.16em;
+}
 
 /* —— Ticker mais premium —— */
 .ticker-strip--mockup {

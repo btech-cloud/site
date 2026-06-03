@@ -192,7 +192,7 @@
 /* —— Faixa pilares (post escuro) —— */
 .pillar-strip {
   position: relative;
-  padding: 32px clamp(16px, 4vw, 32px);
+  padding: 18px clamp(16px, 4vw, 24px);
   color: #fff;
   background:
     radial-gradient(circle at 20% 50%, rgba(0, 225, 255, 0.12), transparent 40%),
@@ -234,12 +234,12 @@
 }
 
 .pillar-strip__item img {
-  width: 44px;
-  height: 44px;
+  width: 56px;
+  height: 56px;
 }
 
 .pillar-strip__item span {
-  font-size: 0.72rem;
+  font-size: 0.88rem;
   font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -253,7 +253,7 @@
 .pillar-strip__sep {
   display: none;
   width: 1px;
-  height: 48px;
+  height: 56px;
   background: rgba(255, 255, 255, 0.2);
 }
 
