@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles-vivid.css">
     <link rel="stylesheet" href="styles-mockup.css">
+    <link rel="stylesheet" href="styles-instagram.css">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -78,7 +79,13 @@
     </header>
 
     <main>
-      <section class="hero hero--home hero--mockup" id="inicio">
+      <section class="hero hero--home hero--mockup hero--ig" id="inicio">
+        <div class="hero__ig-bg" aria-hidden="true">
+          <div class="hero__ig-hex-mesh"></div>
+          <div class="hero__ig-orb hero__ig-orb--1"></div>
+          <div class="hero__ig-orb hero__ig-orb--2"></div>
+          <div class="hero__photo-veil"></div>
+        </div>
         <img class="hero__float-hex hero__float-hex--1" src="assets/visuals/pattern-colmeia.svg" alt="" width="180" height="156" aria-hidden="true">
         <img class="hero__float-hex hero__float-hex--2" src="assets/visuals/hex-grid-accent.svg" alt="" width="120" height="104" aria-hidden="true">
         <div class="container hero__content">
@@ -88,6 +95,7 @@
               Toda empresa precisa <span class="hl-key hl-key--evoluir">Evoluir</span>.
               <span class="hero__line">Nem toda evolução precisa ser <span class="hl-key hl-key--complicada">complicada</span>.</span>
             </h1>
+            <hr class="gradient-rule" aria-hidden="true">
             <p class="hero__lead">
               A <span class="brand-word"><span class="brand-word__b">B</span><span class="brand-word__tech">TECH</span></span>
               Consultoria aproxima cloud, IA, automação e operação da realidade do seu negócio — com
@@ -119,6 +127,44 @@
           </div>
         </div>
       </div>
+
+      <div class="pillar-strip" aria-label="Pilares de atuação">
+        <div class="pillar-strip__inner">
+          <div class="pillar-strip__item pillar-strip__item--cloud">
+            <img src="assets/visuals/pillar-cloud.svg" alt="" width="44" height="44">
+            <span>Cloud</span>
+          </div>
+          <div class="pillar-strip__sep" aria-hidden="true"></div>
+          <div class="pillar-strip__item pillar-strip__item--ia">
+            <img src="assets/visuals/pillar-ia.svg" alt="" width="44" height="44">
+            <span>IA</span>
+          </div>
+          <div class="pillar-strip__sep" aria-hidden="true"></div>
+          <div class="pillar-strip__item pillar-strip__item--auto">
+            <img src="assets/visuals/pillar-automation.svg" alt="" width="44" height="44">
+            <span>Automação</span>
+          </div>
+          <div class="pillar-strip__sep" aria-hidden="true"></div>
+          <div class="pillar-strip__item pillar-strip__item--ops">
+            <img src="assets/visuals/pillar-ops.svg" alt="" width="44" height="44">
+            <span>Operação</span>
+          </div>
+        </div>
+      </div>
+
+      <section class="section section--conversa-ig" aria-labelledby="conversa-ig-title">
+        <div class="conversa-ig">
+          <div class="conversa-ig__bg" aria-hidden="true"></div>
+          <div class="conversa-ig__hex" aria-hidden="true"></div>
+          <div class="conversa-ig__copy">
+            <h2 id="conversa-ig-title">
+              Toda transformação começa por uma <span class="hl-key hl-key--conversa">conversa</span>.
+            </h2>
+            <hr class="gradient-rule" aria-hidden="true">
+            <p class="hero__sub-ig">A tecnologia vem depois.</p>
+          </div>
+        </div>
+      </section>
 
       <section class="section section--quem-mockup" id="quem-somos">
         <div class="container">
@@ -162,7 +208,7 @@
           </div>
           <div class="human-mockup-copy">
             <p class="eyebrow">Pessoas antes da tecnologia</p>
-            <h2 id="human-mockup-title">Proximidade na <span class="hl-gradient">conversa</span>, critério na <span class="hl-violet">execução</span>.</h2>
+            <h2 id="human-mockup-title">Proximidade na <span class="hl-key hl-key--conversa">conversa</span>, critério na <span class="hl-violet">execução</span>.</h2>
             <p class="rich-text">
               Workshops, diagnósticos e construção conjunta — a sensação é organizar junto,
               não comprar um pacote de transformação genérico.

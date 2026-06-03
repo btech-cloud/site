@@ -1,0 +1,340 @@
+/* Identidade visual — posts Instagram BTech (hex, neon, gradientes) */
+
+:root {
+  --ig-ink: #050510;
+  --ig-gradient-evoluir: linear-gradient(120deg, #6e1ee6 0%, #143cff 40%, #00e1b4 100%);
+  --ig-gradient-complicada: linear-gradient(120deg, #c800ff 0%, #ff6e9a 45%, #ffaf3c 100%);
+  --ig-gradient-conversa: linear-gradient(120deg, #6e1ee6 0%, #143cff 50%, #00e1b4 100%);
+  --ig-gradient-rule: linear-gradient(90deg, #6e1ee6 0%, #ffaf3c 100%);
+  --ig-gradient-brand: linear-gradient(120deg, #143cff 0%, #c800ff 50%, #00e1b4 100%);
+}
+
+/* —— Fundo global: hex + bokeh —— */
+.honeycomb-bg {
+  opacity: 0.35;
+  background:
+    radial-gradient(ellipse 50% 40% at 92% 8%, rgba(200, 0, 210, 0.14), transparent 55%),
+    radial-gradient(ellipse 45% 35% at 8% 88%, rgba(20, 60, 255, 0.12), transparent 50%),
+    radial-gradient(ellipse 35% 30% at 75% 75%, rgba(255, 175, 60, 0.1), transparent 45%),
+    url("assets/visuals/pattern-colmeia.svg") 94% 4% / 160px auto no-repeat,
+    url("assets/visuals/hex-grid-accent.svg") 4% 78% / 130px auto no-repeat,
+    url("assets/visuals/pattern-colmeia.svg") 48% 42% / 100px auto no-repeat;
+}
+
+/* —— Hero Instagram —— */
+.hero--ig {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 55% 45% at 100% 0%, rgba(110, 30, 230, 0.2), transparent 50%),
+    radial-gradient(ellipse 50% 40% at 0% 100%, rgba(20, 60, 255, 0.14), transparent 48%),
+    linear-gradient(165deg, #fafbff 0%, #fff 42%, #f3f0ff 100%);
+}
+
+.hero--ig .hero__ig-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero--ig .hero__ig-hex-mesh {
+  position: absolute;
+  top: -8%;
+  right: -4%;
+  width: min(52vw, 520px);
+  height: min(52vw, 520px);
+  opacity: 0.55;
+  background: url("assets/visuals/hex-grid-accent.svg") center / contain no-repeat;
+  filter: drop-shadow(0 0 40px rgba(110, 30, 230, 0.35));
+}
+
+.hero--ig .hero__ig-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.65;
+}
+
+.hero--ig .hero__ig-orb--1 {
+  right: 8%;
+  bottom: 5%;
+  width: min(42vw, 380px);
+  height: min(42vw, 380px);
+  background: radial-gradient(circle, rgba(255, 110, 60, 0.45) 0%, rgba(200, 0, 210, 0.2) 45%, transparent 70%);
+}
+
+.hero--ig .hero__ig-orb--2 {
+  left: 35%;
+  bottom: 0;
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(circle, rgba(110, 30, 230, 0.35) 0%, transparent 65%);
+}
+
+.hero--ig .hero__photo-veil {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  width: 58%;
+  height: 100%;
+  opacity: 0.22;
+  background:
+    linear-gradient(105deg, #fff 0%, transparent 42%),
+    url("assets/images/hero-consultoria.jpg") center / cover no-repeat;
+  mask-image: linear-gradient(105deg, transparent 0%, #000 38%);
+}
+
+.hero--ig .hero__content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero--ig .hero__float-hex {
+  opacity: 0.35;
+  filter: drop-shadow(0 0 20px rgba(0, 225, 255, 0.25));
+}
+
+.hero--ig h1 {
+  color: var(--ink);
+}
+
+.hl-key--evoluir {
+  background: var(--ig-gradient-evoluir);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hl-key--complicada {
+  background: var(--ig-gradient-complicada);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-rule {
+  width: min(280px, 70%);
+  height: 3px;
+  margin: 20px 0 16px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--ig-gradient-rule);
+}
+
+.hero__sub-ig {
+  margin: 0 0 20px;
+  color: var(--ink-soft);
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.hero--ig .hero__lead .brand-word__b,
+.hero--ig .hero__lead .brand-word__tech {
+  color: var(--ink);
+}
+
+.hero--ig .hero__lead .brand-word {
+  background: var(--ig-gradient-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.hero--ig .hero__lead .brand-word__b,
+.hero--ig .hero__lead .brand-word__tech {
+  color: transparent;
+  font-weight: inherit;
+}
+
+.hero-panel--float {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(110, 30, 230, 0.12);
+  box-shadow:
+    0 28px 80px rgba(26, 11, 64, 0.12),
+    0 0 0 1px rgba(255, 255, 255, 0.8) inset;
+  backdrop-filter: blur(12px);
+}
+
+/* —— Faixa pilares (post escuro) —— */
+.pillar-strip {
+  position: relative;
+  padding: 28px clamp(16px, 4vw, 32px);
+  color: #fff;
+  background:
+    radial-gradient(circle at 20% 50%, rgba(0, 225, 255, 0.12), transparent 40%),
+    radial-gradient(circle at 80% 50%, rgba(200, 0, 210, 0.15), transparent 42%),
+    linear-gradient(180deg, #0a0618 0%, #1a0b40 50%, #0f0824 100%);
+  border-block: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.pillar-strip::before {
+  position: absolute;
+  inset: 0;
+  opacity: 0.35;
+  background: url("assets/visuals/pattern-colmeia.svg") center / 280px repeat;
+  content: "";
+  pointer-events: none;
+}
+
+.pillar-strip__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 0;
+  align-items: center;
+  justify-content: center;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.pillar-strip__item {
+  display: flex;
+  flex: 1 1 140px;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  min-width: 120px;
+  padding: 8px 16px;
+  text-align: center;
+}
+
+.pillar-strip__item img {
+  width: 44px;
+  height: 44px;
+}
+
+.pillar-strip__item span {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.pillar-strip__item--cloud span { color: #00e1ff; }
+.pillar-strip__item--ia span { color: #e879ff; }
+.pillar-strip__item--auto span { color: #ffaf3c; }
+.pillar-strip__item--ops span { color: #5ae838; }
+
+.pillar-strip__sep {
+  display: none;
+  width: 1px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+@media (min-width: 720px) {
+  .pillar-strip__sep {
+    display: block;
+  }
+}
+
+/* —— Bloco “conversa” (post claro) —— */
+.section--conversa-ig {
+  padding: 0;
+  background: #fff;
+}
+
+.conversa-ig {
+  position: relative;
+  overflow: hidden;
+  min-height: 320px;
+}
+
+.conversa-ig__bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0.92) 35%, rgba(255, 255, 255, 0.75) 55%, rgba(255, 255, 255, 0.5) 100%),
+    url("assets/images/collab-main.jpg") center bottom / cover no-repeat;
+}
+
+.conversa-ig__hex {
+  position: absolute;
+  top: 12px;
+  right: 8%;
+  width: 140px;
+  height: 140px;
+  opacity: 0.5;
+  background: url("assets/visuals/hex-grid-accent.svg") center / contain no-repeat;
+  filter: drop-shadow(0 0 24px rgba(110, 30, 230, 0.4));
+}
+
+.conversa-ig__copy {
+  position: relative;
+  z-index: 1;
+  max-width: 640px;
+  padding: 56px clamp(20px, 5vw, 48px) 48px;
+}
+
+.conversa-ig__copy h2 {
+  max-width: 18ch;
+  margin: 0 0 12px;
+  font-size: clamp(1.65rem, 3.5vw, 2.35rem);
+  line-height: 1.12;
+}
+
+.conversa-ig__copy .hl-key--conversa {
+  background: var(--ig-gradient-conversa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* —— Seções com mesh hex —— */
+.section--tech-mockup::before {
+  position: absolute;
+  inset: 0;
+  opacity: 0.2;
+  background: url("assets/visuals/pattern-colmeia.svg") center / 240px repeat;
+  content: "";
+  pointer-events: none;
+}
+
+.section--tech-mockup {
+  position: relative;
+  overflow: hidden;
+}
+
+.section--tech-mockup > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.section--cloud-mockup .cloud-block {
+  position: relative;
+  overflow: hidden;
+}
+
+.section--cloud-mockup .cloud-block::after {
+  position: absolute;
+  right: -10%;
+  bottom: -20%;
+  width: 50%;
+  height: 70%;
+  opacity: 0.4;
+  background: radial-gradient(circle, rgba(0, 225, 255, 0.35) 0%, transparent 65%);
+  content: "";
+  pointer-events: none;
+}
+
+.ticker-strip--mockup {
+  background: linear-gradient(90deg, #050510 0%, var(--mockup-purple) 50%, #050510 100%);
+}
+
+@media (max-width: 880px) {
+  .hero--ig .hero__photo-veil {
+    width: 100%;
+    height: 45%;
+    top: auto;
+    bottom: 0;
+    opacity: 0.15;
+    mask-image: linear-gradient(0deg, transparent 0%, #000 50%);
+  }
+
+  .pillar-strip__sep {
+    display: none;
+  }
+}
