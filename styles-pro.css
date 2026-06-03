@@ -80,16 +80,12 @@
 }
 
 /* —— Painel lateral hero —— */
-.hero-panel--pro {
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-panel--pro::before {
+.hero-panel--editorial::before {
   position: absolute;
   inset: -1px;
+  z-index: 0;
   padding: 1px;
-  background: linear-gradient(135deg, rgba(110, 30, 230, 0.45), rgba(20, 60, 255, 0.35), rgba(0, 225, 180, 0.4));
+  background: linear-gradient(135deg, rgba(110, 30, 230, 0.4), rgba(20, 60, 255, 0.3), rgba(0, 225, 180, 0.35));
   border-radius: inherit;
   content: "";
   mask:
@@ -99,22 +95,27 @@
   pointer-events: none;
 }
 
+.hero-panel--editorial {
+  position: relative;
+}
+
+.hero-panel--editorial .hero-panel__body {
+  position: relative;
+  z-index: 1;
+}
+
 .hero-panel__badge {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin: 0 0 16px;
   padding: 8px 14px;
-  color: var(--ink-soft);
-  font-size: 0.78rem;
+  color: #fff;
+  font-size: 0.75rem;
   font-weight: 800;
-  background: rgba(247, 249, 255, 0.95);
-  border: 1px solid rgba(10, 20, 50, 0.08);
+  background: rgba(10, 20, 50, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 999px;
-}
-
-.hero-panel--pro .hero-panel__symbol {
-  filter: drop-shadow(0 8px 24px rgba(110, 30, 230, 0.25));
+  backdrop-filter: blur(8px);
 }
 
 /* —— Botões premium —— */
