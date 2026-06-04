@@ -36,12 +36,20 @@ Nos últimos anos misturei gestão interna e consultoria de marketing (saúde in
 Antes disso passei por WWF-Brasil, Grupo Pão de Açúcar, festivais, cooperativas e negócios que eu mesmo montei. Propaganda (Mackenzie), MBA em Estratégia (FGV), AI for Business (Ibmec). Inglês fluente. Moro em Brasília e trabalho remoto ou híbrido.
 ```
 
-### Opção B — mais curta, tom direto *(versão escolhida — Atmo sem destaque exclusivo)*
+### Opção B — publicada no LinkedIn (mar/2026)
 
 ```
 Vinte anos entre varejo, terceiro setor, cultura e empreendedorismo me ensinaram uma coisa: projeto bom é o que a equipe de frente entende e usa.
 
 Hoje sou sócio na BTech Consultoria — consultoria em cloud, IA e automação com marketing e gestão na mesa. Não empacotamos “solução”; entramos para entender o negócio, priorizar e executar junto com quem vive o dia a dia.
+```
+
+*Detalhes de carteira, Atmo, formação e local ficam nas experiências, Featured (CV) e headline — não no Sobre.*
+
+### Opção B — rascunho com 3º parágrafo (não usado)
+
+```
+… (mesmos dois parágrafos acima)
 
 Nos últimos anos atuei em gestão e consultoria de marketing (institutos, saúde, educação, PMEs). Parte dessa carteira segue na BTech — entre os clientes, o Instituto Atmo Danai. Antes: WWF-Brasil, GPA, movimentos de impacto e negócios próprios. Mackenzie · FGV · Ibmec (IA). Brasília/DF, remoto.
 ```
