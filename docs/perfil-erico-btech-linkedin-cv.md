@@ -31,19 +31,19 @@ Comecei a vida profissional em campanha, loja e causa — e fui aprendendo que o
 
 Em março de 2026 assumi como sócio na BTech Consultoria (btech.cloud). Aqui ajudo empresas a colocar cloud, IA e automação no chão, sem transformar o projeto num teatro de slides. Meu papel é ouvir quem opera, traduzir o que importa e manter o marketing no jogo — marca, funil, mídia, CRM, conteúdo — quando a tecnologia precisa conversar com gente de verdade.
 
-Durante cinco anos fui gerente de marketing no Instituto Atmo Danai (saúde integrativa). O instituto não sumiu da minha rotina: hoje é cliente da BTech, com o mesmo compromisso de antes, só que com uma rede consultiva maior ao lado.
+Nos últimos anos misturei gestão interna e consultoria de marketing (saúde integrativa, institutos, PMEs). Parte desses clientes continua na BTech — o Atmo Danai é um deles, não o único.
 
 Antes disso passei por WWF-Brasil, Grupo Pão de Açúcar, festivais, cooperativas e negócios que eu mesmo montei. Propaganda (Mackenzie), MBA em Estratégia (FGV), AI for Business (Ibmec). Inglês fluente. Moro em Brasília e trabalho remoto ou híbrido.
 ```
 
-### Opção B — mais curta, tom direto
+### Opção B — mais curta, tom direto *(versão escolhida — Atmo sem destaque exclusivo)*
 
 ```
 Vinte anos entre varejo, terceiro setor, cultura e empreendedorismo me ensinaram uma coisa: projeto bom é o que a equipe de frente entende e usa.
 
 Hoje sou sócio na BTech Consultoria — consultoria em cloud, IA e automação com marketing e gestão na mesa. Não empacotamos “solução”; entramos para entender o negócio, priorizar e executar junto com quem vive o dia a dia.
 
-O Instituto Atmo Danai, onde liderei marketing até fev/2026, segue comigo como cliente da BTech. O resto da trilha inclui WWF-Brasil, GPA, movimentos de impacto e PMEs. Mackenzie · FGV · Ibmec (IA). Brasília/DF, remoto.
+Nos últimos anos atuei em gestão e consultoria de marketing (institutos, saúde, educação, PMEs). Parte dessa carteira segue na BTech — entre os clientes, o Instituto Atmo Danai. Antes: WWF-Brasil, GPA, movimentos de impacto e negócios próprios. Mackenzie · FGV · Ibmec (IA). Brasília/DF, remoto.
 ```
 
 ### Opção C — gancho + credencial no fim
@@ -51,7 +51,7 @@ O Instituto Atmo Danai, onde liderei marketing até fev/2026, segue comigo como 
 ```
 Já vi campanha linda morrer porque ninguém na operação sabia o que fazer no dia seguinte. Por isso hoje trabalho na interseção de marketing, gestão e tecnologia — não para enfeitar o relatório, mas para a decisão fazer sentido na segunda-feira.
 
-Sou sócio na BTech Consultoria (btech.cloud): cloud, IA e automação com quem cuida de relacionamento, priorização e comunicação. O Atmo Danai, onde fui gerente de marketing por cinco anos, continua na minha carteira como cliente da BTech.
+Sou sócio na BTech Consultoria (btech.cloud): cloud, IA e automação com quem cuida de relacionamento, priorização e comunicação. Mantenho clientes de marketing dos últimos anos na BTech (entre eles o Atmo Danai).
 
 Se quiser contexto de onde vim: WWF-Brasil, Pão de Açúcar, saúde integrativa, cooperativas e negócios próprios. Formação em Propaganda (Mackenzie), MBA (FGV), IA for Business (Ibmec). Inglês fluente · Brasília · remoto/híbrido.
 ```
