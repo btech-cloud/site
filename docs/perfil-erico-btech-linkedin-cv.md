@@ -22,17 +22,48 @@ Sócio · BTech Consultoria | Marketing + gestão + cloud, IA e automação com 
 
 ## 2. Sobre (LinkedIn — PT)
 
+*Evitar: abrir com “Profissional com X anos”, listar áreas em sequência, “não vendemos caixa de software”, “linguagem clara / acompanhamento humano” (soa genérico). Preferir uma cena, uma escolha ou uma pergunta que o leitor reconheça.*
+
+### Opção A — narrativa (recomendada para colar no LinkedIn)
+
 ```
-Profissional com mais de 20 anos em marketing, gestão de projetos, comunicação e relacionamento com stakeholders — em varejo, terceiro setor, cultura, saúde integrativa e empreendedorismo.
+Comecei a vida profissional em campanha, loja e causa — e fui aprendendo que o melhor marketing não é barulho: é quando a operação e a promessa andam juntas.
 
-Desde março de 2026 sou sócio na BTech Consultoria (btech.cloud), onde uno visão de negócio, marketing e organização operacional à adoção de cloud, IA e automação, com linguagem clara e acompanhamento humano. A BTech atua como consultoria: não é software house nem provedor de infraestrutura; entramos na conversa para diagnosticar, priorizar e executar com critério.
+Em março de 2026 assumi como sócio na BTech Consultoria (btech.cloud). Aqui ajudo empresas a colocar cloud, IA e automação no chão, sem transformar o projeto num teatro de slides. Meu papel é ouvir quem opera, traduzir o que importa e manter o marketing no jogo — marca, funil, mídia, CRM, conteúdo — quando a tecnologia precisa conversar com gente de verdade.
 
-Mantengo forte atuação em **marketing estratégico** (branding, funis, mídia paga, CRM, SEO, conteúdo e parcerias). O **Instituto Atmo Danai** — onde fui gerente de marketing por cinco anos — hoje é **cliente da BTech**, com continuidade no plano de comunicação e crescimento institucional.
+Durante cinco anos fui gerente de marketing no Instituto Atmo Danai (saúde integrativa). O instituto não sumiu da minha rotina: hoje é cliente da BTech, com o mesmo compromisso de antes, só que com uma rede consultiva maior ao lado.
 
-Trajetória anterior: WWF-Brasil, Grupo Pão de Açúcar (orçamento regional de marketing), Awaken Love, Dharma Academy, Mais Brasil, Açaí Cósmico e consultoria para PMEs.
-
-Formação: Propaganda e Marketing (Mackenzie), MBA em Estratégia Empresarial (FGV), certificação AI for Business (Ibmec). Inglês fluente. Base: Brasília/DF · remoto e híbrido.
+Antes disso passei por WWF-Brasil, Grupo Pão de Açúcar, festivais, cooperativas e negócios que eu mesmo montei. Propaganda (Mackenzie), MBA em Estratégia (FGV), AI for Business (Ibmec). Inglês fluente. Moro em Brasília e trabalho remoto ou híbrido.
 ```
+
+### Opção B — mais curta, tom direto
+
+```
+Vinte anos entre varejo, terceiro setor, cultura e empreendedorismo me ensinaram uma coisa: projeto bom é o que a equipe de frente entende e usa.
+
+Hoje sou sócio na BTech Consultoria — consultoria em cloud, IA e automação com marketing e gestão na mesa. Não empacotamos “solução”; entramos para entender o negócio, priorizar e executar junto com quem vive o dia a dia.
+
+O Instituto Atmo Danai, onde liderei marketing até fev/2026, segue comigo como cliente da BTech. O resto da trilha inclui WWF-Brasil, GPA, movimentos de impacto e PMEs. Mackenzie · FGV · Ibmec (IA). Brasília/DF, remoto.
+```
+
+### Opção C — gancho + credencial no fim
+
+```
+Já vi campanha linda morrer porque ninguém na operação sabia o que fazer no dia seguinte. Por isso hoje trabalho na interseção de marketing, gestão e tecnologia — não para enfeitar o relatório, mas para a decisão fazer sentido na segunda-feira.
+
+Sou sócio na BTech Consultoria (btech.cloud): cloud, IA e automação com quem cuida de relacionamento, priorização e comunicação. O Atmo Danai, onde fui gerente de marketing por cinco anos, continua na minha carteira como cliente da BTech.
+
+Se quiser contexto de onde vim: WWF-Brasil, Pão de Açúcar, saúde integrativa, cooperativas e negócios próprios. Formação em Propaganda (Mackenzie), MBA (FGV), IA for Business (Ibmec). Inglês fluente · Brasília · remoto/híbrido.
+```
+
+### Versão anterior (arquivar — evitar)
+
+<details>
+<summary>Texto rejeitado (muito informativo / tom de IA)</summary>
+
+Profissional com mais de 20 anos entre marketing, gestão de projetos, terceiro setor, varejo e empreendedorismo. Hoje atuo como sócio na BTech Consultoria… “não vendemos caixa de software”… lista de certificações no mesmo ritmo do parágrafo anterior.
+
+</details>
 
 ---
 
