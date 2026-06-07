@@ -35,6 +35,53 @@ if (menuButton && menu) {
   });
 }
 
+const contactSubject = document.querySelector("#contact-subject");
+const contactTypeInputs = document.querySelectorAll('input[name="contact_type"]');
+const contactMessageLabel = document.querySelector("#contact-message-label");
+
+const syncContactType = () => {
+  const selected = document.querySelector('input[name="contact_type"]:checked');
+  const isParceria = selected?.value === "parceria";
+
+  if (contactSubject) {
+    contactSubject.value = isParceria
+      ? "Parceria — site BTech"
+      : "Consultoria — site BTech";
+  }
+
+  const contactLabelText = document.querySelector("[data-contact-label]");
+  if (contactLabelText) {
+    contactLabelText.textContent = isParceria
+      ? "Como imagina a parceria?"
+      : "O que você quer organizar?";
+  }
+
+  if (contactMessageLabel) {
+    const textarea = contactMessageLabel.querySelector("textarea");
+    if (textarea instanceof HTMLTextAreaElement) {
+      textarea.placeholder = isParceria
+        ? "Ex.: MSP, integrador, vendor, co-entrega cloud, referência comercial..."
+        : "Ex.: cloud, OpenShift, SAS, backup, CI/CD, IA...";
+    }
+  }
+};
+
+contactTypeInputs.forEach((input) => {
+  input.addEventListener("change", syncContactType);
+});
+
+document.querySelectorAll("[data-contact-focus='parceria']").forEach((trigger) => {
+  trigger.addEventListener("click", () => {
+    const parceriaInput = document.querySelector('input[name="contact_type"][value="parceria"]');
+    if (parceriaInput instanceof HTMLInputElement) {
+      parceriaInput.checked = true;
+      syncContactType();
+    }
+  });
+});
+
+syncContactType();
+
 if (contactForm && formNote) {
   const endpoint = contactForm.dataset.formEndpoint?.trim() || "";
   const targetEmail = contactForm.dataset.formEmail?.trim() || "comercial@b-tech.cloud";
@@ -74,6 +121,7 @@ if (contactForm && formNote) {
 
       formNote.textContent = `Mensagem enviada. Em breve retornamos no e-mail informado (destino: ${targetEmail}).`;
       contactForm.reset();
+      syncContactType();
     } catch {
       formNote.textContent = `Não foi possível enviar agora. Escreva diretamente para ${targetEmail}.`;
     } finally {

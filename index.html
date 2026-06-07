@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="styles-pro.css">
     <link rel="stylesheet" href="styles-hex.css">
     <link rel="stylesheet" href="styles-rhythm.css">
+    <link rel="stylesheet" href="styles-site-v2.css">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -71,8 +72,9 @@
         <ul class="nav__links" id="menu">
           <li><a href="#quem-somos">Quem somos</a></li>
           <li><a href="#pessoas">Pessoas</a></li>
+          <li><a href="#parcerias">Parcerias</a></li>
           <li><a href="#atuacao">Como ajudamos</a></li>
-          <li><a href="#cloud-acompanhada">Cloud</a></li>
+          <li><a href="#projetos">Projetos</a></li>
           <li class="nav__cta-item nav__cta-item--mobile">
             <a class="button button--primary button--nav nav__cta" href="#contato">Conversar com a BTech</a>
           </li>
@@ -114,8 +116,8 @@
           <aside class="hero-panel hero-panel--editorial" aria-label="Resumo do posicionamento">
             <div class="hero-panel__media">
               <img
-                src="assets/images/person-b.jpg"
-                alt="Profissional em atendimento consultivo"
+                src="assets/images/reuniao-estrategia.jpg"
+                alt="Equipe em conversa consultiva"
                 width="480"
                 height="320"
                 loading="eager"
@@ -161,8 +163,64 @@
         </div>
       </div>
 
+      <section class="section section--manifesto-ig" aria-labelledby="manifesto-ig-title">
+        <div class="container manifesto-ig">
+          <div class="manifesto-ig__copy">
+            <img
+              class="manifesto-ig__logo"
+              src="assets/logo-btech-stacked-oficial-light.png"
+              srcset="assets/logo-btech-stacked-oficial-light.png 1x, assets/logo-btech-stacked-oficial-light@2x.png 2x"
+              alt="BTECH"
+              width="120"
+              height="98"
+              loading="lazy"
+            >
+            <h2 id="manifesto-ig-title">
+              Toda empresa precisa <span class="hl-key hl-key--evoluir">evoluir</span>.
+              Nem toda evolução precisa ser <span class="hl-key hl-key--complicada">complicada</span>.
+            </h2>
+            <p>
+              IA, automação, cloud e dados avançam rápido. O desafio não é adotar tudo — é evoluir sem
+              transformar a operação em um labirinto de ferramentas e promessas.
+            </p>
+            <p>
+              A <span class="brand-word"><span class="brand-word__b">B</span><span class="brand-word__tech">TECH</span></span>
+              acredita que tecnologia deve unir pessoas, organizar processos e apoiar decisões com critério.
+            </p>
+            <p class="manifesto-ig__closing">
+              É essa visão que move a
+              <span class="brand-word"><span class="brand-word__b">B</span><span class="brand-word__tech">TECH</span></span>.
+            </p>
+          </div>
+          <div class="pillar-strip pillar-strip--pro" aria-label="Pilares de atuação">
+            <p class="pillar-strip__label">O que conectamos na prática</p>
+            <div class="pillar-strip__inner">
+              <div class="pillar-strip__item pillar-strip__item--cloud">
+                <img src="assets/visuals/pillar-cloud.svg" alt="" width="32" height="32">
+                <span>Cloud</span>
+              </div>
+              <div class="pillar-strip__sep" aria-hidden="true"></div>
+              <div class="pillar-strip__item pillar-strip__item--ia">
+                <img src="assets/visuals/pillar-ia.svg" alt="" width="32" height="32">
+                <span>IA</span>
+              </div>
+              <div class="pillar-strip__sep" aria-hidden="true"></div>
+              <div class="pillar-strip__item pillar-strip__item--auto">
+                <img src="assets/visuals/pillar-automation.svg" alt="" width="32" height="32">
+                <span>Automação</span>
+              </div>
+              <div class="pillar-strip__sep" aria-hidden="true"></div>
+              <div class="pillar-strip__item pillar-strip__item--ops">
+                <img src="assets/visuals/pillar-ops.svg" alt="" width="32" height="32">
+                <span>Operação</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section section--conversa-ig" aria-labelledby="conversa-ig-title">
-        <div class="conversa-ig conversa-ig--pro">
+        <div class="conversa-ig conversa-ig--pro conversa-ig--post">
           <div class="container conversa-ig__grid">
             <div class="conversa-ig__copy">
               <p class="eyebrow">Primeiro passo</p>
@@ -177,47 +235,20 @@
               </p>
               <a class="button button--primary" href="#contato">Agendar uma conversa</a>
             </div>
-            <div class="conversa-ig__visual">
-              <div class="hex-collage hex-collage--conversa" aria-hidden="true">
-                <div class="hex-photo hex-photo--main">
-                  <img src="assets/images/reuniao-estrategia.jpg" alt="" width="400" height="400" loading="eager" decoding="async">
-                </div>
-                <div class="hex-photo hex-photo--b">
-                  <img src="assets/images/collab-main.jpg" alt="" width="320" height="320" loading="eager" decoding="async">
-                </div>
-                <div class="hex-photo hex-photo--c">
-                  <img src="assets/images/meeting-wide.jpg" alt="" width="280" height="280" loading="eager" decoding="async">
-                </div>
-              </div>
+            <div class="conversa-ig__visual conversa-ig__visual--banner">
+              <img
+                src="assets/images/equipe-trabalho.jpg"
+                alt="Equipe em conversa colaborativa no escritório"
+                width="1200"
+                height="700"
+                loading="eager"
+                decoding="async"
+              >
+              <span class="conversa-ig__bokeh" aria-hidden="true"></span>
             </div>
           </div>
         </div>
       </section>
-
-      <div class="pillar-strip pillar-strip--pro" aria-label="Pilares de atuação">
-        <p class="pillar-strip__label">O que conectamos na prática</p>
-        <div class="pillar-strip__inner">
-          <div class="pillar-strip__item pillar-strip__item--cloud">
-            <img src="assets/visuals/pillar-cloud.svg" alt="" width="56" height="56">
-            <span>Cloud</span>
-          </div>
-          <div class="pillar-strip__sep" aria-hidden="true"></div>
-          <div class="pillar-strip__item pillar-strip__item--ia">
-            <img src="assets/visuals/pillar-ia.svg" alt="" width="56" height="56">
-            <span>IA</span>
-          </div>
-          <div class="pillar-strip__sep" aria-hidden="true"></div>
-          <div class="pillar-strip__item pillar-strip__item--auto">
-            <img src="assets/visuals/pillar-automation.svg" alt="" width="56" height="56">
-            <span>Automação</span>
-          </div>
-          <div class="pillar-strip__sep" aria-hidden="true"></div>
-          <div class="pillar-strip__item pillar-strip__item--ops">
-            <img src="assets/visuals/pillar-ops.svg" alt="" width="56" height="56">
-            <span>Operação</span>
-          </div>
-        </div>
-      </div>
 
       <section class="section section--quem-mockup" id="quem-somos">
         <div class="container">
@@ -239,9 +270,9 @@
             </div>
           </div>
           <div class="photo-grid-office">
-            <img class="photo-grid-office__main" src="assets/images/diagnostic.jpg" alt="Diagnóstico e planejamento com a equipe" width="800" height="520" loading="lazy">
-            <img src="assets/images/workshop.jpg" alt="Workshop colaborativo" width="500" height="360" loading="lazy">
-            <img src="assets/images/meeting-wide.jpg" alt="Reunião ampla com stakeholders" width="500" height="360" loading="lazy">
+            <img class="photo-grid-office__main" src="assets/images/hero-consultoria.jpg" alt="Consultoria com equipe e cliente" width="800" height="520" loading="lazy">
+            <img src="assets/images/equipe-trabalho.jpg" alt="Equipe em reunião de trabalho" width="500" height="360" loading="lazy">
+            <img src="assets/images/collab-main.jpg" alt="Colaboração em projeto" width="500" height="360" loading="lazy">
           </div>
         </div>
       </section>
@@ -250,13 +281,13 @@
         <div class="container human-mockup-grid">
           <div class="hex-collage" aria-hidden="true">
             <div class="hex-photo hex-photo--main">
-              <img src="assets/images/person-a.jpg" alt="" width="400" height="400" loading="lazy">
+              <img src="assets/images/reuniao-estrategia.jpg" alt="" width="400" height="400" loading="lazy">
             </div>
             <div class="hex-photo hex-photo--b">
-              <img src="assets/images/person-b.jpg" alt="" width="320" height="320" loading="lazy">
+              <img src="assets/images/meeting-wide.jpg" alt="" width="320" height="320" loading="lazy">
             </div>
             <div class="hex-photo hex-photo--c">
-              <img src="assets/images/diagnostico.jpg" alt="" width="280" height="280" loading="lazy">
+              <img src="assets/images/diagnostic.jpg" alt="" width="280" height="280" loading="lazy">
             </div>
           </div>
           <div class="human-mockup-copy">
@@ -277,28 +308,45 @@
             <h2>Tecnologia faz mais sentido quando existe <span class="hl-violet">gente</span> conduzindo a mudança.</h2>
             <p>Você sabe com quem está falando.</p>
           </div>
-          <div class="people-grid people-grid--mockup">
-            <article class="person-card person-card--mockup">
-              <div class="person-card__avatar" aria-hidden="true">E</div>
-              <p class="person-card__role">Gestão, relacionamento e estratégia operacional</p>
-              <h3>Erico Teixeira</h3>
-              <p>Conecta visão de negócio, comunicação e organização em caminhos claros e executáveis.</p>
-              <ul class="person-card__expertise">
-                <li>Diagnóstico e priorização com gestores</li>
-                <li>Comunicação entre áreas e stakeholders</li>
-                <li>Continuidade na execução do plano</li>
-              </ul>
+          <div class="people-grid people-grid--mockup people-grid--v2">
+            <article class="person-card person-card--mockup person-card--v2">
+              <div class="person-card__media person-card__media--reserved">
+                <img src="assets/images/person-b.jpg" alt="" width="480" height="360" loading="lazy" aria-hidden="true">
+              </div>
+              <div class="person-card__body">
+                <p class="person-card__credential">Sócio · Gestão e estratégia operacional</p>
+                <h3>Erico Teixeira</h3>
+                <p class="person-card__role">Gestão, relacionamento, marketing e continuidade na execução</p>
+                <p>Conecta visão de negócio, comunicação e organização em caminhos claros — da primeira conversa ao plano em produção.</p>
+                <ul class="person-card__expertise">
+                  <li>Diagnóstico e priorização com gestores</li>
+                  <li>Stakeholders, marketing e comunicação</li>
+                  <li>MBA Estratégia (FGV) · Propaganda (Mackenzie)</li>
+                </ul>
+                <a
+                  class="person-card__linkedin"
+                  href="https://www.linkedin.com/in/erico-martins-de-barros-77170911/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >LinkedIn →</a>
+              </div>
             </article>
-            <article class="person-card person-card--mockup">
-              <div class="person-card__avatar person-card__avatar--alt" aria-hidden="true">A</div>
-              <p class="person-card__role">Cloud, IA e inteligência operacional</p>
-              <h3>Alexandre Carvalho</h3>
-              <p>Identifica gargalos e conecta automação, cloud e IA à realidade da operação.</p>
-              <ul class="person-card__expertise">
-                <li>Arquitetura cloud e integração</li>
-                <li>IA aplicada e automação de processos</li>
-                <li>Observabilidade e governança técnica</li>
-              </ul>
+            <article class="person-card person-card--mockup person-card--v2">
+              <div class="person-card__media person-card__media--reserved">
+                <img src="assets/images/person-a.jpg" alt="" width="480" height="360" loading="lazy" aria-hidden="true">
+              </div>
+              <div class="person-card__body">
+                <p class="person-card__credential">Sócio · Cloud, IA e operação</p>
+                <h3>Alexandre Carvalho</h3>
+                <p class="person-card__role">Arquitetura cloud, automação e inteligência operacional</p>
+                <p>Identifica gargalos e conecta cloud, IA e automação à realidade de quem opera o dia a dia.</p>
+                <ul class="person-card__expertise">
+                  <li>Arquitetura cloud e integração</li>
+                  <li>IA aplicada e automação de processos</li>
+                  <li>Observabilidade e governança técnica</li>
+                </ul>
+                <span class="person-card__linkedin person-card__linkedin--reserved">LinkedIn — em atualização</span>
+              </div>
             </article>
           </div>
         </div>
@@ -379,16 +427,85 @@
         </div>
       </section>
 
-      <section class="section section--partners" id="parceiros">
+      <section class="section section--parcerias-v2" id="parcerias">
         <div class="container">
           <div class="section-heading section-heading--center">
-            <p class="eyebrow">Serviços e parcerias</p>
-            <h2>Ecossistema técnico que apoiamos na sua <span class="hl-gradient">operação</span></h2>
+            <p class="eyebrow">Parcerias</p>
+            <h2>Consultoria que <span class="hl-gradient">complementa</span> quem entrega infraestrutura</h2>
+            <p class="section-heading__lead">
+              Não competimos em IaaS nem datacenter próprio. Entramos para qualificar demanda, apoiar pré-venda,
+              co-entregar com critério e manter a operação organizada depois do go-live.
+            </p>
+          </div>
+
+          <div class="parcerias-grid parcerias-grid--3">
+            <article class="parceria-card">
+              <div class="parceria-card__icon" aria-hidden="true">01</div>
+              <h3>MSPs e integradores</h3>
+              <p>
+                Diagnóstico, priorização e linguagem de negócio para projetos de cloud, backup, DevOps e
+                modernização — com continuidade consultiva na operação.
+              </p>
+            </article>
+            <article class="parceria-card">
+              <div class="parceria-card__icon" aria-hidden="true">02</div>
+              <h3>Vendors e fabricantes</h3>
+              <p>
+                Apoio em contas que precisam de proximidade com gestores, workshops, funil técnico-comercial
+                e execução alinhada à realidade do cliente final.
+              </p>
+            </article>
+            <article class="parceria-card">
+              <div class="parceria-card__icon" aria-hidden="true">03</div>
+              <h3>Revendas e canais</h3>
+              <p>
+                Reforço consultivo onde a venda precisa virar projeto sustentável — sem empurrar pacote
+                genérico nem infraestrutura da BTech.
+              </p>
+            </article>
+          </div>
+
+          <div class="parceria-modelo">
+            <div>
+              <h3>O que a BTech traz para a parceria</h3>
+              <ul>
+                <li>Diagnóstico e escuta da operação do cliente</li>
+                <li>Tradução entre negócio, TI e fornecedor</li>
+                <li>Co-entrega em cloud, IA, automação e governança</li>
+                <li>Marketing e comunicação quando o projeto exige alinhamento institucional</li>
+                <li>Continuidade após o go-live — observabilidade e ajustes</li>
+              </ul>
+            </div>
+            <div>
+              <h3>O que não fazemos</h3>
+              <ul>
+                <li>Infraestrutura ou cloud própria da BTech</li>
+                <li>Competição direta na conta de hosting/IaaS do parceiro</li>
+                <li>“Caixa de software” sem acompanhamento</li>
+                <li>Promessas de case ou certificação que ainda não publicamos</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="parceria-cta">
+            <a class="button button--primary" href="#contato" data-contact-focus="parceria">Proposta de parceria</a>
+            <p class="parceria-cta__email">
+              Ou escreva para <a href="mailto:comercial@b-tech.cloud?subject=Proposta%20de%20parceria%20BTech">comercial@b-tech.cloud</a>
+              com assunto <strong>Parceria</strong>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--partners" id="ecossistema-tecnico">
+        <div class="container">
+          <div class="section-heading section-heading--center">
+            <p class="eyebrow">Ecossistema técnico</p>
+            <h2>Tecnologias e práticas que apoiamos na sua <span class="hl-gradient">operação</span></h2>
             <p>
-              Atuamos com plataformas e práticas consolidadas do mercado — sempre com consultoria e
-              acompanhamento da
-              <span class="brand-word"><span class="brand-word__b">B</span><span class="brand-word__tech">TECH</span></span>,
-              sem empurrar infraestrutura própria.
+              Experiência em ambientes com plataformas consolidadas — com consultoria e acompanhamento da
+              <span class="brand-word"><span class="brand-word__b">B</span><span class="brand-word__tech">TECH</span></span>.
+              Logos indicam <strong>stack e prática</strong>, não necessariamente parceria formal de canal.
             </p>
           </div>
 
@@ -437,42 +554,64 @@
                 <h3>Cloud+ e serviços gerenciados</h3>
                 <p>S3, arquivos e IA aplicada à cloud interna — com consultoria, sem infraestrutura própria da BTech.</p>
               </div>
-              <ul class="partner-band__logos" aria-label="Serviços cloud">
+              <ul class="partner-band__logos partner-band__logos--cloud-extra" aria-label="Serviços cloud">
                 <li><img src="assets/partners/amazonaws.svg" alt="AWS" width="72" height="22"><span>AWS</span></li>
                 <li><img src="assets/partners/s3.svg" alt="Amazon S3" width="72" height="26"><span>S3</span></li>
                 <li><img src="assets/partners/file-server.svg" alt="Arquivos" width="40" height="40"><span>Arquivos</span></li>
                 <li><img src="assets/partners/ia-cloud.svg" alt="IA cloud" width="40" height="40"><span>IA na cloud</span></li>
+                <li><span class="partner-chip-text">Microsoft Azure</span></li>
+                <li><span class="partner-chip-text">Google Cloud</span></li>
               </ul>
             </article>
           </div>
+          <p class="section-note">
+            Certificações e badges oficiais de parceiro serão publicados conforme validação formal com cada fabricante.
+          </p>
         </div>
       </section>
 
-      <section class="section section--experiencias" id="onde-atuamos">
-        <div class="container two-column two-column--intro">
-          <div>
-            <p class="eyebrow">Experiências</p>
-            <h2>Espaço preparado para clientes, cases e projetos <span class="hl-gradient">reais</span>.</h2>
-            <p class="rich-text">
-              Comunicamos a experiência dos fundadores com cuidado enquanto a marca se consolida —
-              sem prometer cases que ainda não publicamos.
+      <section class="section section--reservas" id="projetos">
+        <div class="container">
+          <div class="section-heading section-heading--center">
+            <p class="eyebrow">Projetos</p>
+            <h2>Cases e clientes <span class="hl-gradient">em publicação</span></h2>
+            <p class="section-heading__lead">
+              Reservamos este espaço para projetos representativos e logos autorizados — materiais que você
+              enviarão para complementar a base institucional.
             </p>
           </div>
-          <div class="experiencias-visual" aria-hidden="true">
-            <img src="assets/images/workshop.jpg" alt="" width="600" height="400" loading="lazy">
-            <div class="experiencias-visual__veil"></div>
+
+          <div class="reserved-grid reserved-grid--3">
+            <article class="reserved-slot">
+              <span class="reserved-slot__tag">Reservado</span>
+              <h3>Case 01</h3>
+              <p>Setor, desafio, stack e resultado — aguardando material.</p>
+            </article>
+            <article class="reserved-slot">
+              <span class="reserved-slot__tag">Reservado</span>
+              <h3>Case 02</h3>
+              <p>Projeto cloud / infra / DevOps — aguardando material.</p>
+            </article>
+            <article class="reserved-slot">
+              <span class="reserved-slot__tag">Reservado</span>
+              <h3>Case 03</h3>
+              <p>IA, automação ou operação — aguardando material.</p>
+            </article>
           </div>
-        </div>
-        <div class="container experiencias-tags-wrap">
+
+          <div class="reserved-logos" aria-label="Logos de clientes — reservado">
+            <p><strong>Logos de clientes e parceiros</strong> — espaço reservado para autorização e publicação.</p>
+          </div>
+
           <div class="experience-panel experience-panel--mockup">
             <div class="tag-list tag-list--mockup">
               <span>Negócios em crescimento</span>
               <span>Empresas de tecnologia</span>
-              <span>Operações locais</span>
-              <span>Processos manuais</span>
+              <span>Saúde e educação</span>
+              <span>Terceiro setor</span>
               <span>Avaliando cloud</span>
-              <span>Aplicando IA</span>
               <span>DevOps e CI/CD</span>
+              <span>OpenShift e Kubernetes</span>
               <span>Gestão e automação</span>
             </div>
           </div>
@@ -545,6 +684,18 @@
           </div>
           <div class="faq-list">
             <article class="faq-item">
+              <h3 class="faq-item__question">Como funciona parceria com MSPs, integradores ou vendors?</h3>
+              <div class="faq-item__answer">
+                <p>
+                  A BTech entra como consultoria complementar: diagnóstico, alinhamento com o cliente,
+                  co-entrega técnica e continuidade operacional — sem infraestrutura própria e sem competir
+                  na conta de cloud do parceiro. O modelo é combinado caso a caso (referência, co-sell,
+                  implementação consultiva). Veja a seção <a href="#parcerias">Parcerias</a> ou escreva com
+                  assunto <strong>Parceria</strong>.
+                </p>
+              </div>
+            </article>
+            <article class="faq-item">
               <h3 class="faq-item__question">A <span class="brand-word"><span class="brand-word__b">B</span><span class="brand-word__tech">TECH</span></span> vende infraestrutura cloud?</h3>
               <div class="faq-item__answer">
                 <p>
@@ -609,15 +760,19 @@
       </section>
 
       <section class="section contact-section contact-section--mockup" id="contato">
-        <div class="container contact-card">
+        <div class="container contact-card contact-card--v2">
           <div>
             <p class="eyebrow">Primeira conversa</p>
             <h2>Conte o que precisa ficar mais <span class="hl-gradient">claro</span>, organizado ou escalável.</h2>
             <p>Não precisa chegar com a solução pronta. Começamos pela realidade do negócio.</p>
-            <p class="contact-details">
+            <div class="contact-channels">
+              <p class="contact-channels__label">Consultoria e projetos</p>
               <a href="mailto:comercial@b-tech.cloud">comercial@b-tech.cloud</a>
+              <p class="contact-channels__label">Proposta de parceria</p>
+              <a href="mailto:comercial@b-tech.cloud?subject=Proposta%20de%20parceria%20BTech">comercial@b-tech.cloud</a>
               <a href="tel:+5511930226495">(11) 9 3022-6495</a>
-            </p>
+              <p class="contact-channels__label">Base · Brasília/DF · remoto e híbrido</p>
+            </div>
           </div>
           <form
             class="contact-form"
@@ -626,24 +781,37 @@
             data-form-email="comercial@b-tech.cloud"
             novalidate
           >
+            <fieldset class="contact-type">
+              <legend class="sr-only">Tipo de contato</legend>
+              <label>
+                <input type="radio" name="contact_type" value="consultoria" checked>
+                <span>Consultoria / projeto</span>
+              </label>
+              <label>
+                <input type="radio" name="contact_type" value="parceria">
+                <span>Proposta de parceria</span>
+              </label>
+            </fieldset>
             <label>Nome<input type="text" name="name" placeholder="Seu nome" autocomplete="name" required></label>
             <label>E-mail<input type="email" name="email" placeholder="voce@empresa.com" autocomplete="email" required></label>
-            <label>O que você quer organizar?
-              <textarea name="message" rows="4" placeholder="Ex.: cloud, OpenShift, SAS, backup, CI/CD, IA..." required></textarea>
+            <label>Empresa<input type="text" name="company" placeholder="Nome da empresa" autocomplete="organization"></label>
+            <label id="contact-message-label">
+              <span data-contact-label>O que você quer organizar?</span>
+              <textarea name="message" rows="4" placeholder="Ex.: cloud, OpenShift, parceria MSP, backup, CI/CD, IA..." required></textarea>
             </label>
-            <input type="hidden" name="_subject" value="Nova mensagem — site BTech Consultoria">
+            <input type="hidden" name="_subject" id="contact-subject" value="Consultoria — site BTech">
             <input type="hidden" name="_captcha" value="false">
-            <button class="button button--primary" type="submit">Começar a conversa</button>
+            <button class="button button--primary" type="submit">Enviar mensagem</button>
             <p class="form-note" role="status" aria-live="polite"></p>
             <p class="form-disclaimer">
-              Envio para <strong>comercial@b-tech.cloud</strong>. Na primeira mensagem, confirme o e-mail no link do FormSubmit.
+              Resposta em <strong>comercial@b-tech.cloud</strong>. Se o envio falhar, use o e-mail direto acima.
             </p>
           </form>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer site-footer--light">
+    <footer class="site-footer site-footer--light site-footer--v2">
       <div class="container site-footer__content">
         <a class="brand brand--footer-stacked" href="#inicio">
           <img
@@ -654,12 +822,24 @@
             height="72"
           >
         </a>
-        <p>&copy; <span id="current-year"></span>
-          <span class="brand-word"><span class="brand-word__b">B</span><span class="brand-word__tech">TECH</span></span>
-          Consultoria · Tecnologia forte, feita perto da operação.<br>
-          <a href="mailto:comercial@b-tech.cloud">comercial@b-tech.cloud</a> ·
-          <a href="tel:+5511930226495">(11) 9 3022-6495</a>
-        </p>
+        <div>
+          <p class="site-footer__meta">
+            &copy; <span id="current-year"></span>
+            <span class="brand-word"><span class="brand-word__b">B</span><span class="brand-word__tech">TECH</span></span>
+            Consultoria · Tecnologia forte, feita perto da operação.<br>
+            Brasília/DF · atuação remota e híbrida<br>
+            <a href="mailto:comercial@b-tech.cloud">comercial@b-tech.cloud</a> ·
+            <a href="tel:+5511930226495">(11) 9 3022-6495</a><br>
+            <span class="site-footer__reserved">CNPJ / razão social — reservado para publicação</span><br>
+            <span class="site-footer__reserved">LinkedIn da empresa — reservado para publicação</span>
+          </p>
+          <div class="site-footer__links">
+            <a href="#parcerias">Parcerias</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#pessoas">Equipe</a>
+            <a href="#contato">Contato</a>
+          </div>
+        </div>
         <a href="#inicio">Voltar ao topo</a>
       </div>
     </footer>
