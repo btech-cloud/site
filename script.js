@@ -1,3 +1,14 @@
+const header = document.querySelector("[data-header]");
+
+if (header) {
+  const syncHeader = () => {
+    header.classList.toggle("site-header--elevated", window.scrollY > 16);
+  };
+
+  syncHeader();
+  window.addEventListener("scroll", syncHeader, { passive: true });
+}
+
 const menuButton = document.querySelector(".nav__toggle");
 const menu = document.querySelector(".nav__links");
 const currentYear = document.querySelector("#current-year");

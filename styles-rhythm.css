@@ -1,0 +1,245 @@
+/* Ritmo visual — fundos, gradientes e fotos (meio da página em diante) */
+
+.section--conversa-ig {
+  background:
+    radial-gradient(ellipse 60% 50% at 100% 0%, rgba(110, 30, 230, 0.12), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 0% 100%, rgba(0, 225, 180, 0.1), transparent 50%),
+    linear-gradient(180deg, #fff 0%, #f6f3ff 55%, #eef8ff 100%);
+}
+
+.conversa-ig--pro {
+  padding: clamp(56px, 8vw, 96px) 0;
+}
+
+.section--quem-mockup {
+  background:
+    radial-gradient(circle at 100% 0%, rgba(255, 175, 60, 0.14), transparent 40%),
+    radial-gradient(circle at 0% 80%, rgba(20, 60, 255, 0.08), transparent 45%),
+    linear-gradient(180deg, #fbfaf7 0%, #fff 50%, #f3f0ff 100%);
+}
+
+.section--human-mockup {
+  background:
+    radial-gradient(circle at 0% 100%, rgba(0, 225, 180, 0.18), transparent 42%),
+    radial-gradient(circle at 100% 0%, rgba(200, 0, 210, 0.12), transparent 45%),
+    linear-gradient(135deg, #fae8f7 0%, #eef2ff 48%, #e2f9f4 100%);
+}
+
+.section--pessoas-mockup {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 80% 20%, rgba(110, 30, 230, 0.1), transparent 40%),
+    linear-gradient(180deg, #fafbff 0%, #fff 60%, #f7f9ff 100%);
+}
+
+.section--pessoas-mockup::after {
+  position: absolute;
+  top: 10%;
+  right: -5%;
+  width: min(320px, 40vw);
+  height: min(320px, 40vw);
+  opacity: 0.12;
+  background: url("assets/visuals/pattern-colmeia.svg") center / contain no-repeat;
+  content: "";
+  pointer-events: none;
+}
+
+.section--pessoas-mockup > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.section--ajuda-mockup {
+  background:
+    radial-gradient(circle at 0% 0%, rgba(20, 60, 255, 0.1), transparent 42%),
+    radial-gradient(circle at 100% 100%, rgba(200, 0, 210, 0.08), transparent 40%),
+    linear-gradient(180deg, #eef4ff 0%, #faf8ff 45%, #fff 100%);
+}
+
+.ajuda-showcase--split {
+  padding: 0;
+  overflow: hidden;
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-xl);
+  box-shadow: none;
+  gap: 0;
+}
+
+.ajuda-showcase__visual {
+  position: relative;
+  min-height: 360px;
+  background:
+    linear-gradient(135deg, rgba(110, 30, 230, 0.25), rgba(20, 60, 255, 0.2)),
+    url("assets/images/equipe-trabalho.jpg") center / cover no-repeat;
+}
+
+.ajuda-showcase__visual img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  min-height: 360px;
+  object-fit: cover;
+}
+
+.ajuda-showcase__visual::after {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: linear-gradient(90deg, transparent 40%, rgba(255, 255, 255, 0.15) 100%);
+  content: "";
+  pointer-events: none;
+}
+
+.ajuda-showcase__body {
+  padding: clamp(28px, 4vw, 44px);
+  background: rgba(255, 255, 255, 0.97);
+  border-left: 1px solid rgba(110, 30, 230, 0.12);
+}
+
+.process-grid--mockup .process-card {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(110, 30, 230, 0.1);
+  border-top: 3px solid transparent;
+  border-image: linear-gradient(90deg, var(--blue), var(--violet), var(--magenta)) 1;
+}
+
+.section--partners {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(110, 30, 230, 0.08), transparent 50%),
+    linear-gradient(180deg, #fff 0%, #f0f4ff 100%);
+}
+
+.section--experiencias {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 0% 50%, rgba(255, 175, 60, 0.15), transparent 45%),
+    linear-gradient(160deg, #f3efe8 0%, #faf6ff 50%, #e8f4ff 100%);
+}
+
+.experiencias-visual {
+  position: relative;
+  overflow: hidden;
+  min-height: 280px;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-soft);
+}
+
+.experiencias-visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  object-fit: cover;
+}
+
+.experiencias-visual__veil {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(26, 11, 64, 0.35) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.section--cloud-mockup {
+  background:
+    radial-gradient(circle at 100% 50%, rgba(0, 255, 255, 0.08), transparent 40%),
+    #f0f4ff;
+}
+
+.section--ia-mockup {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(250, 232, 247, 0.95), transparent 50%),
+    radial-gradient(circle at 0% 100%, rgba(0, 225, 180, 0.12), transparent 45%),
+    linear-gradient(180deg, #fff 0%, #fae8f7 100%);
+}
+
+.ia-mockup-layout {
+  align-items: start;
+}
+
+.ia-mockup-aside {
+  display: grid;
+  gap: 20px;
+}
+
+.experiencias-tags-wrap {
+  margin-top: 2rem;
+}
+
+.hex-collage .hex-photo--main img {
+  object-position: center 20%;
+}
+
+.hex-collage .hex-photo--b img {
+  object-position: center top;
+}
+
+.hex-collage .hex-photo--c img {
+  object-position: center 30%;
+}
+
+.ia-mockup-visual {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  box-shadow: 0 28px 70px rgba(26, 11, 64, 0.12);
+}
+
+.ia-mockup-visual img {
+  display: block;
+  width: 100%;
+  min-height: 300px;
+  object-fit: cover;
+}
+
+.ia-mockup-visual__hex {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 72px;
+  height: 83px;
+  opacity: 0.85;
+  background: url("assets/logo-symbol-oficial.png") center / contain no-repeat;
+  filter: drop-shadow(0 8px 24px rgba(110, 30, 230, 0.4));
+  pointer-events: none;
+}
+
+.section--faq {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(20, 60, 255, 0.06), transparent 45%),
+    linear-gradient(180deg, #eef4ff 0%, #fff 100%) !important;
+}
+
+.contact-section--mockup {
+  background:
+    radial-gradient(circle at 0% 0%, rgba(255, 175, 60, 0.12), transparent 40%),
+    radial-gradient(circle at 100% 100%, rgba(110, 30, 230, 0.1), transparent 42%),
+    linear-gradient(180deg, #f3efe8 0%, #f7f9ff 50%, #eef8ff 100%);
+}
+
+@media (max-width: 960px) {
+  .ajuda-showcase--split {
+    grid-template-columns: 1fr;
+  }
+
+  .ajuda-showcase__body {
+    border-left: 0;
+    border-top: 1px solid rgba(110, 30, 230, 0.12);
+  }
+
+  .hex-collage,
+  .hex-collage--conversa {
+    min-height: 340px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hex-collage .hex-photo--main { width: 62%; }
+  .hex-collage .hex-photo--b { width: 52%; }
+  .hex-collage .hex-photo--c { width: 44%; }
+}

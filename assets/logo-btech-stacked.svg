@@ -1,3 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1717" height="1866" viewBox="0 0 1717 1866" role="img" aria-label="BTECH">
-  <image xlink:href="logo-btech-stacked-oficial.png" width="1717" height="1866"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 220 200" role="img" aria-label="BTECH">
+  <image xlink:href="btech-mark-exact.png" x="34" y="0" width="152" height="132" preserveAspectRatio="xMidYMid meet"/>
+  <text x="110" y="178" text-anchor="middle" font-family="Century Gothic, AppleGothic, sans-serif" font-size="42" fill="#0a0a0a" letter-spacing="0.02em">
+    <tspan font-weight="700">B</tspan><tspan font-weight="400">TECH</tspan>
+  </text>
 </svg>

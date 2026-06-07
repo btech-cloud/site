@@ -1,0 +1,317 @@
+/* Polimento profissional — hierarquia, impacto visual e credibilidade */
+
+/* —— Header —— */
+.site-header--pro {
+  transition:
+    background 280ms ease,
+    box-shadow 280ms ease,
+    border-color 280ms ease;
+}
+
+.site-header--pro.site-header--elevated {
+  background: rgba(255, 255, 255, 0.94);
+  border-bottom-color: rgba(110, 30, 230, 0.1);
+  box-shadow: 0 12px 40px rgba(26, 11, 64, 0.08);
+}
+
+.site-header--pro .nav__links a {
+  font-weight: 700;
+  transition: color 160ms ease;
+}
+
+.site-header--pro .nav__links a:hover {
+  color: var(--violet);
+}
+
+.site-header--pro .button--nav {
+  box-shadow: 0 14px 36px rgba(20, 60, 255, 0.28);
+}
+
+/* —— Hero impacto —— */
+.hero--ig {
+  padding-bottom: 96px;
+}
+
+.hero--ig .hero__copy .eyebrow {
+  padding: 6px 14px 6px 10px;
+  color: var(--violet);
+  background: rgba(110, 30, 230, 0.08);
+  border: 1px solid rgba(110, 30, 230, 0.14);
+  border-radius: 999px;
+}
+
+.hero--ig .hero__copy .eyebrow::before {
+  width: 7px;
+  height: 7px;
+  box-shadow: 0 0 12px rgba(0, 225, 180, 0.8);
+}
+
+.hero--ig h1 {
+  max-width: 14ch;
+  font-size: clamp(2rem, 4.2vw, 3.05rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+.hero--ig .hero__line {
+  display: block;
+  margin-top: 0.35em;
+}
+
+.hero--ig .hero__lead {
+  max-width: 36ch;
+  color: var(--ink-soft);
+  font-size: clamp(1.08rem, 1.5vw, 1.2rem);
+  line-height: 1.65;
+}
+
+.hl-key--evoluir,
+.hl-key--complicada,
+.hl-key--conversa {
+  filter: drop-shadow(0 2px 14px rgba(110, 30, 230, 0.2));
+}
+
+.gradient-rule {
+  width: min(320px, 85%);
+  height: 4px;
+  margin: 22px 0 18px;
+  box-shadow: 0 0 20px rgba(255, 175, 60, 0.35);
+}
+
+/* —— Painel lateral hero —— */
+.hero-panel--editorial::before {
+  position: absolute;
+  inset: -1px;
+  z-index: 0;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(110, 30, 230, 0.4), rgba(20, 60, 255, 0.3), rgba(0, 225, 180, 0.35));
+  border-radius: inherit;
+  content: "";
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.hero-panel--editorial {
+  position: relative;
+}
+
+.hero-panel--editorial .hero-panel__body {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-panel__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  background: rgba(10, 20, 50, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  backdrop-filter: blur(8px);
+}
+
+/* —— Botões premium —— */
+.button--primary {
+  background: linear-gradient(125deg, #143cff 0%, #6e1ee6 48%, #c800d2 100%);
+  box-shadow:
+    0 18px 40px rgba(20, 60, 255, 0.32),
+    0 0 0 1px rgba(255, 255, 255, 0.12) inset;
+}
+
+.button--primary:hover,
+.button--primary:focus-visible {
+  box-shadow:
+    0 22px 48px rgba(110, 30, 230, 0.38),
+    0 0 0 1px rgba(255, 255, 255, 0.18) inset;
+}
+
+.button--secondary {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: rgba(110, 30, 230, 0.18);
+}
+
+/* —— Bloco conversa (layout editorial) —— */
+.conversa-ig--pro {
+  position: relative;
+  overflow: hidden;
+}
+
+.conversa-ig--pro::before {
+  position: absolute;
+  top: -20%;
+  left: -10%;
+  width: 50%;
+  height: 60%;
+  opacity: 0.5;
+  background: radial-gradient(circle, rgba(110, 30, 230, 0.12) 0%, transparent 65%);
+  content: "";
+  pointer-events: none;
+}
+
+.conversa-ig__grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.95fr);
+  gap: clamp(32px, 5vw, 56px);
+  align-items: center;
+}
+
+.conversa-ig__copy h2 {
+  max-width: 16ch;
+  margin: 0 0 8px;
+  font-size: clamp(1.85rem, 3.8vw, 2.65rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+}
+
+.conversa-ig__lead {
+  max-width: 38ch;
+  margin: 0 0 28px;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.conversa-ig__visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* —— Pilares (após conversa) —— */
+.pillar-strip--pro {
+  padding: 16px clamp(16px, 4vw, 28px) 18px;
+  box-shadow: 0 -24px 60px rgba(5, 5, 16, 0.35);
+}
+
+.pillar-strip__label {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto 10px;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pillar-strip--pro .pillar-strip__item {
+  padding: 4px 16px;
+  gap: 8px;
+  border-radius: var(--radius-md);
+  transition:
+    transform 200ms ease,
+    background 200ms ease;
+}
+
+.pillar-strip--pro .pillar-strip__item:hover {
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateY(-3px);
+}
+
+.pillar-strip--pro .pillar-strip__item img {
+  width: 56px;
+  height: 56px;
+  filter: drop-shadow(0 0 12px currentColor);
+}
+
+.pillar-strip--pro .pillar-strip__item--cloud img { filter: drop-shadow(0 0 14px rgba(0, 225, 255, 0.55)); }
+.pillar-strip--pro .pillar-strip__item--ia img { filter: drop-shadow(0 0 14px rgba(232, 121, 255, 0.55)); }
+.pillar-strip--pro .pillar-strip__item--auto img { filter: drop-shadow(0 0 14px rgba(255, 175, 60, 0.55)); }
+.pillar-strip--pro .pillar-strip__item--ops img { filter: drop-shadow(0 0 14px rgba(90, 232, 56, 0.55)); }
+
+.pillar-strip--pro .pillar-strip__item span {
+  font-size: 0.9rem;
+  letter-spacing: 0.16em;
+}
+
+/* —— Ticker mais premium —— */
+.ticker-strip--mockup {
+  border-block: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ticker-strip--marquee .ticker-strip__track {
+  font-size: clamp(0.7rem, 1.3vw, 0.82rem);
+  letter-spacing: 0.16em;
+}
+
+/* —— Cards e seções —— */
+.person-card--mockup,
+.partner-tile,
+.process-grid--mockup .process-card {
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    border-color 220ms ease;
+}
+
+.person-card--mockup:hover,
+.partner-tile:hover,
+.process-grid--mockup .process-card:hover {
+  border-color: rgba(110, 30, 230, 0.18);
+  box-shadow: 0 28px 60px rgba(26, 11, 64, 0.12);
+  transform: translateY(-4px);
+}
+
+.photo-grid-office img {
+  transition: transform 400ms ease, box-shadow 400ms ease;
+}
+
+.photo-grid-office img:hover {
+  box-shadow: 0 28px 70px rgba(26, 11, 64, 0.16);
+  transform: scale(1.02);
+}
+
+.tint-panel {
+  box-shadow: 0 16px 48px rgba(20, 60, 255, 0.08);
+}
+
+.contact-section--mockup .contact-card {
+  border: 1px solid rgba(110, 30, 230, 0.1);
+}
+
+.section-heading--center .eyebrow {
+  justify-content: center;
+  width: 100%;
+}
+
+@media (max-width: 960px) {
+  .conversa-ig__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .conversa-ig__visual {
+    order: -1;
+    min-height: 300px;
+  }
+
+  .hex-collage--conversa {
+    min-height: 280px;
+  }
+
+  .hero--ig h1 {
+    max-width: 18ch;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero--ig {
+    padding-bottom: 72px;
+  }
+
+  .conversa-ig__copy .button--primary {
+    width: 100%;
+  }
+}

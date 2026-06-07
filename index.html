@@ -24,6 +24,10 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles-vivid.css">
     <link rel="stylesheet" href="styles-mockup.css">
+    <link rel="stylesheet" href="styles-instagram.css">
+    <link rel="stylesheet" href="styles-pro.css">
+    <link rel="stylesheet" href="styles-hex.css">
+    <link rel="stylesheet" href="styles-rhythm.css">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -48,15 +52,15 @@
   <body>
     <div class="honeycomb-bg" aria-hidden="true"></div>
 
-    <header class="site-header" data-header>
-      <nav class="nav container" aria-label="Navegação principal">
+    <header class="site-header site-header--pro" data-header>
+      <nav class="nav nav--mockup container" aria-label="Navegação principal">
         <a class="brand brand--horizontal" href="#inicio" aria-label="BTech Consultoria - início">
           <img
             class="brand__logo"
             src="assets/logo-btech-horizontal-oficial.png"
             srcset="assets/logo-btech-horizontal-oficial.png 1x, assets/logo-btech-horizontal-oficial@2x.png 2x"
             alt="BTECH"
-            width="220"
+            width="121"
             height="42"
           >
         </a>
@@ -69,12 +73,23 @@
           <li><a href="#pessoas">Pessoas</a></li>
           <li><a href="#atuacao">Como ajudamos</a></li>
           <li><a href="#cloud-acompanhada">Cloud</a></li>
+          <li class="nav__cta-item nav__cta-item--mobile">
+            <a class="button button--primary button--nav nav__cta" href="#contato">Conversar com a BTech</a>
+          </li>
         </ul>
+        <a class="button button--primary button--nav nav__cta nav__cta--desktop" href="#contato">Conversar com a BTech</a>
       </nav>
     </header>
 
     <main>
-      <section class="hero hero--home hero--mockup" id="inicio">
+      <section class="hero hero--home hero--mockup hero--ig" id="inicio">
+        <div class="hero__ig-bg" aria-hidden="true">
+          <div class="hero__ig-hex-mesh"></div>
+          <div class="hero__ig-orb hero__ig-orb--1"></div>
+          <div class="hero__ig-orb hero__ig-orb--2"></div>
+          <div class="hero__ig-orb hero__ig-orb--3"></div>
+          <div class="hero__photo-veil"></div>
+        </div>
         <img class="hero__float-hex hero__float-hex--1" src="assets/visuals/pattern-colmeia.svg" alt="" width="180" height="156" aria-hidden="true">
         <img class="hero__float-hex hero__float-hex--2" src="assets/visuals/hex-grid-accent.svg" alt="" width="120" height="104" aria-hidden="true">
         <div class="container hero__content">
@@ -84,6 +99,7 @@
               Toda empresa precisa <span class="hl-key hl-key--evoluir">Evoluir</span>.
               <span class="hero__line">Nem toda evolução precisa ser <span class="hl-key hl-key--complicada">complicada</span>.</span>
             </h1>
+            <hr class="gradient-rule" aria-hidden="true">
             <p class="hero__lead">
               A <span class="brand-word"><span class="brand-word__b">B</span><span class="brand-word__tech">TECH</span></span>
               Consultoria aproxima cloud, IA, automação e operação da realidade do seu negócio — com
@@ -95,33 +111,112 @@
             </div>
           </div>
 
-          <aside class="hero-panel hero-panel--float" aria-label="Resumo do posicionamento">
-            <div class="hero-panel__brand">
+          <aside class="hero-panel hero-panel--editorial" aria-label="Resumo do posicionamento">
+            <div class="hero-panel__media">
               <img
-                src="assets/logo-btech-stacked-oficial.png"
-                srcset="assets/logo-btech-stacked-oficial.png 1x, assets/logo-btech-stacked-oficial@2x.png 2x"
-                alt="BTECH"
-                width="100"
-                height="101"
+                src="assets/images/person-b.jpg"
+                alt="Profissional em atendimento consultivo"
+                width="480"
+                height="320"
+                loading="eager"
+              >
+              <div class="hero-panel__media-veil" aria-hidden="true"></div>
+              <p class="hero-panel__badge"><span class="status-dot" aria-hidden="true"></span> Consultoria com proximidade</p>
+              <img
+                class="hero-panel__mark"
+                src="assets/logo-symbol-oficial.png"
+                alt=""
+                width="44"
+                height="51"
+                aria-hidden="true"
               >
             </div>
-            <p class="hero-panel__statement">
-              A transformação ganha sentido com proximidade: escutamos a operação, organizamos prioridades
-              e acompanhamos a evolução no ritmo certo da empresa.
-            </p>
-            <ul class="hero-checklist">
-              <li>Cloud com participação</li>
-              <li>IA aplicada</li>
-              <li>Transformação acompanhada</li>
-            </ul>
+            <div class="hero-panel__body">
+              <h3 class="hero-panel__title">Entre a ideia e a operação, existe um caminho possível.</h3>
+              <ul class="hero-panel__features">
+                <li>
+                  <img src="assets/visuals/pillar-cloud.svg" alt="" width="28" height="28">
+                  <span>Cloud com participação</span>
+                </li>
+                <li>
+                  <img src="assets/visuals/pillar-ia.svg" alt="" width="28" height="28">
+                  <span>IA aplicada</span>
+                </li>
+                <li>
+                  <img src="assets/visuals/pillar-automation.svg" alt="" width="28" height="28">
+                  <span>Transformação acompanhada</span>
+                </li>
+              </ul>
+            </div>
           </aside>
         </div>
       </section>
 
-      <div class="ticker-strip ticker-strip--mockup ticker-strip--static">
-        <p class="ticker-strip__text">
-          Clareza operacional · Suporte humano · Capacidade técnica · Conhecimento aplicado · Crescimento sustentável
-        </p>
+      <div class="ticker-strip ticker-strip--mockup ticker-strip--marquee" aria-hidden="true">
+        <div class="ticker-strip__viewport">
+          <div class="ticker-strip__track">
+            <span>Clareza operacional · Suporte humano · Capacidade técnica · Conhecimento aplicado · Crescimento sustentável · </span>
+            <span>Clareza operacional · Suporte humano · Capacidade técnica · Conhecimento aplicado · Crescimento sustentável · </span>
+          </div>
+        </div>
+      </div>
+
+      <section class="section section--conversa-ig" aria-labelledby="conversa-ig-title">
+        <div class="conversa-ig conversa-ig--pro">
+          <div class="container conversa-ig__grid">
+            <div class="conversa-ig__copy">
+              <p class="eyebrow">Primeiro passo</p>
+              <h2 id="conversa-ig-title">
+                Toda transformação começa por uma <span class="hl-key hl-key--conversa">conversa</span>.
+              </h2>
+              <hr class="gradient-rule" aria-hidden="true">
+              <p class="hero__sub-ig">A tecnologia vem depois.</p>
+              <p class="conversa-ig__lead">
+                Entendemos o cenário, organizamos prioridades e só então desenhamos cloud, IA e automação
+                com critério — sempre perto de quem opera o negócio.
+              </p>
+              <a class="button button--primary" href="#contato">Agendar uma conversa</a>
+            </div>
+            <div class="conversa-ig__visual">
+              <div class="hex-collage hex-collage--conversa" aria-hidden="true">
+                <div class="hex-photo hex-photo--main">
+                  <img src="assets/images/reuniao-estrategia.jpg" alt="" width="400" height="400" loading="eager" decoding="async">
+                </div>
+                <div class="hex-photo hex-photo--b">
+                  <img src="assets/images/collab-main.jpg" alt="" width="320" height="320" loading="eager" decoding="async">
+                </div>
+                <div class="hex-photo hex-photo--c">
+                  <img src="assets/images/meeting-wide.jpg" alt="" width="280" height="280" loading="eager" decoding="async">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="pillar-strip pillar-strip--pro" aria-label="Pilares de atuação">
+        <p class="pillar-strip__label">O que conectamos na prática</p>
+        <div class="pillar-strip__inner">
+          <div class="pillar-strip__item pillar-strip__item--cloud">
+            <img src="assets/visuals/pillar-cloud.svg" alt="" width="56" height="56">
+            <span>Cloud</span>
+          </div>
+          <div class="pillar-strip__sep" aria-hidden="true"></div>
+          <div class="pillar-strip__item pillar-strip__item--ia">
+            <img src="assets/visuals/pillar-ia.svg" alt="" width="56" height="56">
+            <span>IA</span>
+          </div>
+          <div class="pillar-strip__sep" aria-hidden="true"></div>
+          <div class="pillar-strip__item pillar-strip__item--auto">
+            <img src="assets/visuals/pillar-automation.svg" alt="" width="56" height="56">
+            <span>Automação</span>
+          </div>
+          <div class="pillar-strip__sep" aria-hidden="true"></div>
+          <div class="pillar-strip__item pillar-strip__item--ops">
+            <img src="assets/visuals/pillar-ops.svg" alt="" width="56" height="56">
+            <span>Operação</span>
+          </div>
+        </div>
       </div>
 
       <section class="section section--quem-mockup" id="quem-somos">
@@ -143,23 +238,34 @@
               </p>
             </div>
           </div>
-          <div class="photo-grid-office" aria-hidden="true">
-            <img class="photo-grid-office__main" src="assets/images/hero-consultoria.jpg" alt="" width="800" height="520" loading="lazy">
-            <img src="assets/images/reuniao-estrategia.jpg" alt="" width="500" height="360" loading="lazy">
-            <img src="assets/images/collab-main.jpg" alt="" width="500" height="360" loading="lazy">
+          <div class="photo-grid-office">
+            <img class="photo-grid-office__main" src="assets/images/diagnostic.jpg" alt="Diagnóstico e planejamento com a equipe" width="800" height="520" loading="lazy">
+            <img src="assets/images/workshop.jpg" alt="Workshop colaborativo" width="500" height="360" loading="lazy">
+            <img src="assets/images/meeting-wide.jpg" alt="Reunião ampla com stakeholders" width="500" height="360" loading="lazy">
           </div>
-          <div class="pessoas-bridge">
-            <div class="pessoas-bridge__media">
-              <img src="assets/images/diagnostico.jpg" alt="Equipe em diagnóstico e planejamento no escritório" width="640" height="420" loading="lazy">
+        </div>
+      </section>
+
+      <section class="section section--human-mockup" aria-labelledby="human-mockup-title">
+        <div class="container human-mockup-grid">
+          <div class="hex-collage" aria-hidden="true">
+            <div class="hex-photo hex-photo--main">
+              <img src="assets/images/person-a.jpg" alt="" width="400" height="400" loading="lazy">
             </div>
-            <div>
-              <p class="eyebrow">Pessoas antes da tecnologia</p>
-              <h2>Proximidade na <span class="hl-gradient">conversa</span>, critério na <span class="hl-violet">execução</span>.</h2>
-              <p class="rich-text">
-                Workshops, diagnósticos e construção conjunta — a sensação é organizar junto,
-                não comprar um pacote de transformação genérico.
-              </p>
+            <div class="hex-photo hex-photo--b">
+              <img src="assets/images/person-b.jpg" alt="" width="320" height="320" loading="lazy">
             </div>
+            <div class="hex-photo hex-photo--c">
+              <img src="assets/images/diagnostico.jpg" alt="" width="280" height="280" loading="lazy">
+            </div>
+          </div>
+          <div class="human-mockup-copy">
+            <p class="eyebrow">Pessoas antes da tecnologia</p>
+            <h2 id="human-mockup-title">Proximidade na <span class="hl-key hl-key--conversa">conversa</span>, critério na <span class="hl-violet">execução</span>.</h2>
+            <p class="rich-text">
+              Workshops, diagnósticos e construção conjunta — a sensação é organizar junto,
+              não comprar um pacote de transformação genérico.
+            </p>
           </div>
         </div>
       </section>
@@ -200,20 +306,33 @@
 
       <section class="section section--ajuda-mockup" id="atuacao">
         <div class="container">
-          <div class="section-heading">
+          <div class="section-heading section-heading--ajuda">
             <p class="eyebrow">Como ajudamos</p>
-            <h2>Ajudamos empresas a atravessar <span class="hl-gradient">mudanças</span> ganhando <span class="hl-violet">praticidade</span> e facilitando <span class="hl-magenta">processos</span>.</h2>
+            <h2>
+              Ajudamos empresas a atravessar <span class="hl-gradient">mudanças</span>
+              ganhando <span class="hl-violet">praticidade</span>
+              e facilitando <span class="hl-magenta">processos</span>.
+            </h2>
+            <p class="section-heading__lead">
+              Do diagnóstico à operação em produção — com método, presença e ritmo que a sua equipe consegue sustentar.
+            </p>
           </div>
-          <div class="ajuda-bridge">
-            <div>
-              <h3>Entre a ideia e a operação, existe um caminho possível.</h3>
+          <div class="ajuda-showcase ajuda-showcase--split">
+            <div class="ajuda-showcase__visual">
+              <img src="assets/images/equipe-trabalho.jpg" alt="Equipe em reunião de trabalho no escritório" width="1200" height="560" loading="lazy">
+            </div>
+            <div class="ajuda-showcase__body">
+              <h3>Entre a ideia e a operação, existe método, presença e acompanhamento.</h3>
               <p>
                 Escutamos a rotina, organizamos prioridades e aplicamos cloud, IA e automação no ritmo
                 certo — com critério para a mudança não virar mais uma camada de complexidade.
               </p>
-            </div>
-            <div class="ajuda-bridge__media">
-              <img src="assets/images/equipe-trabalho.jpg" alt="Equipe em reunião de trabalho no escritório" width="800" height="500" loading="lazy">
+              <ul class="ajuda-showcase__list">
+                <li>Escuta real da operação antes de propor ferramenta</li>
+                <li>Prioridades claras, com donos e marcos possíveis</li>
+                <li>Cloud, IA e automação no ritmo certo da empresa</li>
+              </ul>
+              <a class="button button--primary" href="#contato">Conversar sobre meu cenário</a>
             </div>
           </div>
           <div class="process-grid process-grid--mockup">
@@ -225,13 +344,13 @@
         </div>
       </section>
 
-      <section class="section section--tech-mockup" id="capacidades-tecnicas" aria-labelledby="tech-depth-title">
+      <section class="section section--tech-depth" id="capacidades-tecnicas" aria-labelledby="tech-depth-title">
         <div class="container">
           <div class="section-heading section-heading--center">
-            <p class="eyebrow eyebrow--on-dark">Capacidades técnicas</p>
+            <p class="eyebrow eyebrow--on-dark">Áreas de atuação</p>
             <h2 id="tech-depth-title">Capacidades técnicas apresentadas pela ótica do <span class="hl-gradient">resultado</span>.</h2>
             <p>
-              Profundidade real quando precisa — traduzida para gestão quando importa.
+              Cloud, IA e automação são meios. O objetivo é uma operação mais organizada e crescimento sustentável.
             </p>
           </div>
           <div class="tech-depth-grid">
@@ -239,6 +358,7 @@
               <span class="tech-depth-card__tag">01</span>
               <h3>Cloud &amp; Infraestrutura</h3>
               <p>Arquitetura, migração, backup, monitoramento e escolha de provedores com acompanhamento consultivo.</p>
+              <a class="tech-depth-card__link" href="#cloud-acompanhada">Ver frente Cloud</a>
             </article>
             <article class="tech-depth-card">
               <span class="tech-depth-card__tag">02</span>
@@ -338,6 +458,12 @@
               sem prometer cases que ainda não publicamos.
             </p>
           </div>
+          <div class="experiencias-visual" aria-hidden="true">
+            <img src="assets/images/workshop.jpg" alt="" width="600" height="400" loading="lazy">
+            <div class="experiencias-visual__veil"></div>
+          </div>
+        </div>
+        <div class="container experiencias-tags-wrap">
           <div class="experience-panel experience-panel--mockup">
             <div class="tag-list tag-list--mockup">
               <span>Negócios em crescimento</span>
@@ -390,17 +516,23 @@
             </p>
             <a class="button button--primary" href="#contato">Explorar IA na operação</a>
           </div>
-          <div class="tint-panel">
-            <p>
-              IA entra onde reduz trabalho manual e ruído na operação — com limites claros,
-              supervisão humana e métricas do que mudou na rotina.
-            </p>
-            <ul class="check-list">
-              <li>Automação empresarial e de atendimento</li>
-              <li>Integração de sistemas e APIs</li>
-              <li>IA aplicada com governança</li>
-              <li>Continuidade operacional</li>
-            </ul>
+          <div class="ia-mockup-aside">
+            <div class="ia-mockup-visual" aria-hidden="true">
+              <img src="assets/images/diagnostic.jpg" alt="" width="600" height="400" loading="lazy">
+              <div class="ia-mockup-visual__hex"></div>
+            </div>
+            <div class="tint-panel ia-mockup-panel">
+              <p>
+                IA entra onde reduz trabalho manual e ruído na operação — com limites claros,
+                supervisão humana e métricas do que mudou na rotina.
+              </p>
+              <ul class="check-list">
+                <li>Automação empresarial e de atendimento</li>
+                <li>Integração de sistemas e APIs</li>
+                <li>IA aplicada com governança</li>
+                <li>Continuidade operacional</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -519,7 +651,7 @@
             srcset="assets/logo-btech-stacked-oficial.png 1x, assets/logo-btech-stacked-oficial@2x.png 2x"
             alt="BTECH"
             width="88"
-            height="89"
+            height="72"
           >
         </a>
         <p>&copy; <span id="current-year"></span>

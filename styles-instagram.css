@@ -1,0 +1,332 @@
+/* Identidade visual — posts Instagram BTech (hex, neon, gradientes) */
+
+:root {
+  --ig-ink: #050510;
+  --ig-gradient-evoluir: linear-gradient(120deg, #6e1ee6 0%, #143cff 40%, #00e1b4 100%);
+  --ig-gradient-complicada: linear-gradient(120deg, #c800ff 0%, #ff6e9a 45%, #ffaf3c 100%);
+  --ig-gradient-conversa: linear-gradient(120deg, #6e1ee6 0%, #143cff 50%, #00e1b4 100%);
+  --ig-gradient-rule: linear-gradient(90deg, #6e1ee6 0%, #ffaf3c 100%);
+  --ig-gradient-brand: linear-gradient(120deg, #143cff 0%, #c800ff 50%, #00e1b4 100%);
+}
+
+/* —— Fundo global: hex + bokeh —— */
+.honeycomb-bg {
+  opacity: 0.42;
+  background:
+    radial-gradient(ellipse 50% 40% at 92% 8%, rgba(200, 0, 210, 0.14), transparent 55%),
+    radial-gradient(ellipse 45% 35% at 8% 88%, rgba(20, 60, 255, 0.12), transparent 50%),
+    radial-gradient(ellipse 35% 30% at 75% 75%, rgba(255, 175, 60, 0.1), transparent 45%),
+    url("assets/visuals/pattern-colmeia.svg") 94% 4% / 160px auto no-repeat,
+    url("assets/visuals/hex-grid-accent.svg") 4% 78% / 130px auto no-repeat,
+    url("assets/visuals/pattern-colmeia.svg") 48% 42% / 100px auto no-repeat;
+}
+
+/* —— Hero Instagram —— */
+.hero--ig {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 55% 45% at 100% 0%, rgba(110, 30, 230, 0.2), transparent 50%),
+    radial-gradient(ellipse 50% 40% at 0% 100%, rgba(20, 60, 255, 0.14), transparent 48%),
+    linear-gradient(165deg, #fafbff 0%, #fff 42%, #f3f0ff 100%);
+}
+
+.hero--ig .hero__ig-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero--ig .hero__ig-hex-mesh {
+  position: absolute;
+  top: -8%;
+  right: -4%;
+  width: min(52vw, 520px);
+  height: min(52vw, 520px);
+  opacity: 0.72;
+  background: url("assets/visuals/hex-grid-accent.svg") center / contain no-repeat;
+  filter: drop-shadow(0 0 56px rgba(110, 30, 230, 0.5));
+  animation: ig-mesh-pulse 8s ease-in-out infinite;
+}
+
+.hero--ig .hero__ig-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(72px);
+  opacity: 0.88;
+  animation: ig-orb-drift 14s ease-in-out infinite;
+}
+
+.hero--ig .hero__ig-orb--1 {
+  right: 6%;
+  bottom: 2%;
+  width: min(48vw, 420px);
+  height: min(48vw, 420px);
+  background: radial-gradient(circle, rgba(255, 110, 60, 0.62) 0%, rgba(200, 0, 210, 0.35) 42%, transparent 72%);
+  animation-delay: 0s;
+}
+
+.hero--ig .hero__ig-orb--2 {
+  left: 32%;
+  bottom: -5%;
+  width: min(36vw, 340px);
+  height: min(36vw, 340px);
+  background: radial-gradient(circle, rgba(110, 30, 230, 0.55) 0%, rgba(20, 60, 255, 0.2) 50%, transparent 70%);
+  animation-delay: -4s;
+}
+
+.hero--ig .hero__ig-orb--3 {
+  top: 8%;
+  right: 22%;
+  width: min(28vw, 260px);
+  height: min(28vw, 260px);
+  background: radial-gradient(circle, rgba(0, 225, 255, 0.45) 0%, rgba(20, 60, 255, 0.2) 45%, transparent 68%);
+  animation-delay: -7s;
+}
+
+@keyframes ig-orb-drift {
+  0%,
+  100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-12px, 10px) scale(1.06); }
+}
+
+@keyframes ig-mesh-pulse {
+  0%,
+  100% { opacity: 0.65; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.03); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero--ig .hero__ig-orb,
+  .hero--ig .hero__ig-hex-mesh {
+    animation: none;
+  }
+}
+
+.hero--ig .hero__photo-veil {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  width: 52%;
+  height: 100%;
+  opacity: 0.12;
+  background:
+    linear-gradient(105deg, #fff 0%, transparent 50%),
+    url("assets/images/meeting-wide.jpg") center / cover no-repeat;
+  mask-image: linear-gradient(105deg, transparent 0%, #000 55%);
+}
+
+.hero--ig .hero__content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero--ig .hero__float-hex {
+  opacity: 0.48;
+  filter: drop-shadow(0 0 28px rgba(0, 225, 255, 0.4));
+}
+
+.hero--ig h1 {
+  color: var(--ink);
+}
+
+.hl-key--evoluir {
+  background: var(--ig-gradient-evoluir);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hl-key--complicada {
+  background: var(--ig-gradient-complicada);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-rule {
+  width: min(280px, 70%);
+  height: 3px;
+  margin: 20px 0 16px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--ig-gradient-rule);
+}
+
+.hero__sub-ig {
+  margin: 0 0 20px;
+  color: var(--ink-soft);
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.hero--ig .hero__lead .brand-word__b,
+.hero--ig .hero__lead .brand-word__tech {
+  color: var(--ink);
+}
+
+.hero--ig .hero__lead .brand-word {
+  background: var(--ig-gradient-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.hero--ig .hero__lead .brand-word__b,
+.hero--ig .hero__lead .brand-word__tech {
+  color: transparent;
+  font-weight: inherit;
+}
+
+.hero-panel--editorial {
+  box-shadow:
+    0 32px 90px rgba(26, 11, 64, 0.14),
+    0 0 0 1px rgba(255, 255, 255, 0.85) inset;
+}
+
+/* —— Faixa pilares (post escuro) —— */
+.pillar-strip {
+  position: relative;
+  padding: 18px clamp(16px, 4vw, 24px);
+  color: #fff;
+  background:
+    radial-gradient(circle at 20% 50%, rgba(0, 225, 255, 0.12), transparent 40%),
+    radial-gradient(circle at 80% 50%, rgba(200, 0, 210, 0.15), transparent 42%),
+    linear-gradient(180deg, #0a0618 0%, #1a0b40 50%, #0f0824 100%);
+  border-block: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.pillar-strip::before {
+  position: absolute;
+  inset: 0;
+  opacity: 0.45;
+  background: url("assets/visuals/pattern-colmeia.svg") center / 280px repeat;
+  content: "";
+  pointer-events: none;
+}
+
+.pillar-strip__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 0;
+  align-items: center;
+  justify-content: center;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.pillar-strip__item {
+  display: flex;
+  flex: 1 1 140px;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  min-width: 120px;
+  padding: 8px 16px;
+  text-align: center;
+}
+
+.pillar-strip__item img {
+  width: 56px;
+  height: 56px;
+}
+
+.pillar-strip__item span {
+  font-size: 0.88rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.pillar-strip__item--cloud span { color: #00e1ff; }
+.pillar-strip__item--ia span { color: #e879ff; }
+.pillar-strip__item--auto span { color: #ffaf3c; }
+.pillar-strip__item--ops span { color: #5ae838; }
+
+.pillar-strip__sep {
+  display: none;
+  width: 1px;
+  height: 56px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+@media (min-width: 720px) {
+  .pillar-strip__sep {
+    display: block;
+  }
+}
+
+.conversa-ig__hex {
+  position: absolute;
+  z-index: 2;
+  background: url("assets/visuals/hex-grid-accent.svg") center / contain no-repeat;
+  filter: drop-shadow(0 0 28px rgba(110, 30, 230, 0.55));
+  pointer-events: none;
+}
+
+.conversa-ig__copy .hl-key--conversa {
+  background: var(--ig-gradient-conversa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* —— Seções com mesh hex —— */
+.section--tech-depth::before {
+  position: absolute;
+  inset: 0;
+  opacity: 0.2;
+  background: url("assets/visuals/pattern-colmeia.svg") center / 240px repeat;
+  content: "";
+  pointer-events: none;
+}
+
+.section--tech-depth {
+  position: relative;
+  overflow: hidden;
+}
+
+.section--tech-depth > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.section--cloud-mockup .cloud-block {
+  position: relative;
+  overflow: hidden;
+}
+
+.section--cloud-mockup .cloud-block::after {
+  position: absolute;
+  right: -10%;
+  bottom: -20%;
+  width: 50%;
+  height: 70%;
+  opacity: 0.4;
+  background: radial-gradient(circle, rgba(0, 225, 255, 0.35) 0%, transparent 65%);
+  content: "";
+  pointer-events: none;
+}
+
+.ticker-strip--mockup {
+  background: linear-gradient(90deg, #050510 0%, var(--mockup-purple) 50%, #050510 100%);
+}
+
+@media (max-width: 880px) {
+  .hero--ig .hero__photo-veil {
+    width: 100%;
+    height: 45%;
+    top: auto;
+    bottom: 0;
+    opacity: 0.15;
+    mask-image: linear-gradient(0deg, transparent 0%, #000 50%);
+  }
+
+  .pillar-strip__sep {
+    display: none;
+  }
+}
