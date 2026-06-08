@@ -27,9 +27,13 @@ python3 -m http.server 8000
 
 Depois acesse `http://localhost:8000`.
 
+## Versão enxuta (atual na branch `cursor/site-enxuto-consultores-0702`)
+
+Landing curta: hero + conversa + quem somos + atuação + **grupo de consultores** (skills unificadas) + parcerias + tecnologias + FAQ + contato. Sem exposição individual de sócios.
+
 ## Próximos ajustes recomendados
 
-1. Substituir o SVG temporário pelo logotipo oficial em arquivo vetorial, se disponível.
-2. Conectar o formulário de contato a um serviço de envio.
-3. Inserir clientes, segmentos, cases e logos conforme a ABTech consolidar esses materiais.
-4. Revisar textos finais com os responsáveis Erico e Alexandre antes da publicação.
+1. Cases e logos de clientes (quando autorizados).
+2. CNPJ e LinkedIn da empresa no rodapé.
+3. Fotos oficiais do grupo (opcional).
+4. Formulário com backend definitivo.
