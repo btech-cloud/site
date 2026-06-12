@@ -12,6 +12,98 @@ Cloud, backup, infraestrutura, agentes e automação são **como** começamos �
 
 ---
 
+## A pergunta que nos define
+
+A maioria das empresas de tecnologia nasce perguntando:
+
+> *Como podemos ganhar dinheiro com essa tecnologia?*
+
+A BTech nasce perguntando:
+
+> *Como essa tecnologia pode ampliar a capacidade humana, melhorar a sociedade e criar bem-estar?*
+
+E, em seguida:
+
+> *Como garantir que a IA seja força de **ampliação** humana — e não de **concentração** de poder?*
+
+Quase todo o mercado discute produtividade, eficiência e redução de custo.  
+Nós nos interessamos também pela **consequência social**: quem ganha, quem perde, quem fica de fora, quem passa a ter acesso, como as pessoas trabalham, como comunidades se organizam, como pequenos negócios sobrevivem.
+
+**Não substituir pessoas. Potencializar pessoas.**
+
+---
+
+## O que queremos ampliar (na prática)
+
+- democratizar acesso a ferramentas avançadas;
+- permitir que pequenas empresas tenham capacidades antes reservadas às grandes;
+- reduzir trabalho repetitivo e burocrático;
+- ampliar a autonomia das pessoas;
+- tornar conhecimento mais acessível;
+- aumentar a capacidade de ação de indivíduos e organizações.
+
+Temas transversais: transformação do trabalho · acessibilidade · democratização · impacto social da IA · reorganização da sociedade.
+
+---
+
+## Dois futuros (versão expandida)
+
+### Caminho 1 — A IA concentra
+
+- riqueza, conhecimento e capacidade produtiva concentram;
+- decisões concentram;
+- poucas organizações controlam muito;
+- milhões de pessoas perdem autonomia.
+
+### Caminho 2 — A IA distribui
+
+- conhecimento é ampliado;
+- capacidade produtiva é democratizada;
+- pequenas empresas ganham superpoderes;
+- indivíduos competem em escala muito maior;
+- a tecnologia aumenta a liberdade humana.
+
+**Não como ONG. Não como ativismo.** Como **infraestrutura para essa transição**.
+
+---
+
+## Prova no chão (não no discurso)
+
+| Entrega | O que parece | O que também é |
+|---------|----------------|----------------|
+| Agente para terapeuta | Automação | Profissional autônomo com capacidade operacional que antes só clínica maior tinha |
+| Soluções para PMEs | Software / cloud | Redução de desigualdade de acesso tecnológico |
+| IA para quem não tem time técnico | Consultoria | Distribuição de capacidade produtiva |
+
+Isso é **transformação social acontecendo na prática** — não slide de ESG.
+
+---
+
+## Crenças (escolher 1 principal + variações)
+
+**Principal (recomendada):**
+
+> Acreditamos que a inteligência artificial deve **ampliar** possibilidades humanas, não substituí-las.
+
+**Variações:**
+
+> Acreditamos que a próxima revolução tecnológica deve gerar mais autonomia, mais acesso e mais oportunidades para mais pessoas.
+
+> Acreditamos que tecnologia só cumpre seu papel quando aumenta a capacidade das pessoas de criar, aprender, trabalhar e transformar a realidade ao seu redor.
+
+---
+
+## O coração da BTech — e o que é o “B”
+
+O coração **não** está em cloud, agentes, automação ou IA. Essas são **ferramentas**.
+
+O coração é participar da construção de uma **transição social positiva** para a era da inteligência artificial.
+
+Por isso o **B** não é apenas uma alternativa tecnológica.  
+É uma **alternativa de visão de mundo**: ampliação em vez de concentração; proximidade em vez de pacote genérico; potencializar em vez de substituir.
+
+---
+
 ## A analogia que importa
 
 Quando a máquina a vapor surgiu, não mudou só fábricas. Mudou cidades, famílias, educação, profissões, governos, transporte, economia e a própria ideia de trabalho.
