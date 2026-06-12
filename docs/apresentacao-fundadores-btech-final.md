@@ -1,6 +1,12 @@
 # Apresentação Fundadores BTECH — versão final
 
-**Arquivo Canva:** `assets/presentations/btech-fundamentos-fundadores.pptx`  
+## Download do PowerPoint
+
+**[⬇ Baixar `btech-fundamentos-fundadores.pptx`](https://github.com/btech-cloud/site/raw/cursor/site-enxuto-consultores-0702/assets/presentations/btech-fundamentos-fundadores.pptx)**
+
+*(Link direto — importe no Canva em Arquivo → Importar.)*
+
+**Arquivo no repositório:** `assets/presentations/btech-fundamentos-fundadores.pptx`  
 **Slides:** 22 · **Idioma:** português · **Visual:** paleta BTech (sem logotipos)
 
 ---
