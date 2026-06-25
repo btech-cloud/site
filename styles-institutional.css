@@ -19,6 +19,8 @@
 :root {
   --blue: #143cff;
   --violet: #6e1ee6;
+  --magenta: #c800d2;
+  --cyan: #00e1b4;
   --ink: #0a1432;
   --ink-soft: #3d4663;
   --muted: #667089;
@@ -56,6 +58,68 @@ body {
   background: var(--white);
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
+  position: relative;
+}
+
+/* Gradil nos cantos — manual de identidade */
+.gradil-decor {
+  position: fixed;
+  z-index: 0;
+  width: min(42vw, 420px);
+  height: auto;
+  pointer-events: none;
+  opacity: 0.55;
+}
+
+.gradil-decor--tr {
+  top: 0;
+  right: 0;
+  transform: translate(8%, -5%);
+}
+
+.gradil-decor--bl {
+  bottom: 0;
+  left: 0;
+  transform: translate(-8%, 5%) scaleX(-1);
+}
+
+.site-header,
+main,
+.site-footer {
+  position: relative;
+  z-index: 1;
+}
+
+/* Palavra em degradê + traço — manual */
+.hl-gradient {
+  background: linear-gradient(120deg, var(--blue) 0%, var(--violet) 45%, var(--cyan) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-rule {
+  width: min(200px, 55%);
+  height: 3px;
+  margin: 0 0 20px;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--blue) 0%, var(--violet) 50%, var(--cyan) 85%, #ffaf3c 100%);
+}
+
+.gradient-rule--center {
+  margin-inline: auto;
+}
+
+.cta-section .hl-gradient {
+  background: linear-gradient(120deg, #7eb8ff 0%, #c4a0ff 50%, var(--cyan) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.cta-section .gradient-rule {
+  margin-inline: auto;
+  opacity: 0.85;
 }
 
 img { max-width: 100%; height: auto; display: block; }
@@ -192,6 +256,19 @@ a:hover { text-decoration: underline; }
   background: var(--paper);
 }
 
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 12%;
+  right: -2%;
+  width: min(38vw, 400px);
+  height: min(32vw, 320px);
+  background: url("assets/visuals/gradil-cantos.svg") right top / contain no-repeat;
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 0;
+}
+
 .hero__slides {
   position: relative;
   height: calc(100vh - var(--header-h));
@@ -217,6 +294,8 @@ a:hover { text-decoration: underline; }
 }
 
 .hero__slide-inner {
+  position: relative;
+  z-index: 1;
   width: min(var(--max), calc(100% - 48px));
   margin-inline: auto;
   display: grid;
@@ -268,8 +347,23 @@ a:hover { text-decoration: underline; }
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(20, 60, 255, 0.06), transparent 50%);
+  background:
+    linear-gradient(135deg, rgba(20, 60, 255, 0.08), transparent 45%),
+    url("assets/visuals/pattern-colmeia.svg") 92% 8% / 100px auto no-repeat;
+  opacity: 0.9;
   pointer-events: none;
+}
+
+.hero__media::before {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  left: -5%;
+  width: 55%;
+  height: 50%;
+  background: radial-gradient(ellipse, rgba(110, 30, 230, 0.2), transparent 70%);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .hero__controls {
@@ -320,10 +414,28 @@ a:hover { text-decoration: underline; }
 
 /* —— Credibility strip —— */
 .credibility {
+  position: relative;
   padding: 20px 0;
   background: var(--ink);
   color: rgba(255, 255, 255, 0.9);
+  overflow: hidden;
 }
+
+.credibility::before,
+.credibility::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 200px;
+  height: 120px;
+  transform: translateY(-50%);
+  background: url("assets/visuals/gradil-cantos.svg") center / contain no-repeat;
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.credibility::before { left: 0; }
+.credibility::after { right: 0; transform: translateY(-50%) scaleX(-1); }
 
 .credibility__text {
   margin: 0;
@@ -381,9 +493,18 @@ a:hover { text-decoration: underline; }
 }
 
 .section__photo {
+  position: relative;
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow);
+}
+
+.section__photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(20, 60, 255, 0.05), transparent 40%);
+  pointer-events: none;
 }
 
 .section__photo img {
@@ -467,8 +588,30 @@ a:hover { text-decoration: underline; }
   left: 8%;
   right: 8%;
   height: 2px;
-  background: var(--line);
+  background: linear-gradient(90deg, var(--blue), var(--violet), var(--cyan));
+  opacity: 0.35;
   z-index: 0;
+}
+
+.methodology__node {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  border: 2px solid transparent;
+  background-image: linear-gradient(var(--white), var(--white)), linear-gradient(135deg, var(--blue), var(--violet));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--blue);
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 20px rgba(20, 60, 255, 0.12);
 }
 
 .methodology__step {
@@ -489,23 +632,6 @@ a:hover { text-decoration: underline; }
 .methodology__step:nth-child(3) { transition-delay: 0.2s; }
 .methodology__step:nth-child(4) { transition-delay: 0.3s; }
 .methodology__step:nth-child(5) { transition-delay: 0.4s; }
-
-.methodology__node {
-  width: 56px;
-  height: 56px;
-  margin: 0 auto 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--white);
-  border: 2px solid var(--blue);
-  border-radius: 50%;
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--blue);
-  position: relative;
-  z-index: 1;
-}
 
 .methodology__step h3 {
   margin: 0 0 6px;
@@ -592,10 +718,42 @@ a:hover { text-decoration: underline; }
 
 /* —— CTA —— */
 .cta-section {
+  position: relative;
   padding: clamp(80px, 12vw, 120px) 0;
   background: linear-gradient(165deg, var(--ink) 0%, #1a2848 100%);
   color: var(--white);
   text-align: center;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: min(45vw, 380px);
+  height: 200px;
+  background: url("assets/visuals/gradil-cantos.svg") left bottom / contain no-repeat;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.cta-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: min(40vw, 360px);
+  height: 180px;
+  background: url("assets/visuals/gradil-cantos.svg") right top / contain no-repeat;
+  opacity: 0.3;
+  transform: scaleX(-1);
+  pointer-events: none;
+}
+
+.cta-section .container {
+  position: relative;
+  z-index: 1;
 }
 
 .cta-section .section__title { color: var(--white); max-width: 20ch; margin-inline: auto; }
