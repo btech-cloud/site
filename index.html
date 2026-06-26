@@ -166,24 +166,40 @@
       <!-- 2. Credibilidade -->
       <div class="credibility">
         <div class="container">
-          <p class="credibility__text">
-            15 a 25 anos de experiência
-            <span class="credibility__sep" aria-hidden="true">|</span>
-            Equipe atuando em conjunto há mais de 5 anos
-            <span class="credibility__sep" aria-hidden="true">|</span>
-            Projetos para Vivo, Claro, Stone, Tokio Marine, Porto Seguro, Sabin, Cooperforte e outras organizações
-          </p>
+          <ul class="credibility__items">
+            <li class="credibility__item">
+              <span class="credibility__icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none"><path d="M8 2l5 3v6l-5 3-5-3V5l5-3z" stroke="#00e1b4" stroke-width="1.2"/></svg>
+              </span>
+              15 a 25 anos de experiência
+            </li>
+            <li class="credibility__item">
+              <span class="credibility__icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none"><circle cx="5" cy="6" r="2" stroke="#6e1ee6" stroke-width="1.2"/><circle cx="11" cy="6" r="2" stroke="#143cff" stroke-width="1.2"/><path d="M2 13c0-2 2-3 3-3s3 1 3 3M8 13c0-2 2-3 3-3s3 1 3 3" stroke="#c800d2" stroke-width="1.2"/></svg>
+              </span>
+              Equipe atuando em conjunto há mais de 5 anos
+            </li>
+            <li class="credibility__item">
+              <span class="credibility__icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none"><path d="M3 12V6l5-3 5 3v6" stroke="#ffaf3c" stroke-width="1.2"/><path d="M6 12V9h4v3" stroke="#00e1b4" stroke-width="1.2"/></svg>
+              </span>
+              Vivo, Claro, Stone, Tokio Marine, Porto Seguro, Sabin, Cooperforte e outras
+            </li>
+          </ul>
         </div>
       </div>
 
       <!-- 3. Quem somos -->
-      <section class="section" id="quem-somos">
+      <section class="section section--sky" id="quem-somos">
+        <img class="section__hex-float section__hex-float--tr" src="assets/visuals/hex-grid-accent.svg" alt="" width="120" height="105" aria-hidden="true">
         <div class="container">
           <div class="section__grid-2 reveal">
             <div>
-              <p class="section__eyebrow">Quem somos</p>
-              <h2 class="section__title">Especialistas unidos por <span class="hl-gradient">resultados</span></h2>
-              <hr class="gradient-rule" aria-hidden="true">
+              <div class="section__head">
+                <p class="section__eyebrow">Quem somos</p>
+                <h2 class="section__title">Especialistas unidos por <span class="hl-gradient">resultados</span></h2>
+                <hr class="gradient-rule" aria-hidden="true">
+              </div>
               <p class="section__lead">
                 A BTech nasceu da união de profissionais especializados em Cloud, Infraestrutura,
                 Virtualização, Automação, Inteligência Artificial e Arquitetura de Soluções.
@@ -193,9 +209,11 @@
                 há mais de cinco anos, participando da implantação, evolução e sustentação de ambientes
                 tecnológicos para empresas de diferentes portes e segmentos.
               </p>
-              <p class="section__lead" style="margin-top: 1rem;">
-                Mais do que conhecimento técnico, entregamos visão estratégica, proximidade e compromisso com resultados.
-              </p>
+              <div class="stat-row">
+                <div class="stat-chip"><strong>15–25</strong><span>anos de experiência</span></div>
+                <div class="stat-chip"><strong>5+</strong><span>anos juntos</span></div>
+                <div class="stat-chip"><strong>15+</strong><span>organizações atendidas</span></div>
+              </div>
             </div>
             <div class="section__photo">
               <img src="assets/images/equipe-trabalho.jpg" alt="Equipe BTech em colaboração" width="800" height="500" loading="lazy">
@@ -205,11 +223,14 @@
       </section>
 
       <!-- 4. O mercado mudou -->
-      <section class="section section--alt" id="mercado">
+      <section class="section section--violet" id="mercado">
+        <img class="section__hex-float section__hex-float--bl" src="assets/visuals/pattern-colmeia.svg" alt="" width="120" height="104" aria-hidden="true">
         <div class="container reveal">
-          <p class="section__eyebrow">O mercado mudou</p>
-          <h2 class="section__title">A tecnologia nunca evoluiu tão <span class="hl-gradient">rapidamente</span></h2>
-          <hr class="gradient-rule" aria-hidden="true">
+          <div class="section__head">
+            <p class="section__eyebrow">O mercado mudou</p>
+            <h2 class="section__title">A tecnologia nunca evoluiu tão <span class="hl-gradient">rapidamente</span></h2>
+            <hr class="gradient-rule" aria-hidden="true">
+          </div>
           <div class="section__grid-2" style="margin-top: 32px;">
             <div>
               <p class="section__lead">
@@ -220,7 +241,7 @@
                 Enquanto isso, muitas organizações acumulam complexidade, desperdícios e dificuldades para evoluir.
               </p>
             </div>
-            <blockquote class="section__lead" style="margin: 0; padding: 28px 32px; background: var(--white); border-left: 3px solid var(--blue); border-radius: 0 var(--radius) var(--radius) 0; font-size: 1.2rem; font-weight: 600; color: var(--ink);">
+            <blockquote class="callout-card">
               Acreditamos que a tecnologia deve ampliar a capacidade das empresas, não sua complexidade.
             </blockquote>
           </div>
@@ -228,54 +249,70 @@
       </section>
 
       <!-- 5. Como podemos ajudar -->
-      <section class="section" id="servicos">
+      <section class="section section--warm" id="servicos">
         <div class="container reveal">
-          <p class="section__eyebrow">Como podemos ajudar</p>
-          <h2 class="section__title">Serviços especializados para cada etapa da <span class="hl-gradient">jornada</span></h2>
-          <hr class="gradient-rule gradient-rule--center" aria-hidden="true">
+          <div class="section__head section__head--center">
+            <p class="section__eyebrow">Como podemos ajudar</p>
+            <h2 class="section__title">Serviços especializados para cada etapa da <span class="hl-gradient">jornada</span></h2>
+            <hr class="gradient-rule gradient-rule--center" aria-hidden="true">
+          </div>
           <p class="section__lead section__lead--center">
             Consultoria e execução com foco em sustentabilidade, eficiência e evolução contínua.
           </p>
 
           <div class="services-grid">
             <article class="service-card">
-              <img class="service-card__icon" src="assets/icons/icon-consultoria.svg" alt="" width="32" height="32">
+              <div class="service-card__icon-wrap">
+                <img class="service-card__icon" src="assets/icons/icon-consultoria.svg" alt="" width="32" height="32">
+              </div>
               <h3>Consultoria Estratégica</h3>
               <p>Diagnóstico, roadmap e priorização alinhados ao negócio — antes de qualquer ferramenta.</p>
               <a class="service-card__link" href="#detalhe-consultoria" data-service-toggle="consultoria">Saiba mais</a>
             </article>
             <article class="service-card">
-              <img class="service-card__icon" src="assets/icons/icon-cloud.svg" alt="" width="32" height="32">
+              <div class="service-card__icon-wrap">
+                <img class="service-card__icon" src="assets/icons/icon-cloud.svg" alt="" width="32" height="32">
+              </div>
               <h3>Cloud &amp; Infraestrutura</h3>
               <p>Arquitetura, migração e operação em ambientes públicos, privados e híbridos.</p>
               <a class="service-card__link" href="#detalhe-cloud" data-service-toggle="cloud">Saiba mais</a>
             </article>
             <article class="service-card">
-              <img class="service-card__icon" src="assets/icons/icon-servicos-cloud.svg" alt="" width="32" height="32">
+              <div class="service-card__icon-wrap">
+                <img class="service-card__icon" src="assets/icons/icon-servicos-cloud.svg" alt="" width="32" height="32">
+              </div>
               <h3>Serviços Cloud</h3>
               <p>Implementação, gestão e evolução de workloads com governança e disponibilidade.</p>
               <a class="service-card__link" href="#detalhe-servicos" data-service-toggle="servicos">Saiba mais</a>
             </article>
             <article class="service-card">
-              <img class="service-card__icon" src="assets/icons/icon-virtualizacao.svg" alt="" width="32" height="32">
+              <div class="service-card__icon-wrap">
+                <img class="service-card__icon" src="assets/icons/icon-virtualizacao.svg" alt="" width="32" height="32">
+              </div>
               <h3>Virtualização e Modernização</h3>
               <p>Transição de ambientes legados para plataformas modernas, sem interromper a operação.</p>
               <a class="service-card__link" href="#detalhe-virt" data-service-toggle="virt">Saiba mais</a>
             </article>
             <article class="service-card">
-              <img class="service-card__icon" src="assets/icons/icon-automacao.svg" alt="" width="32" height="32">
+              <div class="service-card__icon-wrap">
+                <img class="service-card__icon" src="assets/icons/icon-automacao.svg" alt="" width="32" height="32">
+              </div>
               <h3>Automação</h3>
               <p>Processos, integrações e entrega contínua para reduzir tarefas repetitivas e erros.</p>
               <a class="service-card__link" href="#detalhe-auto" data-service-toggle="auto">Saiba mais</a>
             </article>
             <article class="service-card">
-              <img class="service-card__icon" src="assets/icons/icon-ia.svg" alt="" width="32" height="32">
+              <div class="service-card__icon-wrap">
+                <img class="service-card__icon" src="assets/icons/icon-ia.svg" alt="" width="32" height="32">
+              </div>
               <h3>Inteligência Artificial</h3>
               <p>IA aplicada com critério — atendimento, operação e projetos com supervisão humana.</p>
               <a class="service-card__link" href="#detalhe-ia" data-service-toggle="ia">Saiba mais</a>
             </article>
             <article class="service-card">
-              <img class="service-card__icon" src="assets/icons/icon-finops.svg" alt="" width="32" height="32">
+              <div class="service-card__icon-wrap">
+                <img class="service-card__icon" src="assets/icons/icon-finops.svg" alt="" width="32" height="32">
+              </div>
               <h3>FinOps</h3>
               <p>Visibilidade, otimização e governança de custos em cloud — eficiência financeira contínua.</p>
               <a class="service-card__link" href="#detalhe-finops" data-service-toggle="finops">Saiba mais</a>
@@ -316,11 +353,13 @@
       </section>
 
       <!-- 6. Metodologia -->
-      <section class="section section--alt" id="metodologia">
+      <section class="section section--mint" id="metodologia">
         <div class="container reveal">
-          <p class="section__eyebrow">Nossa metodologia</p>
-          <h2 class="section__title">Do diagnóstico à <span class="hl-gradient">evolução contínua</span></h2>
-          <hr class="gradient-rule gradient-rule--center" aria-hidden="true">
+          <div class="section__head section__head--center">
+            <p class="section__eyebrow">Nossa metodologia</p>
+            <h2 class="section__title">Do diagnóstico à <span class="hl-gradient">evolução contínua</span></h2>
+            <hr class="gradient-rule gradient-rule--center" aria-hidden="true">
+          </div>
           <p class="section__lead section__lead--center">
             Diagnóstico → Arquitetura → Implantação → Operação → Evolução Contínua
           </p>
@@ -358,11 +397,13 @@
       </section>
 
       <!-- 7. Parceiros -->
-      <section class="section" id="parceiros">
+      <section class="section section--sky" id="parceiros">
         <div class="container reveal">
-          <p class="section__eyebrow">Parceiros</p>
-          <h2 class="section__title">Ecossistema <span class="hl-gradient">tecnológico</span></h2>
-          <hr class="gradient-rule gradient-rule--center" aria-hidden="true">
+          <div class="section__head section__head--center">
+            <p class="section__eyebrow">Parceiros</p>
+            <h2 class="section__title">Ecossistema <span class="hl-gradient">tecnológico</span></h2>
+            <hr class="gradient-rule gradient-rule--center" aria-hidden="true">
+          </div>
           <p class="section__lead section__lead--center">
             Trabalhamos com as principais plataformas e fabricantes do mercado.
           </p>
@@ -380,11 +421,13 @@
       </section>
 
       <!-- 8. Clientes -->
-      <section class="section section--alt" id="clientes">
+      <section class="section section--clients" id="clientes">
         <div class="container reveal">
-          <p class="section__eyebrow">Clientes</p>
-          <h2 class="section__title">Organizações que confiam na <span class="hl-gradient">BTech</span></h2>
-          <hr class="gradient-rule gradient-rule--center" aria-hidden="true">
+          <div class="section__head section__head--center">
+            <p class="section__eyebrow">Clientes</p>
+            <h2 class="section__title">Organizações que confiam na <span class="hl-gradient">BTech</span></h2>
+            <hr class="gradient-rule gradient-rule--center" aria-hidden="true">
+          </div>
           <p class="section__lead section__lead--center">
             Experiência comprovada em projetos para empresas de diversos segmentos.
           </p>
@@ -412,33 +455,42 @@
       </section>
 
       <!-- 9. Diferenciais -->
-      <section class="section" id="diferenciais">
+      <section class="section section--diff" id="diferenciais">
+        <img class="section__hex-float section__hex-float--tr" src="assets/visuals/hex-grid-accent.svg" alt="" width="100" height="88" aria-hidden="true">
         <div class="container reveal">
-          <p class="section__eyebrow">Diferenciais</p>
-          <h2 class="section__title">Por que a <span class="hl-gradient">BTech Cloud</span></h2>
-          <hr class="gradient-rule" aria-hidden="true">
+          <div class="section__head">
+            <p class="section__eyebrow">Diferenciais</p>
+            <h2 class="section__title">Por que a <span class="hl-gradient">BTech Cloud</span></h2>
+            <hr class="gradient-rule" aria-hidden="true">
+          </div>
           <div class="diff-grid">
             <article class="diff-card">
+              <div class="diff-card__icon"><img src="assets/icons/icon-diff-senior.svg" alt="" width="22" height="22"></div>
               <h3>Especialistas seniores</h3>
               <p>15 a 25 anos de experiência em cloud, infraestrutura e arquitetura de soluções.</p>
             </article>
             <article class="diff-card">
+              <div class="diff-card__icon"><img src="assets/icons/icon-diff-consultivo.svg" alt="" width="22" height="22"></div>
               <h3>Atuação consultiva</h3>
               <p>Proximidade com gestão e TI — entendemos o negócio antes da ferramenta.</p>
             </article>
             <article class="diff-card">
+              <div class="diff-card__icon"><img src="assets/icons/icon-diff-independencia.svg" alt="" width="22" height="22"></div>
               <h3>Independência tecnológica</h3>
               <p>Recomendamos o que faz sentido para o cliente, sem viés de fabricante único.</p>
             </article>
             <article class="diff-card">
+              <div class="diff-card__icon"><img src="assets/icons/icon-diff-direto.svg" alt="" width="22" height="22"></div>
               <h3>Participação direta dos especialistas</h3>
               <p>Quem desenha participa da entrega — sem camadas desnecessárias.</p>
             </article>
             <article class="diff-card">
+              <div class="diff-card__icon"><img src="assets/icons/icon-diff-negocio.svg" alt="" width="22" height="22"></div>
               <h3>Tecnologia com visão de negócio</h3>
               <p>Decisões técnicas conectadas a custo, risco e crescimento sustentável.</p>
             </article>
             <article class="diff-card">
+              <div class="diff-card__icon"><img src="assets/icons/icon-diff-parceria.svg" alt="" width="22" height="22"></div>
               <h3>Relacionamento de longo prazo</h3>
               <p>Parceria que evolui com a empresa — da migração à operação contínua.</p>
             </article>
@@ -499,7 +551,7 @@
     <footer class="site-footer">
       <div class="container footer__inner">
         <a href="#inicio">
-          <img class="footer__logo" src="assets/logo-btech-stacked-oficial.png" alt="BTech Cloud" width="88" height="72">
+          <img class="footer__logo" src="assets/logo-btech-stacked-light.svg" alt="BTech Cloud" width="88" height="72">
         </a>
         <p class="footer__copy">
           &copy; <span id="current-year"></span> BTech Cloud · Brasília/DF<br>
