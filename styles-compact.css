@@ -1,0 +1,232 @@
+/* Site enxuto — menos seções, ritmo mais curto */
+
+.section--compact {
+  padding: clamp(48px, 6vw, 72px) 0;
+}
+
+.hero--ig {
+  padding-bottom: 64px;
+}
+
+.section--quem-mockup.section--compact .photo-grid-office {
+  display: none;
+}
+
+.quem-intro--compact .tint-panel {
+  margin-top: 20px;
+}
+
+.quem-intro--compact .tint-panel p:last-child {
+  margin-bottom: 0;
+}
+
+.quem-hero-photo {
+  margin-top: 28px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 24px 64px rgba(26, 11, 64, 0.12);
+}
+
+.quem-hero-photo img {
+  display: block;
+  width: 100%;
+  max-height: 360px;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+/* —— Grupo de consultores + skills —— */
+.section--equipe {
+  background:
+    radial-gradient(ellipse 50% 40% at 100% 0%, rgba(110, 30, 230, 0.06), transparent 55%),
+    linear-gradient(180deg, #fafbff 0%, #fff 100%);
+}
+
+.equipe-intro {
+  max-width: 58ch;
+  margin: 0 auto 32px;
+  text-align: center;
+  color: var(--ink-soft);
+  line-height: 1.65;
+}
+
+.skills-unified {
+  display: grid;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+@media (min-width: 640px) {
+  .skills-unified {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills-unified {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.skill-cluster {
+  padding: 22px 20px;
+  background: #fff;
+  border: 1px solid rgba(110, 30, 230, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 12px 36px rgba(26, 11, 64, 0.05);
+}
+
+.skill-cluster h3 {
+  margin: 0 0 12px;
+  font-size: 1rem;
+  color: var(--violet);
+}
+
+.skill-cluster ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skill-cluster li {
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 6px;
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.skill-cluster li::before {
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: linear-gradient(120deg, #6e1ee6, #00e1b4);
+  content: "";
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.skills-tags span {
+  padding: 6px 14px;
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: rgba(110, 30, 230, 0.06);
+  border: 1px solid rgba(110, 30, 230, 0.1);
+  border-radius: 999px;
+}
+
+/* —— Atuação compacta —— */
+.process-grid--compact {
+  margin-top: 28px;
+}
+
+.ajuda-lead--compact {
+  max-width: 52ch;
+  margin: 12px 0 0;
+  color: var(--ink-soft);
+  line-height: 1.65;
+}
+
+/* —— Parcerias compacta —— */
+.section--parcerias-compact {
+  background: linear-gradient(180deg, #fff 0%, #f6f4ff 100%);
+}
+
+.parcerias-compact-grid {
+  display: grid;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+  .parcerias-compact-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.parcerias-compact-card {
+  padding: 20px 18px;
+  background: #fff;
+  border-radius: 14px;
+  border: 1px solid rgba(110, 30, 230, 0.1);
+}
+
+.parcerias-compact-card h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+.parcerias-compact-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  line-height: 1.55;
+}
+
+.parcerias-note {
+  margin-top: 20px;
+  padding: 16px 20px;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  line-height: 1.6;
+  background: rgba(110, 30, 230, 0.05);
+  border-radius: 12px;
+  border-left: 3px solid var(--violet);
+}
+
+/* —— Ecossistema reduzido —— */
+.partners-ecosystem--compact .partners-ecosystem__row {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.partners-ecosystem--compact .partner-band__head p {
+  display: none;
+}
+
+.section--partners.section--compact {
+  padding-top: 40px;
+}
+
+/* —— FAQ curto —— */
+.section--faq.section--compact {
+  padding: clamp(40px, 5vw, 56px) 0;
+}
+
+.partner-chip-text {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 14px;
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+  font-weight: 700;
+  background: rgba(110, 30, 230, 0.06);
+  border: 1px solid rgba(110, 30, 230, 0.12);
+  border-radius: 999px;
+}
+
+.partner-band--cloud .partner-chip-text {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: #e8e4ff;
+}
+
+.hex-collage--conversa .hex-photo--c {
+  display: none;
+}
+
+/* —— Contato —— */
+.contact-card--compact .form-disclaimer {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
