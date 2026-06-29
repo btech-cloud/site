@@ -17,6 +17,9 @@
     <meta property="og:image" content="https://btech.cloud/assets/og-cover.svg">
     <meta property="og:locale" content="pt_BR">
     <link rel="icon" href="assets/logo-icon-oficial.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles-institutional.css">
     <script type="application/ld+json">
     {
@@ -52,12 +55,12 @@
       <div class="container nav">
         <a class="brand" href="#inicio" aria-label="BTech Cloud — início">
           <img
-            class="brand__logo"
+            class="brand__logo brand__logo--light"
             src="assets/logo-btech-horizontal-oficial.png"
             srcset="assets/logo-btech-horizontal-oficial.png 1x, assets/logo-btech-horizontal-oficial@2x.png 2x"
             alt="BTech Cloud"
-            width="121"
-            height="42"
+            width="140"
+            height="48"
           >
         </a>
         <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu">
@@ -227,58 +230,61 @@
             </div>
           </div>
 
-          <div class="ecosystem-panels">
-            <div class="ecosystem-panel" id="clientes">
-              <header class="ecosystem-panel__head">
-                <span class="ecosystem-panel__icon" aria-hidden="true">
-                  <img src="assets/icons/icon-pillar-experiencia.svg" alt="" width="24" height="24">
-                </span>
-                <h3>Nossos Clientes</h3>
-              </header>
-              <div class="logo-grid logo-grid--ecosystem">
-                <div class="logo-cell logo-cell--client"><img src="assets/clients/vivo.svg" alt="Vivo" height="32"></div>
-                <div class="logo-cell logo-cell--client"><img src="assets/clients/claro.svg" alt="Claro" height="32"></div>
-                <div class="logo-cell logo-cell--client"><img src="assets/clients/stone.svg" alt="Stone" height="32"></div>
-                <div class="logo-cell logo-cell--client"><img src="assets/clients/tokio-marine.svg" alt="Tokio Marine Seguradora" height="32"></div>
-                <div class="logo-cell logo-cell--client"><img src="assets/clients/porto-seguro.svg" alt="Porto Seguro" height="32"></div>
-                <div class="logo-cell logo-cell--client"><img src="assets/clients/asefaz-es.svg" alt="Fundação Assefaz" height="32"></div>
-                <div class="logo-cell logo-cell--client"><img src="assets/clients/sabin.svg" alt="Grupo Sabin" height="32"></div>
-                <div class="logo-cell logo-cell--client"><img src="assets/clients/cooperforte.svg" alt="Cooperforte" height="32"></div>
-                <div class="logo-cell logo-cell--client"><img src="assets/clients/ot-consultoria.svg" alt="CT Consultoria em TI" height="32"></div>
-                <div class="logo-cell logo-cell--client"><img src="assets/clients/mourway.svg" alt="Mourway" height="32"></div>
-                <div class="logo-cell logo-cell--client"><img src="assets/clients/circulo.svg" alt="Círculo" height="32"></div>
-                <div class="logo-cell logo-cell--client"><img src="assets/clients/blend-it.svg" alt="Blend IT" height="32"></div>
-                <div class="logo-cell logo-cell--client"><img src="assets/clients/eurobalões.svg" alt="Euro Balões" height="32"></div>
-                <div class="logo-cell logo-cell--client"><img src="assets/clients/atmo-danai.svg" alt="Atmo Danai" height="32"></div>
-              </div>
-              <p class="ecosystem-panel__note">Logos oficiais dos clientes: substitua os arquivos em <code>assets/clients/</code> pelos fornecidos pela marca.</p>
-            </div>
+          <div class="ecosystem-showcase">
+            <div class="ecosystem-panels ecosystem-panels--premium">
+              <article class="ecosystem-panel ecosystem-panel--clients" id="clientes">
+                <header class="ecosystem-panel__head">
+                  <span class="ecosystem-panel__badge" aria-hidden="true"></span>
+                  <div>
+                    <p class="ecosystem-panel__eyebrow">Quem confia</p>
+                    <h3>Nossos Clientes</h3>
+                  </div>
+                </header>
+                <div class="logo-wall logo-wall--clients" role="list">
+                  <div class="logo-tile" role="listitem"><img src="assets/clients/official/vivo.svg" alt="Vivo" loading="lazy" data-logo-fallback="vivo"></div>
+                  <div class="logo-tile" role="listitem"><img src="assets/clients/official/claro.svg" alt="Claro" loading="lazy" data-logo-fallback="claro"></div>
+                  <div class="logo-tile" role="listitem"><img src="assets/clients/official/stone.svg" alt="Stone" loading="lazy" data-logo-fallback="stone"></div>
+                  <div class="logo-tile" role="listitem"><img src="assets/clients/official/tokio-marine.svg" alt="Tokio Marine Seguradora" loading="lazy" data-logo-fallback="tokio-marine"></div>
+                  <div class="logo-tile" role="listitem"><img src="assets/clients/official/porto-seguro.svg" alt="Porto Seguro" loading="lazy" data-logo-fallback="porto-seguro"></div>
+                  <div class="logo-tile" role="listitem"><img src="assets/clients/official/asefaz-es.svg" alt="Fundação Assefaz" loading="lazy" data-logo-fallback="asefaz-es"></div>
+                  <div class="logo-tile" role="listitem"><img src="assets/clients/official/sabin.svg" alt="Grupo Sabin" loading="lazy" data-logo-fallback="sabin"></div>
+                  <div class="logo-tile logo-tile--cooperforte" role="listitem"><img src="assets/clients/official/cooperforte.png" alt="Cooperforte" loading="lazy" data-logo-fallback="cooperforte"></div>
+                  <div class="logo-tile logo-tile--warm" role="listitem"><img src="assets/clients/official/ot-consultoria.webp" alt="OT Consultoria em TI" loading="lazy" data-logo-fallback="ot-consultoria"></div>
+                  <div class="logo-tile" role="listitem"><img src="assets/clients/official/mourway.png" alt="Mourway" loading="lazy" data-logo-fallback="mourway"></div>
+                  <div class="logo-tile logo-tile--dark" role="listitem"><img src="assets/clients/official/circulo-dark.png" alt="Círculo" loading="lazy" data-logo-fallback="circulo"></div>
+                  <div class="logo-tile" role="listitem"><img src="assets/clients/official/blend-it.png" alt="Blend IT" loading="lazy" data-logo-fallback="blend-it"></div>
+                  <div class="logo-tile logo-tile--brand" role="listitem"><img src="assets/clients/official/eurobaloes.png" alt="Euro Balões" loading="lazy" data-logo-fallback="eurobalões"></div>
+                  <div class="logo-tile" role="listitem"><img src="assets/clients/official/atmo-danai.png" alt="Atmo Danai" loading="lazy" data-logo-fallback="atmo-danai"></div>
+                </div>
+              </article>
 
-            <div class="ecosystem-panel" id="parceiros">
-              <header class="ecosystem-panel__head">
-                <span class="ecosystem-panel__icon" aria-hidden="true">
-                  <img src="assets/icons/icon-pillar-parcerias.svg" alt="" width="24" height="24">
-                </span>
-                <h3>Parceria Estratégica</h3>
-              </header>
-              <div class="logo-grid logo-grid--ecosystem logo-grid--partners">
-                <div class="logo-cell logo-cell--partner" data-brand="aws"><img src="assets/partners/amazonaws.svg" alt="AWS" height="28"></div>
-                <div class="logo-cell logo-cell--partner" data-brand="azure"><img src="assets/partners/azure.svg" alt="Microsoft Azure" height="28"></div>
-                <div class="logo-cell logo-cell--partner" data-brand="gcp"><img src="assets/partners/google-cloud.svg" alt="Google Cloud" height="28"></div>
-                <div class="logo-cell logo-cell--partner" data-brand="redhat"><img src="assets/partners/redhat.svg" alt="Red Hat" height="28"></div>
-                <div class="logo-cell logo-cell--partner" data-brand="suse"><img src="assets/partners/suse.svg" alt="SUSE" height="28"></div>
-                <div class="logo-cell logo-cell--partner" data-brand="vmware"><img src="assets/partners/vmware.svg" alt="VMware" height="28"></div>
-                <div class="logo-cell logo-cell--partner" data-brand="oracle"><img src="assets/partners/oracle.svg" alt="Oracle" height="28"></div>
-                <div class="logo-cell logo-cell--partner" data-brand="microsoft"><img src="assets/partners/microsoft.svg" alt="Microsoft" height="28"></div>
-                <div class="logo-cell logo-cell--partner" data-brand="openstack"><img src="assets/partners/openstack.svg" alt="OpenStack" height="28"></div>
-              </div>
+              <article class="ecosystem-panel ecosystem-panel--partners" id="parceiros">
+                <header class="ecosystem-panel__head">
+                  <span class="ecosystem-panel__badge ecosystem-panel__badge--violet" aria-hidden="true"></span>
+                  <div>
+                    <p class="ecosystem-panel__eyebrow">Ecossistema</p>
+                    <h3>Parceria Estratégica</h3>
+                  </div>
+                </header>
+                <div class="logo-wall logo-wall--partners" role="list">
+                  <div class="logo-tile logo-tile--partner" role="listitem"><img src="assets/partners/official/amazonaws.svg" alt="Amazon Web Services" loading="lazy"></div>
+                  <div class="logo-tile logo-tile--partner" role="listitem"><img src="assets/partners/official/azure.svg" alt="Microsoft Azure" loading="lazy"></div>
+                  <div class="logo-tile logo-tile--partner" role="listitem"><img src="assets/partners/official/google-cloud.svg" alt="Google Cloud" loading="lazy"></div>
+                  <div class="logo-tile logo-tile--partner" role="listitem"><img src="assets/partners/official/redhat.svg" alt="Red Hat" loading="lazy"></div>
+                  <div class="logo-tile logo-tile--partner" role="listitem"><img src="assets/partners/official/suse.svg" alt="SUSE" loading="lazy"></div>
+                  <div class="logo-tile logo-tile--partner" role="listitem"><img src="assets/partners/official/vmware.svg" alt="VMware" loading="lazy"></div>
+                  <div class="logo-tile logo-tile--partner" role="listitem"><img src="assets/partners/official/oracle.svg" alt="Oracle" loading="lazy"></div>
+                  <div class="logo-tile logo-tile--partner" role="listitem"><img src="assets/partners/official/microsoft.svg" alt="Microsoft" loading="lazy"></div>
+                  <div class="logo-tile logo-tile--partner" role="listitem"><img src="assets/partners/official/openstack.svg" alt="OpenStack" loading="lazy"></div>
+                </div>
+              </article>
             </div>
           </div>
         </div>
       </section>
 
       <!-- 4. O mercado mudou -->
-      <section class="section section--violet" id="mercado">
+      <section class="section section--brand-band" id="mercado">
         <img class="section__hex-float section__hex-float--bl" src="assets/visuals/pattern-colmeia.svg" alt="" width="120" height="104" aria-hidden="true">
         <div class="container reveal">
           <div class="section__head">
@@ -583,8 +589,15 @@
     <!-- 11. Rodapé -->
     <footer class="site-footer">
       <div class="container footer__inner">
-        <a href="#inicio">
-          <img class="footer__logo" src="assets/logo-btech-stacked-light.svg" alt="BTech Cloud" width="88" height="72">
+        <a class="footer__brand" href="#inicio" aria-label="BTech Cloud — início">
+          <img
+            class="footer__logo"
+            src="assets/logo-btech-stacked-oficial-light.png"
+            srcset="assets/logo-btech-stacked-oficial-light.png 1x, assets/logo-btech-stacked-oficial-light@2x.png 2x"
+            alt="BTech Cloud"
+            width="96"
+            height="80"
+          >
         </a>
         <p class="footer__copy">
           &copy; <span id="current-year"></span> BTech Cloud · Brasília/DF<br>

@@ -85,4 +85,23 @@
       });
     });
   }
+  /* Logo fallback — official assets with graceful degradation */
+  const logoImgs = document.querySelectorAll("img[data-logo-fallback]");
+  logoImgs.forEach((img) => {
+    const slug = img.dataset.logoFallback;
+    if (!slug) return;
+    const candidates = [
+      `assets/clients/official/${slug}.png`,
+      `assets/clients/official/${slug}.webp`,
+      `assets/clients/official/${slug}.svg`,
+      `assets/clients/${slug}.svg`,
+    ].filter((url, index, all) => all.indexOf(url) === index && !img.src.endsWith(url));
+    let step = 0;
+    img.addEventListener("error", () => {
+      if (step < candidates.length) {
+        img.src = candidates[step];
+        step += 1;
+      }
+    });
+  });
 })();
