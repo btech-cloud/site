@@ -1,5 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="150" height="40" viewBox="0 0 150 40" role="img" aria-label="Tokio Marine Seguradora">
-  <rect x="2" y="10" width="20" height="20" rx="2" fill="#009B3A"/>
-  <text x="28" y="18" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#009B3A">TOKIO MARINE</text>
-  <text x="28" y="30" font-family="Arial, sans-serif" font-size="10" fill="#666">Seguradora</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="40" viewBox="0 0 120 40" role="img" aria-label="Tokio Marine">
+  <text x="0" y="26" font-family="Century Gothic, Arial, sans-serif" font-size="14" font-weight="600" fill="#3d4663" letter-spacing="0.04em">Tokio Marine</text>
 </svg>

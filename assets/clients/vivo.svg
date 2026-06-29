@@ -1,5 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="90" height="40" viewBox="0 0 90 40" role="img" aria-label="Vivo">
-  <circle cx="14" cy="20" r="8" fill="none" stroke="#660099" stroke-width="2.5"/>
-  <circle cx="14" cy="20" r="3" fill="#660099"/>
-  <text x="28" y="25" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#660099">vivo</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="40" viewBox="0 0 120 40" role="img" aria-label="Vivo">
+  <text x="0" y="26" font-family="Century Gothic, Arial, sans-serif" font-size="14" font-weight="600" fill="#3d4663" letter-spacing="0.04em">Vivo</text>
 </svg>
