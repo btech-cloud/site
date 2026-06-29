@@ -549,6 +549,148 @@ a:hover { text-decoration: underline; }
     linear-gradient(180deg, var(--white) 0%, var(--tint-violet) 100%);
 }
 
+/* —— Ecossistema (Quem somos) —— */
+.section--ecosystem {
+  background:
+    url("assets/visuals/pattern-colmeia.svg") 50% 0% / min(90vw, 520px) auto no-repeat,
+    linear-gradient(180deg, var(--white) 0%, var(--tint-sky) 45%, var(--tint-violet) 100%);
+}
+
+.ecosystem-header {
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) minmax(320px, 1.15fr);
+  gap: clamp(32px, 5vw, 56px);
+  align-items: start;
+  margin-bottom: clamp(40px, 6vw, 64px);
+}
+
+.ecosystem-header__tagline {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  max-width: 42ch;
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.pillar-card {
+  padding: 20px 18px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(110, 30, 230, 0.14);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 30px rgba(20, 60, 255, 0.06);
+  backdrop-filter: blur(6px);
+  transition: transform 0.25s var(--ease), box-shadow 0.25s;
+}
+
+.pillar-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+
+.pillar-card__icon {
+  width: 48px;
+  height: 54px;
+  margin-bottom: 12px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(160deg, rgba(20, 60, 255, 0.1), rgba(200, 0, 210, 0.08));
+  clip-path: var(--hex-clip);
+}
+
+.pillar-card h3 {
+  margin: 0 0 8px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--ink);
+}
+
+.pillar-card p {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.ecosystem-panels {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.ecosystem-panel {
+  padding: 24px 22px 28px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 2px solid transparent;
+  border-radius: var(--radius-lg);
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    linear-gradient(135deg, rgba(110, 30, 230, 0.35), rgba(20, 60, 255, 0.25), rgba(0, 225, 180, 0.2));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-shadow: 0 16px 40px rgba(10, 20, 50, 0.06);
+}
+
+.ecosystem-panel__head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.ecosystem-panel__icon {
+  width: 36px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(145deg, rgba(20, 60, 255, 0.12), rgba(110, 30, 230, 0.1));
+  clip-path: var(--hex-clip);
+  flex-shrink: 0;
+}
+
+.ecosystem-panel__head h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.logo-grid--ecosystem {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 0;
+}
+
+.logo-grid--ecosystem.logo-grid--partners {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.logo-cell--color {
+  min-height: 56px;
+  padding: 10px 12px;
+  background: var(--white);
+}
+
+.logo-cell--color img,
+.logo-cell--color svg {
+  max-height: 32px;
+  width: auto;
+  max-width: 100%;
+  opacity: 1;
+  filter: none;
+}
+
+.logo-cell--color:hover img,
+.logo-cell--color:hover svg {
+  filter: none;
+  transform: scale(1.03);
+}
+
 .section__hex-float {
   position: absolute;
   width: 120px;
@@ -1177,6 +1319,19 @@ a:hover { text-decoration: underline; }
   outline-offset: 3px;
 }
 @media (max-width: 960px) {
+  .ecosystem-header,
+  .ecosystem-panels {
+    grid-template-columns: 1fr;
+  }
+
+  .pillars-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .logo-grid--ecosystem {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .hero__slide-inner,
   .hero__slide {
     grid-template-columns: 1fr;

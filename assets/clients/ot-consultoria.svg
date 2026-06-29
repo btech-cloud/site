@@ -1,3 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="126" height="40" viewBox="0 0 126 40" role="img" aria-label="OT Consultoria">
-  <text x="0" y="26" font-family="Century Gothic, Arial, sans-serif" font-size="14" font-weight="600" fill="#3d4663" letter-spacing="0.04em">OT Consultoria</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="40" viewBox="0 0 160 40" role="img" aria-label="CT Consultoria em TI">
+  <rect x="2" y="10" width="22" height="20" rx="3" fill="#F58220"/>
+  <text x="6" y="24" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#fff">CT</text>
+  <text x="30" y="18" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0054A6">CT Consultoria</text>
+  <text x="30" y="30" font-family="Arial, sans-serif" font-size="10" fill="#F58220">em TI</text>
 </svg>

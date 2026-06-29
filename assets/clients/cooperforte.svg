@@ -1,3 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="120" height="40" viewBox="0 0 120 40" role="img" aria-label="Cooperforte">
-  <text x="0" y="26" font-family="Century Gothic, Arial, sans-serif" font-size="14" font-weight="600" fill="#3d4663" letter-spacing="0.04em">Cooperforte</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="40" viewBox="0 0 130 40" role="img" aria-label="Cooperforte">
+  <rect x="4" y="10" width="20" height="20" rx="2" fill="#F5C518"/>
+  <text x="6" y="24" font-family="Arial, sans-serif" font-size="7" font-weight="700" fill="#1a1a1a">CF</text>
+  <text x="30" y="25" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#1a1a1a">Cooperforte</text>
 </svg>

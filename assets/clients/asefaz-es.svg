@@ -1,3 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="120" height="40" viewBox="0 0 120 40" role="img" aria-label="ASEFAZ ES">
-  <text x="0" y="26" font-family="Century Gothic, Arial, sans-serif" font-size="14" font-weight="600" fill="#3d4663" letter-spacing="0.04em">ASEFAZ ES</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="40" viewBox="0 0 150 40" role="img" aria-label="Fundação Assefaz">
+  <circle cx="16" cy="20" r="12" fill="none" stroke="#0054A6" stroke-width="2"/>
+  <text x="8" y="24" font-family="Arial, sans-serif" font-size="8" font-weight="700" fill="#0054A6">ASF</text>
+  <text x="34" y="18" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0054A6">Fundação</text>
+  <text x="34" y="30" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#0054A6">Assefaz</text>
 </svg>

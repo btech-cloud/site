@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="36" viewBox="0 0 130 36" role="img" aria-label="OpenStack">
+  <circle cx="18" cy="18" r="12" fill="#ED1944"/>
+  <text x="8" y="22" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#fff">OS</text>
+  <text x="36" y="23" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#ED1944" letter-spacing="0.02em">OpenStack</text>
+</svg>
