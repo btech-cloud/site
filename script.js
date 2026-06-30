@@ -6,6 +6,31 @@ const contactForm = document.querySelector('.contact-form');
 const formNote = document.querySelector('.form-note');
 const slides = Array.from(document.querySelectorAll('.hero__slide'));
 const pager = document.querySelector('[data-hero-pager]');
+const animatedElements = document.querySelectorAll(
+  '.section, .trust-bar, .service-card, .timeline li, .metric-grid article, .brand-panel, .differentials-grid article'
+);
+
+document.body.classList.add('reveal-ready');
+
+animatedElements.forEach((element) => element.classList.add('reveal'));
+
+if ('IntersectionObserver' in window) {
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { rootMargin: '0px 0px -12% 0px', threshold: 0.12 }
+  );
+
+  animatedElements.forEach((element) => revealObserver.observe(element));
+} else {
+  animatedElements.forEach((element) => element.classList.add('is-visible'));
+}
 
 if (header) {
   const syncHeader = () => header.classList.toggle('is-elevated', window.scrollY > 12);
