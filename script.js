@@ -80,9 +80,12 @@ if (slides.length && pager) {
 }
 
 if (contactForm && formNote) {
+  formNote.hidden = true;
+
   contactForm.addEventListener('submit', (event) => {
     event.preventDefault();
     formNote.textContent = 'Obrigado. Recebemos sua intenção de contato; envie também para comercial@b-tech.cloud para seguirmos a conversa.';
+    formNote.hidden = false;
     contactForm.reset();
   });
 }

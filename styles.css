@@ -297,6 +297,7 @@ h1 span, h2 span, .ecosystem__head h2 span { background: var(--gradient); -webki
 .contact-form label { display: grid; gap: 8px; color: var(--ink-soft); font-weight: 900; }
 .contact-form input, .contact-form textarea { width: 100%; padding: 14px 16px; border: 1px solid var(--line); border-radius: 16px; color: var(--ink); background: #fbfcff; resize: vertical; }
 .form-note { min-height: 1.5em; color: var(--blue); font-weight: 900; }
+.form-note[hidden], .form-note:empty { display: none; }
 .site-footer { padding: 32px 0; color: rgba(255,255,255,.78); background: var(--navy); }
 .site-footer__grid { display: flex; align-items: center; justify-content: space-between; gap: 22px; }
 .site-footer img { width: 132px; height: auto; }
