@@ -1,85 +1,91 @@
-const header = document.querySelector("[data-header]");
+const header = document.querySelector('[data-header]');
+const menuButton = document.querySelector('.nav__toggle');
+const menu = document.querySelector('.nav__links');
+const currentYear = document.querySelector('#current-year');
+const contactForm = document.querySelector('.contact-form');
+const formNote = document.querySelector('.form-note');
+const slides = Array.from(document.querySelectorAll('.hero__slide'));
+const pager = document.querySelector('[data-hero-pager]');
+const animatedElements = document.querySelectorAll(
+  '.section, .trust-bar, .problems-grid article, .service-card, .timeline li, .metric-grid article, .brand-panel, .differentials-grid article'
+);
 
-if (header) {
-  const syncHeader = () => {
-    header.classList.toggle("site-header--elevated", window.scrollY > 16);
-  };
+document.body.classList.add('reveal-ready');
 
-  syncHeader();
-  window.addEventListener("scroll", syncHeader, { passive: true });
+animatedElements.forEach((element) => element.classList.add('reveal'));
+
+if ('IntersectionObserver' in window) {
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { rootMargin: '0px 0px -12% 0px', threshold: 0.12 }
+  );
+
+  animatedElements.forEach((element) => revealObserver.observe(element));
+} else {
+  animatedElements.forEach((element) => element.classList.add('is-visible'));
 }
 
-const menuButton = document.querySelector(".nav__toggle");
-const menu = document.querySelector(".nav__links");
-const currentYear = document.querySelector("#current-year");
-const contactForm = document.querySelector(".contact-form");
-const formNote = document.querySelector(".form-note");
+if (header) {
+  const syncHeader = () => header.classList.toggle('is-elevated', window.scrollY > 12);
+  syncHeader();
+  window.addEventListener('scroll', syncHeader, { passive: true });
+}
 
 if (currentYear) {
   currentYear.textContent = new Date().getFullYear();
 }
 
 if (menuButton && menu) {
-  menuButton.addEventListener("click", () => {
-    const isExpanded = menuButton.getAttribute("aria-expanded") === "true";
-
-    menuButton.setAttribute("aria-expanded", String(!isExpanded));
-    menu.classList.toggle("is-open", !isExpanded);
+  menuButton.addEventListener('click', () => {
+    const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+    menuButton.setAttribute('aria-expanded', String(!isExpanded));
+    menu.classList.toggle('is-open', !isExpanded);
   });
 
-  menu.addEventListener("click", (event) => {
+  menu.addEventListener('click', (event) => {
     if (event.target instanceof HTMLAnchorElement) {
-      menuButton.setAttribute("aria-expanded", "false");
-      menu.classList.remove("is-open");
+      menuButton.setAttribute('aria-expanded', 'false');
+      menu.classList.remove('is-open');
     }
   });
 }
 
+if (slides.length && pager) {
+  let activeIndex = 0;
+  const buttons = slides.map((_, index) => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.setAttribute('aria-label', `Mostrar slide ${index + 1}`);
+    button.addEventListener('click', () => showSlide(index, true));
+    pager.append(button);
+    return button;
+  });
+
+  function showSlide(index, userAction = false) {
+    activeIndex = index;
+    slides.forEach((slide, slideIndex) => slide.classList.toggle('is-active', slideIndex === activeIndex));
+    buttons.forEach((button, buttonIndex) => button.classList.toggle('is-active', buttonIndex === activeIndex));
+    if (userAction) window.clearInterval(slideTimer);
+  }
+
+  showSlide(0);
+  const slideTimer = window.setInterval(() => showSlide((activeIndex + 1) % slides.length), 6500);
+}
+
 if (contactForm && formNote) {
-  const endpoint = contactForm.dataset.formEndpoint?.trim() || "";
-  const targetEmail = contactForm.dataset.formEmail?.trim() || "comercial@b-tech.cloud";
+  formNote.hidden = true;
 
-  contactForm.addEventListener("submit", async (event) => {
+  contactForm.addEventListener('submit', (event) => {
     event.preventDefault();
-
-    if (!endpoint) {
-      formNote.textContent =
-        "Envio não configurado. Escreva para comercial@b-tech.cloud ou ligue (11) 9 3022-6495.";
-      return;
-    }
-
-    const submitButton = contactForm.querySelector('button[type="submit"]');
-    const formData = new FormData(contactForm);
-    const payload = Object.fromEntries(formData.entries());
-
-    if (submitButton instanceof HTMLButtonElement) {
-      submitButton.disabled = true;
-    }
-
-    formNote.textContent = "Enviando…";
-
-    try {
-      const response = await fetch(endpoint, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(payload),
-      });
-
-      if (!response.ok) {
-        throw new Error("Falha no envio");
-      }
-
-      formNote.textContent = `Mensagem enviada. Em breve retornamos no e-mail informado (destino: ${targetEmail}).`;
-      contactForm.reset();
-    } catch {
-      formNote.textContent = `Não foi possível enviar agora. Escreva diretamente para ${targetEmail}.`;
-    } finally {
-      if (submitButton instanceof HTMLButtonElement) {
-        submitButton.disabled = false;
-      }
-    }
+    formNote.textContent = 'Obrigado. Recebemos sua intenção de contato; envie também para comercial@b-tech.cloud para seguirmos a conversa.';
+    formNote.hidden = false;
+    contactForm.reset();
   });
 }
