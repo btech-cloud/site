@@ -7,7 +7,7 @@ const formNote = document.querySelector('.form-note');
 const slides = Array.from(document.querySelectorAll('.hero__slide'));
 const pager = document.querySelector('[data-hero-pager]');
 const animatedElements = document.querySelectorAll(
-  '.section, .trust-bar, .service-card, .timeline li, .metric-grid article, .brand-panel, .differentials-grid article'
+  '.section, .trust-bar, .problems-grid article, .service-card, .timeline li, .metric-grid article, .brand-panel, .differentials-grid article'
 );
 
 document.body.classList.add('reveal-ready');
