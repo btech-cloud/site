@@ -308,6 +308,13 @@ h1 span, h2 span, .ecosystem__head h2 span { background: var(--gradient); -webki
 .contact__grid > div, .contact-form { padding: 34px; border: 1px solid var(--line); border-radius: var(--radius-lg); background: white; box-shadow: var(--shadow-soft); }
 .contact__grid p:not(.eyebrow) { margin-top: 18px; color: var(--muted); }
 .contact__links { display: flex; flex-direction: column; gap: 8px; font-weight: 900; color: var(--blue) !important; }
+.social-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.social-links a,
+.social-links span,
+.site-footer__links a,
+.site-footer__links span { display: inline-flex; align-items: center; min-height: 36px; padding: 8px 12px; border: 1px solid rgba(10,20,50,.10); border-radius: 999px; font-weight: 900; font-size: .9rem; }
+.social-links a { color: var(--ink); background: rgba(20,60,255,.06); }
+.social-links span { color: var(--muted); background: rgba(10,20,50,.04); }
 .contact-form { display: grid; gap: 16px; }
 .contact-form label { display: grid; gap: 8px; color: var(--ink-soft); font-weight: 900; }
 .contact-form input, .contact-form textarea { width: 100%; padding: 14px 16px; border: 1px solid var(--line); border-radius: 16px; color: var(--ink); background: #fbfcff; resize: vertical; }
@@ -317,6 +324,10 @@ h1 span, h2 span, .ecosystem__head h2 span { background: var(--gradient); -webki
 .site-footer__grid { display: flex; align-items: center; justify-content: space-between; gap: 22px; }
 .site-footer img { width: 132px; height: auto; }
 .site-footer a { color: white; font-weight: 900; }
+.site-footer__links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; }
+.site-footer__links a,
+.site-footer__links span { border-color: rgba(255,255,255,.16); color: rgba(255,255,255,.86); background: rgba(255,255,255,.06); }
+.site-footer__links span { color: rgba(255,255,255,.58); }
 
 @media (max-width: 1040px) {
   .hero__grid, .split-grid, .market__panel, .ecosystem__head, .photo-grid, .contact__grid { grid-template-columns: 1fr; }
@@ -351,6 +362,7 @@ h1 span, h2 span, .ecosystem__head h2 span { background: var(--gradient); -webki
   .client-grid, .partner-grid, .brand-panel--partners .partner-grid { grid-template-columns: 1fr; }
   .cta__panel { padding: 38px 24px; }
   .site-footer__grid { flex-direction: column; text-align: center; }
+  .site-footer__links { justify-content: center; }
 }
 
 @media (max-width: 520px) {
