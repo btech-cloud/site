@@ -3,53 +3,64 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BTech | Infraestrutura, Automação e IA para ampliar sua capacidade</title>
+    <title>BTech Cloud | Consultoria, Cloud, Automação, IA e FinOps</title>
     <meta
       name="description"
-      content="Construímos infraestrutura, automação e agentes inteligentes para profissionais, empresas e organizações operarem melhor na era da IA."
+      content="Consultoria e serviços especializados em Cloud, Infraestrutura, Automação, Inteligência Artificial e FinOps. Reduzimos complexidade e aceleramos a evolução tecnológica da sua empresa."
     >
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://btech.cloud/">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://btech.cloud/">
-    <meta property="og:title" content="BTech | Amplie sua capacidade na era da IA">
-    <meta property="og:description" content="Cloud, backup, automação e agentes de IA com consultoria próxima da operação. Resultados reais, sem hype.">
+    <meta property="og:title" content="BTech Cloud | Consultoria, Cloud, Automação, IA e FinOps">
+    <meta property="og:description" content="Consultoria e serviços especializados em Cloud, Infraestrutura, Automação, Inteligência Artificial e FinOps.">
     <meta property="og:image" content="https://btech.cloud/assets/og-cover.svg">
     <meta property="og:locale" content="pt_BR">
     <link rel="icon" href="assets/logo-icon-oficial.png" type="image/png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles-vivid.css">
-    <link rel="stylesheet" href="styles-mockup.css">
-    <link rel="stylesheet" href="styles-instagram.css">
-    <link rel="stylesheet" href="styles-pro.css">
-    <link rel="stylesheet" href="styles-hex.css">
-    <link rel="stylesheet" href="styles-compact.css">
-    <link rel="stylesheet" href="styles-commercial.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles-institutional.css">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "BTech",
-      "url": "https://btech.cloud/",
-      "logo": "https://btech.cloud/assets/logo-btech-stacked-oficial.png",
-      "description": "Empresa de tecnologia, infraestrutura e inteligência artificial focada em ampliar capacidades humanas e organizacionais.",
-      "areaServed": "BR"
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "BTech Cloud",
+          "url": "https://btech.cloud/",
+          "logo": "https://btech.cloud/assets/logo-btech-stacked-oficial.png",
+          "description": "Consultoria e serviços especializados em Cloud, Infraestrutura, Automação, Inteligência Artificial e FinOps.",
+          "areaServed": "BR",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "comercial@b-tech.cloud",
+            "telephone": "+55-11-93022-6495",
+            "contactType": "sales"
+          }
+        },
+        {
+          "@type": "ProfessionalService",
+          "name": "BTech Cloud",
+          "url": "https://btech.cloud/",
+          "serviceType": ["Cloud Consulting", "Infrastructure", "Automation", "Artificial Intelligence", "FinOps"]
+        }
+      ]
     }
     </script>
   </head>
   <body>
-    <div class="honeycomb-bg" aria-hidden="true"></div>
-
-    <header class="site-header site-header--pro" data-header>
-      <nav class="nav nav--mockup container" aria-label="Navegação principal">
-        <a class="brand brand--horizontal" href="#inicio" aria-label="BTech - início">
+    <img class="gradil-decor gradil-decor--tr" src="assets/visuals/gradil-cantos.svg" alt="" width="420" height="315" aria-hidden="true">
+    <header class="site-header" data-header>
+      <div class="container nav">
+        <a class="brand" href="#inicio" aria-label="BTech Cloud — início">
           <img
-            class="brand__logo"
+            class="brand__logo brand__logo--light"
             src="assets/logo-btech-horizontal-oficial.png"
             srcset="assets/logo-btech-horizontal-oficial.png 1x, assets/logo-btech-horizontal-oficial@2x.png 2x"
-            alt="BTECH"
-            width="121"
-            height="42"
+            alt="BTech Cloud"
+            width="140"
+            height="48"
           >
         </a>
         <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu">
@@ -57,562 +68,551 @@
           <span></span><span></span><span></span>
         </button>
         <ul class="nav__links" id="menu">
-          <li><a href="#solucoes">Soluções</a></li>
           <li><a href="#quem-somos">Quem somos</a></li>
-          <li><a href="#equipe">Equipe</a></li>
-          <li><a href="#parcerias">Parcerias</a></li>
-          <li class="nav__cta-item nav__cta-item--mobile">
-            <a class="button button--primary button--nav nav__cta" href="#contato">Fale conosco</a>
-          </li>
+          <li><a href="#onde-atuamos">Onde atuamos</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#metodologia">Metodologia</a></li>
+          <li><a href="#parceiros">Parceiros</a></li>
+          <li><a href="#clientes">Clientes</a></li>
+          <li><a class="btn btn--primary btn--nav nav__cta-desktop" href="#contato">Falar com especialista</a></li>
         </ul>
-        <a class="button button--primary button--nav nav__cta nav__cta--desktop" href="#contato">Fale conosco</a>
-      </nav>
+      </div>
     </header>
 
-    <main>
+    <main id="inicio">
       <!-- 1. Hero -->
-      <section class="hero hero--home hero--mockup hero--ig hero--comercial" id="inicio">
-        <div class="hero__ig-bg" aria-hidden="true">
-          <div class="hero__ig-hex-mesh"></div>
-          <div class="hero__ig-orb hero__ig-orb--1"></div>
-          <div class="hero__ig-orb hero__ig-orb--2"></div>
-          <div class="hero__ig-orb hero__ig-orb--3"></div>
-          <div class="hero__photo-veil"></div>
+      <section class="hero" aria-label="Apresentação" data-hero>
+        <div class="hero__slides">
+          <article class="hero__slide is-active" data-slide="0">
+            <div class="container hero__slide-inner">
+              <div>
+                <p class="hero__eyebrow">BTech Cloud</p>
+                <h1 class="hero__title">Toda transformação começa por uma <span class="hl-gradient">conversa</span>.</h1>
+                <hr class="gradient-rule" aria-hidden="true">
+                <p class="hero__text hero__text--tagline">A tecnologia vem depois.</p>
+                <p class="hero__text">
+                  Ajudamos empresas a reorganizar sua tecnologia e preparar a infraestrutura
+                  para a próxima fase da transformação digital — com menos complexidade.
+                </p>
+                <a class="btn btn--primary" href="#contato">Falar com um especialista</a>
+              </div>
+              <div class="hero__media">
+                <img src="assets/btech-operations-team.png" alt="Equipe em ambiente corporativo moderno" width="800" height="600" loading="eager">
+              </div>
+            </div>
+          </article>
+
+          <article class="hero__slide" data-slide="1">
+            <div class="container hero__slide-inner">
+              <div>
+                <p class="hero__eyebrow">Evolução com clareza</p>
+                <h1 class="hero__title">Toda empresa precisa <span class="hl-gradient">evoluir</span>. Nem toda evolução precisa ser <span class="hl-gradient hl-gradient--alt">complicada</span>.</h1>
+                <hr class="gradient-rule" aria-hidden="true">
+                <p class="hero__text">
+                  Cloud, IA, automação e operação com consultoria próxima — resultados reais, sem hype.
+                </p>
+                <a class="btn btn--primary" href="#servicos">Conheça nossos serviços</a>
+              </div>
+              <div class="hero__media">
+                <img src="assets/images/reuniao-estrategia.jpg" alt="Executivos em reunião de estratégia tecnológica" width="800" height="600" loading="lazy">
+              </div>
+            </div>
+          </article>
+
+          <article class="hero__slide" data-slide="2">
+            <div class="container hero__slide-inner">
+              <div>
+                <p class="hero__eyebrow">Vantagem competitiva</p>
+                <h1 class="hero__title">Transformamos tecnologia em <span class="hl-gradient">vantagem competitiva</span>.</h1>
+                <hr class="gradient-rule" aria-hidden="true">
+                <p class="hero__text">
+                  Consultoria, Cloud, Automação, Inteligência Artificial, FinOps e serviços especializados
+                  para empresas que precisam evoluir com segurança.
+                </p>
+                <a class="btn btn--primary" href="#servicos">Como podemos ajudar</a>
+              </div>
+              <div class="hero__media">
+                <img src="assets/btech-people-workshop.png" alt="Especialistas colaborando em workshop" width="800" height="600" loading="lazy">
+              </div>
+            </div>
+          </article>
+
+          <article class="hero__slide" data-slide="3">
+            <div class="container hero__slide-inner">
+              <div>
+                <p class="hero__eyebrow">Experiência</p>
+                <h1 class="hero__title">Experiência para os desafios de hoje. <span class="hl-gradient">Visão</span> para os próximos anos.</h1>
+                <hr class="gradient-rule" aria-hidden="true">
+                <p class="hero__text">
+                  Profissionais com 15 a 25 anos de experiência atuando juntos há mais de cinco anos.
+                </p>
+                <a class="btn btn--primary" href="#quem-somos">Quem somos</a>
+              </div>
+              <div class="hero__media">
+                <img src="assets/btech-client-conversation.png" alt="Consultor em conversa com cliente" width="800" height="600" loading="lazy">
+              </div>
+            </div>
+          </article>
         </div>
-        <img class="hero__float-hex hero__float-hex--1" src="assets/visuals/pattern-colmeia.svg" alt="" width="180" height="156" aria-hidden="true">
-        <div class="container hero__content">
-          <div class="hero__copy">
-            <p class="eyebrow">Tecnologia · Infraestrutura · IA</p>
-            <h1>
-              Amplie sua capacidade na era da <span class="hl-key hl-key--evoluir">Inteligência Artificial</span>
-            </h1>
+
+        <div class="hero__controls" aria-label="Controles do carrossel">
+          <button type="button" class="hero__arrow" data-hero-prev aria-label="Slide anterior">‹</button>
+          <div class="hero__dots" role="tablist">
+            <button type="button" class="hero__dot is-active" data-hero-dot="0" aria-label="Slide 1" aria-selected="true"></button>
+            <button type="button" class="hero__dot" data-hero-dot="1" aria-label="Slide 2" aria-selected="false"></button>
+            <button type="button" class="hero__dot" data-hero-dot="2" aria-label="Slide 3" aria-selected="false"></button>
+            <button type="button" class="hero__dot" data-hero-dot="3" aria-label="Slide 4" aria-selected="false"></button>
+          </div>
+          <button type="button" class="hero__arrow" data-hero-next aria-label="Próximo slide">›</button>
+        </div>
+      </section>
+
+      <!-- 2. Credibilidade -->
+      <div class="credibility">
+        <div class="container">
+          <ul class="credibility__items">
+            <li class="credibility__item">
+              <span class="credibility__icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none"><path d="M8 2l5 3v6l-5 3-5-3V5l5-3z" stroke="#00e1b4" stroke-width="1.2"/></svg>
+              </span>
+              15 a 25 anos de experiência
+            </li>
+            <li class="credibility__item">
+              <span class="credibility__icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none"><circle cx="5" cy="6" r="2" stroke="#6e1ee6" stroke-width="1.2"/><circle cx="11" cy="6" r="2" stroke="#143cff" stroke-width="1.2"/><path d="M2 13c0-2 2-3 3-3s3 1 3 3M8 13c0-2 2-3 3-3s3 1 3 3" stroke="#c800d2" stroke-width="1.2"/></svg>
+              </span>
+              Equipe atuando em conjunto há mais de 5 anos
+            </li>
+            <li class="credibility__item">
+              <span class="credibility__icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" fill="none"><path d="M3 12V6l5-3 5 3v6" stroke="#ffaf3c" stroke-width="1.2"/><path d="M6 12V9h4v3" stroke="#00e1b4" stroke-width="1.2"/></svg>
+              </span>
+              Vivo, Claro, Stone, Tokio Marine, Porto Seguro, Sabin, Cooperforte e outras
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 3. Quem somos — Ecossistema de Experiência e Confiança -->
+      <section class="section section--ecosystem" id="quem-somos">
+        <img class="section__hex-float section__hex-float--tr" src="assets/visuals/pattern-colmeia.svg" alt="" width="140" height="121" aria-hidden="true">
+        <div class="container reveal">
+          <div class="ecosystem-header">
+            <div class="ecosystem-header__intro">
+              <p class="section__eyebrow">Quem somos</p>
+              <h2 class="section__title">Ecossistema de <span class="hl-gradient">Experiência e Confiança</span></h2>
+              <hr class="gradient-rule" aria-hidden="true">
+              <p class="section__lead ecosystem-header__tagline">
+                Experiência sólida. Relacionamentos de longo prazo. Parcerias que impulsionam resultados.
+              </p>
+            </div>
+            <div class="pillars-grid">
+              <article class="pillar-card">
+                <div class="pillar-card__icon"><img src="assets/icons/icon-pillar-experiencia.svg" alt="" width="40" height="40"></div>
+                <h3>15 a 25 anos de experiência</h3>
+                <p>Profissionais seniores com histórico sólido em projetos de alta complexidade.</p>
+              </article>
+              <article class="pillar-card">
+                <div class="pillar-card__icon"><img src="assets/icons/icon-pillar-equipe.svg" alt="" width="40" height="40"></div>
+                <h3>+5 anos trabalhando juntos</h3>
+                <p>Equipe consolidada que atua de forma integrada desde 2020.</p>
+              </article>
+              <article class="pillar-card">
+                <div class="pillar-card__icon"><img src="assets/icons/icon-pillar-excelencia.svg" alt="" width="40" height="40"></div>
+                <h3>Excelência em entrega</h3>
+                <p>Metodologia, processos e compromisso com resultados sustentáveis.</p>
+              </article>
+              <article class="pillar-card">
+                <div class="pillar-card__icon"><img src="assets/icons/icon-pillar-parcerias.svg" alt="" width="40" height="40"></div>
+                <h3>Parcerias estratégicas</h3>
+                <p>Alianças com líderes globais em tecnologia e inovação.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="ecosystem-showcase">
+            <div class="ecosystem-panels ecosystem-panels--premium">
+              <article class="ecosystem-panel ecosystem-panel--clients" id="clientes">
+                <header class="ecosystem-panel__head">
+                  <span class="ecosystem-panel__badge" aria-hidden="true"></span>
+                  <div>
+                    <p class="ecosystem-panel__eyebrow">Quem confia</p>
+                    <h3>Nossos Clientes</h3>
+                  </div>
+                </header>
+                <div class="logo-wall logo-wall--clients" role="list">
+                  <div class="logo-tile" role="listitem"><img src="assets/clients/official/vivo.svg" alt="Vivo" loading="lazy" data-logo-fallback="vivo"></div>
+                  <div class="logo-tile" role="listitem"><img src="assets/clients/official/claro.svg" alt="Claro" loading="lazy" data-logo-fallback="claro"></div>
+                  <div class="logo-tile" role="listitem"><img src="assets/clients/official/stone.svg" alt="Stone" loading="lazy" data-logo-fallback="stone"></div>
+                  <div class="logo-tile" role="listitem"><img src="assets/clients/official/tokio-marine.svg" alt="Tokio Marine Seguradora" loading="lazy" data-logo-fallback="tokio-marine"></div>
+                  <div class="logo-tile" role="listitem"><img src="assets/clients/official/porto-seguro.svg" alt="Porto Seguro" loading="lazy" data-logo-fallback="porto-seguro"></div>
+                  <div class="logo-tile" role="listitem"><img src="assets/clients/official/asefaz-es.svg" alt="Fundação Assefaz" loading="lazy" data-logo-fallback="asefaz-es"></div>
+                  <div class="logo-tile" role="listitem"><img src="assets/clients/official/sabin.svg" alt="Grupo Sabin" loading="lazy" data-logo-fallback="sabin"></div>
+                  <div class="logo-tile logo-tile--cooperforte" role="listitem"><img src="assets/clients/official/cooperforte.png" alt="Cooperforte" loading="lazy" data-logo-fallback="cooperforte"></div>
+                  <div class="logo-tile logo-tile--warm" role="listitem"><img src="assets/clients/official/ot-consultoria.webp" alt="OT Consultoria em TI" loading="lazy" data-logo-fallback="ot-consultoria"></div>
+                  <div class="logo-tile" role="listitem"><img src="assets/clients/official/mourway.png" alt="Mourway" loading="lazy" data-logo-fallback="mourway"></div>
+                  <div class="logo-tile logo-tile--dark" role="listitem"><img src="assets/clients/official/circulo-dark.png" alt="Círculo" loading="lazy" data-logo-fallback="circulo"></div>
+                  <div class="logo-tile" role="listitem"><img src="assets/clients/official/blend-it.png" alt="Blend IT" loading="lazy" data-logo-fallback="blend-it"></div>
+                  <div class="logo-tile logo-tile--brand" role="listitem"><img src="assets/clients/official/eurobaloes.png" alt="Euro Balões" loading="lazy" data-logo-fallback="eurobalões"></div>
+                  <div class="logo-tile" role="listitem"><img src="assets/clients/official/atmo-danai.png" alt="Atmo Danai" loading="lazy" data-logo-fallback="atmo-danai"></div>
+                </div>
+              </article>
+
+              <article class="ecosystem-panel ecosystem-panel--partners" id="parceiros">
+                <header class="ecosystem-panel__head">
+                  <span class="ecosystem-panel__badge ecosystem-panel__badge--violet" aria-hidden="true"></span>
+                  <div>
+                    <p class="ecosystem-panel__eyebrow">Ecossistema</p>
+                    <h3>Parceria Estratégica</h3>
+                  </div>
+                </header>
+                <div class="logo-wall logo-wall--partners" role="list">
+                  <div class="logo-tile logo-tile--partner" role="listitem"><img src="assets/partners/official/amazonaws.svg" alt="Amazon Web Services" loading="lazy"></div>
+                  <div class="logo-tile logo-tile--partner" role="listitem"><img src="assets/partners/official/azure.svg" alt="Microsoft Azure" loading="lazy"></div>
+                  <div class="logo-tile logo-tile--partner" role="listitem"><img src="assets/partners/official/google-cloud.svg" alt="Google Cloud" loading="lazy"></div>
+                  <div class="logo-tile logo-tile--partner" role="listitem"><img src="assets/partners/official/redhat.svg" alt="Red Hat" loading="lazy"></div>
+                  <div class="logo-tile logo-tile--partner" role="listitem"><img src="assets/partners/official/suse.svg" alt="SUSE" loading="lazy"></div>
+                  <div class="logo-tile logo-tile--partner" role="listitem"><img src="assets/partners/official/vmware.svg" alt="VMware" loading="lazy"></div>
+                  <div class="logo-tile logo-tile--partner" role="listitem"><img src="assets/partners/official/oracle.svg" alt="Oracle" loading="lazy"></div>
+                  <div class="logo-tile logo-tile--partner" role="listitem"><img src="assets/partners/official/microsoft.svg" alt="Microsoft" loading="lazy"></div>
+                  <div class="logo-tile logo-tile--partner" role="listitem"><img src="assets/partners/official/openstack.svg" alt="OpenStack" loading="lazy"></div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. O mercado mudou -->
+      <section class="section section--brand-band" id="mercado">
+        <img class="section__hex-float section__hex-float--bl" src="assets/visuals/pattern-colmeia.svg" alt="" width="120" height="104" aria-hidden="true">
+        <div class="container reveal">
+          <div class="section__head">
+            <p class="section__eyebrow">O mercado mudou</p>
+            <h2 class="section__title">A tecnologia nunca evoluiu tão <span class="hl-gradient">rapidamente</span></h2>
             <hr class="gradient-rule" aria-hidden="true">
-            <p class="hero__lead">
-              Construímos infraestrutura, automação e agentes inteligentes para ajudar profissionais,
-              empresas e organizações a fazer mais — com menos complexidade e com quem entende de operação.
-            </p>
-            <div class="hero__actions">
-              <a class="button button--primary" href="#solucoes">Conheça nossas soluções</a>
-              <a class="button button--secondary" href="#contato">Fale conosco</a>
-            </div>
           </div>
-
-          <aside class="hero-panel hero-panel--editorial" aria-label="Áreas de atuação">
-            <div class="hero-panel__media">
-              <img
-                src="assets/images/equipe-trabalho.jpg"
-                alt="Pessoas em reunião de trabalho com tecnologia"
-                width="480"
-                height="320"
-                loading="eager"
-              >
-              <div class="hero-panel__media-veil" aria-hidden="true"></div>
-              <p class="hero-panel__badge"><span class="status-dot" aria-hidden="true"></span> Consultoria com proximidade</p>
-            </div>
-            <div class="hero-panel__body">
-              <h3 class="hero-panel__title">Cloud · Backup · Automação · Agentes de IA</h3>
-              <ul class="hero-panel__features">
-                <li>
-                  <img src="assets/visuals/pillar-cloud.svg" alt="" width="28" height="28">
-                  <span>Infraestrutura confiável para crescer</span>
-                </li>
-                <li>
-                  <img src="assets/visuals/pillar-ia.svg" alt="" width="28" height="28">
-                  <span>IA aplicada com supervisão humana</span>
-                </li>
-                <li>
-                  <img src="assets/visuals/pillar-automation.svg" alt="" width="28" height="28">
-                  <span>Menos tarefa repetitiva, mais resultado</span>
-                </li>
-              </ul>
-            </div>
-          </aside>
-        </div>
-      </section>
-
-      <!-- 2. Nossa visão -->
-      <section class="section section--visao section--compact" id="visao" aria-labelledby="visao-title">
-        <div class="container visao-block">
-          <p class="eyebrow">Nossa visão</p>
-          <h2 id="visao-title">Estamos vivendo uma <span class="hl-gradient">mudança histórica</span></h2>
-          <p>
-            A Inteligência Artificial está transformando trabalho, educação, negócios e acesso ao conhecimento.
-          </p>
-          <p>
-            Acreditamos que essa transformação deve <strong>ampliar capacidades humanas e organizacionais</strong>.
-            Por isso construímos soluções que tornam tecnologias avançadas acessíveis e úteis para quem precisa
-            gerar resultados reais.
-          </p>
-        </div>
-      </section>
-
-      <!-- 3. O que fazemos -->
-      <section class="section section--compact" id="solucoes" aria-labelledby="solucoes-title">
-        <div class="container">
-          <div class="section-heading section-heading--center">
-            <p class="eyebrow">O que fazemos</p>
-            <h2 id="solucoes-title">Soluções para <span class="hl-gradient">operar e crescer</span> hoje</h2>
-            <p class="section-heading__lead--wide">
-              Foco na primeira fase: infraestrutura, proteção de dados, automação e IA aplicada —
-              com linguagem clara e entrega perto de quem opera o negócio.
-            </p>
-          </div>
-
-          <div class="solucoes-grid solucoes-grid--5">
-            <article class="solucao-card">
-              <span class="solucao-card__icon">Cloud</span>
-              <h3>Infraestrutura confiável para crescer</h3>
-              <p>Arquitetura, migração e operação em AWS, Azure e Google Cloud — com governança desde o desenho.</p>
-              <p class="solucao-card__tech">Multicloud · Kubernetes · Observabilidade</p>
-            </article>
-            <article class="solucao-card">
-              <span class="solucao-card__icon">Backup</span>
-              <h3>Proteção e continuidade</h3>
-              <p>Backup, recuperação de desastres e proteção de dados para manter o negócio funcionando.</p>
-              <p class="solucao-card__tech">Veeam · DR · LGPD no desenho</p>
-            </article>
-            <article class="solucao-card">
-              <span class="solucao-card__icon">Automação</span>
-              <h3>Menos tarefas repetitivas</h3>
-              <p>Automatizamos processos e integrações para liberar tempo para o trabalho de maior valor.</p>
-              <p class="solucao-card__tech">CI/CD · Ansible · Orquestração</p>
-            </article>
-            <article class="solucao-card">
-              <span class="solucao-card__icon">Agentes de IA</span>
-              <h3>Atendimento e operação inteligentes</h3>
-              <p>Agentes para atendimento, suporte e operação — com supervisão humana e integração aos seus sistemas.</p>
-              <p class="solucao-card__tech">LLMs · APIs · Fluxos supervisionados</p>
-            </article>
-            <article class="solucao-card">
-              <span class="solucao-card__icon">Projetos de IA</span>
-              <h3>Soluções para desafios específicos</h3>
-              <p>Projetos sob medida quando o caso exige diagnóstico, dados e implementação com critério.</p>
-              <p class="solucao-card__tech">Diagnóstico · PoC · Produção</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- 4. O que entregamos -->
-      <section class="section section--resultados section--compact" id="resultados" aria-labelledby="resultados-title">
-        <div class="container">
-          <div class="section-heading section-heading--center">
-            <p class="eyebrow">O que entregamos</p>
-            <h2 id="resultados-title">Não vendemos tecnologia. <span class="hl-violet">Vendemos resultado.</span></h2>
-          </div>
-
-          <div class="resultados-grid">
-            <article class="resultado-card">
-              <h3>Para profissionais</h3>
-              <ul>
-                <li>Mais produtividade no dia a dia</li>
-                <li>Mais autonomia com ferramentas certas</li>
-                <li>Mais tempo para o trabalho de maior valor</li>
-              </ul>
-            </article>
-            <article class="resultado-card">
-              <h3>Para pequenas empresas</h3>
-              <ul>
-                <li>Capacidades antes restritas a grandes organizações</li>
-                <li>Cloud e automação sem equipe interna gigante</li>
-                <li>Crescimento com eficiência e previsibilidade</li>
-              </ul>
-            </article>
-            <article class="resultado-card">
-              <h3>Para organizações</h3>
-              <ul>
-                <li>Escala com inteligência operacional</li>
-                <li>Eficiência em processos e infraestrutura</li>
-                <li>Preparação para a nova economia</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- 5. Nossa tese (curta) -->
-      <section class="section section--tese" aria-labelledby="tese-title">
-        <div class="container">
-          <div class="tese-panel">
-            <p class="eyebrow">Nossa tese</p>
-            <h2 id="tese-title">
-              Não acreditamos que a IA deva substituir pessoas.
-              Acreditamos que ela deve <span class="hl-gradient">ampliar possibilidades</span>.
-            </h2>
-            <p>
-              A tecnologia cumpre seu papel quando aumenta a capacidade de criar, aprender, trabalhar
-              e transformar a realidade — com critério, governança e resultado mensurável.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Método (como trabalhamos) -->
-      <section class="section section--ajuda-mockup section--compact" id="atuacao" aria-labelledby="atuacao-title">
-        <div class="container">
-          <p class="eyebrow">Como trabalhamos</p>
-          <h2 id="atuacao-title">Do diagnóstico à operação em <span class="hl-gradient">produção</span></h2>
-          <p class="ajuda-lead--compact">
-            Método, presença e ritmo que a equipe consegue sustentar — sem pacote genérico de transformação.
-          </p>
-          <div class="process-grid process-grid--mockup process-grid--compact">
-            <article class="process-card"><span>01</span><h3>Entender</h3><p>Rotina, travas e decisões antes de qualquer ferramenta.</p></article>
-            <article class="process-card"><span>02</span><h3>Priorizar</h3><p>Plano executável, com donos e marcos possíveis.</p></article>
-            <article class="process-card"><span>03</span><h3>Aplicar</h3><p>Cloud, backup, automação e IA com governança desde o desenho.</p></article>
-            <article class="process-card"><span>04</span><h3>Acompanhar</h3><p>Observabilidade e ajustes depois do go-live.</p></article>
-          </div>
-        </div>
-      </section>
-
-      <!-- 6. Casos e iniciativas -->
-      <section class="section section--compact" id="casos" aria-labelledby="casos-title">
-        <div class="container">
-          <div class="section-heading section-heading--center">
-            <p class="eyebrow">Casos e iniciativas</p>
-            <h2 id="casos-title">Projetos que <span class="hl-gradient">já estão em andamento</span></h2>
-            <p class="section-heading__lead--wide">
-              Pilotos e entregas reais — exemplos do tipo de problema que resolvemos hoje.
-            </p>
-          </div>
-
-          <div class="casos-grid">
-            <article class="caso-card">
-              <span class="caso-card__tag">Agentes de IA</span>
-              <h3>Agente para terapeutas</h3>
-              <p>Automação de atendimento e gestão administrativa, liberando tempo para o cuidado clínico.</p>
-            </article>
-            <article class="caso-card">
-              <span class="caso-card__tag">Cloud</span>
-              <h3>Infraestrutura para negócios digitais</h3>
-              <p>Arquitetura cloud, backup e continuidade para operações que não podem parar.</p>
-            </article>
-            <article class="caso-card">
-              <span class="caso-card__tag">Automação</span>
-              <h3>Automação de processos</h3>
-              <p>Redução de tarefas repetitivas e integração entre sistemas com supervisão humana.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- 7. Quem somos -->
-      <section class="section section--quem-mockup section--compact" id="quem-somos">
-        <div class="container">
-          <p class="eyebrow">Quem somos</p>
-          <div class="quem-intro quem-intro--compact">
-            <h2>
-              Tecnologia e IA para <span class="hl-gradient">ampliar capacidades</span> humanas e organizacionais
-            </h2>
-            <div class="tint-panel">
-              <p>
-                A <span class="brand-word"><span class="brand-word__b">B</span><span class="brand-word__tech">TECH</span></span>
-                é uma empresa de tecnologia, infraestrutura e inteligência artificial. Ajudamos profissionais,
-                empresas e instituições a utilizar cloud, automação e IA para operar melhor, crescer com mais
-                eficiência e se preparar para a nova economia.
+          <div class="section__grid-2" style="margin-top: 32px;">
+            <div>
+              <p class="section__lead">
+                Cloud, Inteligência Artificial, automação e novos modelos de infraestrutura transformaram
+                a forma como as empresas operam.
               </p>
-              <p>
-                Nascemos da percepção de que a Inteligência Artificial está criando uma transformação comparável
-                às grandes revoluções tecnológicas da história. Nossa missão é ajudar pessoas e organizações a
-                atravessarem essa transição de forma <strong>prática, sustentável e rentável</strong>.
+              <p class="section__lead" style="margin-top: 1rem;">
+                Enquanto isso, muitas organizações acumulam complexidade, desperdícios e dificuldades para evoluir.
               </p>
             </div>
-            <div class="missao-panel">
-              <p><strong>Missão:</strong> Construir soluções que ampliem a capacidade de pessoas e organizações na era da inteligência artificial.</p>
-              <p>
-                Não somos software house nem provedor de infraestrutura própria. Entramos com um
-                <strong>grupo de consultores</strong> multidisciplinar — gestão, cloud, DevOps, IA, dados e
-                comunicação quando o projeto exige.
-              </p>
-            </div>
-          </div>
-          <div class="quem-hero-photo">
-            <img src="assets/images/reuniao-estrategia.jpg" alt="Equipe em reunião de estratégia" width="1200" height="400" loading="lazy">
+            <blockquote class="callout-card">
+              Acreditamos que a tecnologia deve ampliar a capacidade das empresas, não sua complexidade.
+            </blockquote>
           </div>
         </div>
       </section>
 
-      <!-- Equipe / bagagem técnica -->
-      <section class="section section--equipe section--compact" id="equipe">
-        <div class="container">
-          <div class="section-heading section-heading--center">
-            <p class="eyebrow">Equipe</p>
-            <h2>Um <span class="hl-violet">grupo de consultores</span> à disposição do projeto</h2>
-          </div>
-          <p class="equipe-intro">
-            A BTech reúne competências de gestão, tecnologia e operação em um time consultivo.
-            Você fala com a BTech; o grupo certo entra conforme o desafio — com experiência em ambientes
-            de produção, não só em apresentação.
-          </p>
-
-          <div class="skills-unified">
-            <article class="skill-cluster">
-              <h3>Gestão e operação</h3>
-              <ul>
-                <li>Diagnóstico e priorização com gestores</li>
-                <li>Stakeholders e continuidade na execução</li>
-                <li>Marketing e comunicação alinhados à operação</li>
-                <li>Indicadores, processos e governança leve</li>
-              </ul>
-            </article>
-            <article class="skill-cluster">
-              <h3>Cloud e infraestrutura</h3>
-              <ul>
-                <li>Arquitetura, migração e multicloud</li>
-                <li>AWS, Azure e Google Cloud</li>
-                <li>Backup, DR e observabilidade</li>
-                <li>Segurança e LGPD no desenho</li>
-              </ul>
-            </article>
-            <article class="skill-cluster">
-              <h3>DevOps e plataforma</h3>
-              <ul>
-                <li>Kubernetes, OpenShift e Rancher</li>
-                <li>Ansible, RHEL e automação de infra</li>
-                <li>GitLab, GitHub Actions e Argo CD</li>
-                <li>CI/CD e entrega contínua</li>
-              </ul>
-            </article>
-            <article class="skill-cluster">
-              <h3>IA e automação</h3>
-              <ul>
-                <li>Automação de processos e atendimento</li>
-                <li>Agentes e integração entre sistemas</li>
-                <li>APIs e orquestração com supervisão humana</li>
-                <li>IA aplicada sem hype vazio</li>
-              </ul>
-            </article>
-            <article class="skill-cluster">
-              <h3>Dados e analytics</h3>
-              <ul>
-                <li>Ambientes SAS 9 e Viya</li>
-                <li>Análise apoiando decisão operacional</li>
-                <li>Proteção de dados com Veeam</li>
-              </ul>
-            </article>
-            <article class="skill-cluster">
-              <h3>Parcerias e co-entrega</h3>
-              <ul>
-                <li>Apoio a MSPs e integradores</li>
-                <li>Pré-venda e implementação consultiva</li>
-                <li>Referência qualificada sem competir em IaaS</li>
-              </ul>
-            </article>
-          </div>
-
-          <div class="skills-tags" aria-label="Competências resumidas">
-            <span>Cloud</span>
-            <span>IA</span>
-            <span>DevOps</span>
-            <span>OpenShift</span>
-            <span>Kubernetes</span>
-            <span>Automação</span>
-            <span>SAS</span>
-            <span>Veeam</span>
-            <span>LGPD</span>
-            <span>Marketing B2B</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--parcerias-compact section--compact" id="parcerias">
-        <div class="container">
-          <div class="section-heading section-heading--center">
-            <p class="eyebrow">Parcerias</p>
-            <h2>Consultoria que <span class="hl-gradient">complementa</span> quem entrega infraestrutura</h2>
-          </div>
-          <p class="equipe-intro">
-            Não vendemos datacenter nem cloud própria. Trabalhamos com MSPs, integradores e vendors
-            para qualificar demanda, co-entregar e manter a operação organizada.
-          </p>
-          <div class="parcerias-compact-grid">
-            <article class="parcerias-compact-card">
-              <h3>MSPs e integradores</h3>
-              <p>Diagnóstico, alinhamento com o cliente e continuidade consultiva no projeto.</p>
-            </article>
-            <article class="parcerias-compact-card">
-              <h3>Vendors e fabricantes</h3>
-              <p>Apoio técnico-comercial, workshops e execução perto da operação do cliente.</p>
-            </article>
-            <article class="parcerias-compact-card">
-              <h3>Canais e revendas</h3>
-              <p>Reforço consultivo para a venda virar entrega sustentável.</p>
-            </article>
-          </div>
-          <p class="parcerias-note">
-            Interessado em parceria? Escreva para
-            <a href="mailto:comercial@b-tech.cloud?subject=Proposta%20de%20parceria%20BTech">comercial@b-tech.cloud</a>
-            com assunto <strong>Parceria</strong>.
-          </p>
-        </div>
-      </section>
-
-      <section class="section section--partners section--compact" id="tecnologias" aria-labelledby="tech-title">
-        <div class="container">
-          <div class="section-heading section-heading--center">
-            <p class="eyebrow">Tecnologias</p>
-            <h2 id="tech-title">Stack e práticas que <span class="hl-gradient">apoiamos</span></h2>
-            <p>Experiência em ambientes com estas plataformas — consultoria, não revenda de caixa preta.</p>
-          </div>
-
-          <div class="partners-ecosystem partners-ecosystem--compact">
-            <div class="partners-ecosystem__row">
-              <article class="partner-tile">
-                <div class="partner-tile__logo-wrap">
-                  <img src="assets/partners/redhat.svg" alt="Red Hat" width="112" height="28">
-                </div>
-                <p class="partner-tile__chips">OpenShift · Ansible · RHEL</p>
-              </article>
-              <article class="partner-tile">
-                <div class="partner-tile__logo-wrap">
-                  <img src="assets/partners/sas.svg" alt="SAS" width="80" height="28">
-                </div>
-                <p class="partner-tile__chips">SAS 9 · Viya</p>
-              </article>
-              <article class="partner-tile partner-tile--veeam">
-                <div class="partner-tile__logo-wrap partner-tile__logo-wrap--veeam">
-                  <img src="assets/partners/veeam.svg" alt="Veeam" width="120" height="36">
-                </div>
-                <p class="partner-tile__chips">Backup · DR</p>
-              </article>
-            </div>
-
-            <article class="partner-band">
-              <div class="partner-band__head">
-                <h3>DevOps e Kubernetes</h3>
-              </div>
-              <ul class="partner-band__logos" aria-label="Ferramentas DevOps">
-                <li><img src="assets/partners/kubernetes.svg" alt="Kubernetes" width="40" height="40"><span>Kubernetes</span></li>
-                <li><img src="assets/partners/rancher.svg" alt="Rancher" width="40" height="40"><span>Rancher</span></li>
-                <li><img src="assets/partners/gitlab.svg" alt="GitLab" width="40" height="40"><span>GitLab</span></li>
-                <li><img src="assets/partners/github.svg" alt="GitHub" width="40" height="40"><span>Actions</span></li>
-                <li><img src="assets/partners/argocd.svg" alt="Argo CD" width="80" height="24"><span>Argo CD</span></li>
-              </ul>
-            </article>
-
-            <article class="partner-band partner-band--cloud">
-              <div class="partner-band__head">
-                <h3>Cloud</h3>
-              </div>
-              <ul class="partner-band__logos" aria-label="Provedores cloud">
-                <li><img src="assets/partners/amazonaws.svg" alt="AWS" width="72" height="22"><span>AWS</span></li>
-                <li><span class="partner-chip-text">Azure</span></li>
-                <li><span class="partner-chip-text">Google Cloud</span></li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--surface-blue section--faq section--compact" id="faq">
-        <div class="container">
-          <div class="section-heading section-heading--center">
-            <p class="eyebrow">FAQ</p>
-            <h2>Dúvidas comuns</h2>
-          </div>
-          <div class="faq-list faq-list--compact">
-            <article class="faq-item">
-              <h3 class="faq-item__question">A BTech vende infraestrutura cloud?</h3>
-              <div class="faq-item__answer">
-                <p>
-                  <strong>Não.</strong> Somos consultoria. Ajudamos a escolher provedores, desenhar arquitetura
-                  e acompanhar a operação — sem datacenter ou cloud própria.
-                </p>
-              </div>
-            </article>
-            <article class="faq-item">
-              <h3 class="faq-item__question">Quais serviços vocês oferecem hoje?</h3>
-              <div class="faq-item__answer">
-                <p>
-                  Cloud, backup, automação, agentes de IA e projetos personalizados — com foco em resultado
-                  operacional. Veja <a href="#solucoes">Soluções</a> para o detalhe.
-                </p>
-              </div>
-            </article>
-            <article class="faq-item">
-              <h3 class="faq-item__question">Como funciona parceria com integradores?</h3>
-              <div class="faq-item__answer">
-                <p>
-                  Entramos como consultoria complementar: diagnóstico, alinhamento com o cliente e co-entrega —
-                  sem competir na conta de infra do parceiro. Veja <a href="#parcerias">Parcerias</a>.
-                </p>
-              </div>
-            </article>
-            <article class="faq-item">
-              <h3 class="faq-item__question">Como é a primeira conversa?</h3>
-              <div class="faq-item__answer">
-                <p>
-                  Você conta onde a operação está pesada. Organizamos prioridades e, se fizer sentido,
-                  um próximo passo técnico — sem pacote fechado na primeira troca.
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- 8. CTA final -->
-      <section class="cta-final" aria-labelledby="cta-final-title">
-        <div class="container">
-          <h2 id="cta-final-title">O futuro não é algo que encontramos. É algo que construímos.</h2>
-          <p class="cta-final__quote">Vamos conversar sobre o seu cenário — cloud, automação, IA ou parceria.</p>
-          <a class="button button--primary" href="#contato">Vamos conversar</a>
-        </div>
-      </section>
-
-      <section class="section contact-section contact-section--mockup section--compact" id="contato">
-        <div class="container contact-card contact-card--compact">
-          <div>
-            <p class="eyebrow">Contato</p>
-            <h2>Fale <span class="hl-gradient">conosco</span></h2>
-            <p>Brasília/DF · remoto e híbrido</p>
-            <p class="contact-details">
-              <a href="mailto:comercial@b-tech.cloud">comercial@b-tech.cloud</a>
-              <a href="tel:+5511930226495">(11) 9 3022-6495</a>
+      <!-- 4b. Onde atuamos (template apresentação) -->
+      <section class="section section--onde" id="onde-atuamos">
+        <div class="container reveal">
+          <div class="section__head section__head--center">
+            <p class="section__eyebrow">Onde atuamos</p>
+            <h2 class="section__title">Reorganizamos a tecnologia para sua empresa <span class="hl-gradient">crescer</span></h2>
+            <hr class="gradient-rule gradient-rule--center" aria-hidden="true">
+            <p class="section__lead section__lead--center">
+              Cloud · Infraestrutura · IA · Automação · FinOps — com foco em reduzir desperdícios, simplificar arquiteturas e evoluir com segurança.
             </p>
           </div>
-          <form
-            class="contact-form"
-            id="contact-form"
-            data-form-endpoint="https://formsubmit.co/ajax/comercial@b-tech.cloud"
-            data-form-email="comercial@b-tech.cloud"
-            novalidate
-          >
-            <label>Nome<input type="text" name="name" placeholder="Seu nome" autocomplete="name" required></label>
-            <label>E-mail<input type="email" name="email" placeholder="voce@empresa.com" autocomplete="email" required></label>
-            <label>Mensagem
-              <textarea name="message" rows="3" placeholder="Projeto, parceria ou dúvida..." required></textarea>
-            </label>
-            <input type="hidden" name="_subject" value="Site BTech — contato">
-            <input type="hidden" name="_captcha" value="false">
-            <button class="button button--primary" type="submit">Enviar</button>
-            <p class="form-note" role="status" aria-live="polite"></p>
-            <p class="form-disclaimer">Se o envio falhar, use o e-mail direto acima.</p>
-          </form>
+          <div class="onde-grid">
+            <article class="onde-card onde-card--cloud">
+              <img class="onde-card__icon" src="assets/visuals/pillar-cloud.svg" alt="" width="48" height="48">
+              <h3>Reorganização da Cloud</h3>
+              <p>Arquitetura, FinOps, right sizing, modernização e redução de custos.</p>
+            </article>
+            <article class="onde-card onde-card--infra">
+              <img class="onde-card__icon" src="assets/visuals/pillar-ops.svg" alt="" width="48" height="48">
+              <h3>Infraestrutura</h3>
+              <p>Cloud pública, privada e híbrida, virtualização, backup e alta disponibilidade.</p>
+            </article>
+            <article class="onde-card onde-card--ia">
+              <img class="onde-card__icon" src="assets/visuals/pillar-ia.svg" alt="" width="48" height="48">
+              <h3>Inteligência Artificial</h3>
+              <p>Agentes, automação, assistentes e produtividade com supervisão humana.</p>
+            </article>
+            <article class="onde-card onde-card--ops">
+              <img class="onde-card__icon" src="assets/visuals/pillar-automation.svg" alt="" width="48" height="48">
+              <h3>Transformação operacional</h3>
+              <p>Automação de processos, integrações, governança e observabilidade.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Como podemos ajudar -->
+      <section class="section section--warm" id="servicos">
+        <div class="container reveal">
+          <div class="section__head section__head--center">
+            <p class="section__eyebrow">Como podemos ajudar</p>
+            <h2 class="section__title">Serviços especializados para cada etapa da <span class="hl-gradient">jornada</span></h2>
+            <hr class="gradient-rule gradient-rule--center" aria-hidden="true">
+          </div>
+          <p class="section__lead section__lead--center">
+            Consultoria e execução com foco em sustentabilidade, eficiência e evolução contínua.
+          </p>
+
+          <div class="services-grid">
+            <article class="service-card">
+              <div class="service-card__icon-wrap">
+                <img class="service-card__icon" src="assets/icons/icon-consultoria.svg" alt="" width="32" height="32">
+              </div>
+              <h3>Consultoria Estratégica</h3>
+              <p>Diagnóstico, roadmap e priorização alinhados ao negócio — antes de qualquer ferramenta.</p>
+              <a class="service-card__link" href="#detalhe-consultoria" data-service-toggle="consultoria">Saiba mais</a>
+            </article>
+            <article class="service-card">
+              <div class="service-card__icon-wrap">
+                <img class="service-card__icon" src="assets/icons/icon-cloud.svg" alt="" width="32" height="32">
+              </div>
+              <h3>Cloud &amp; Infraestrutura</h3>
+              <p>Arquitetura, migração e operação em ambientes públicos, privados e híbridos.</p>
+              <a class="service-card__link" href="#detalhe-cloud" data-service-toggle="cloud">Saiba mais</a>
+            </article>
+            <article class="service-card">
+              <div class="service-card__icon-wrap">
+                <img class="service-card__icon" src="assets/icons/icon-servicos-cloud.svg" alt="" width="32" height="32">
+              </div>
+              <h3>Serviços Cloud</h3>
+              <p>Implementação, gestão e evolução de workloads com governança e disponibilidade.</p>
+              <a class="service-card__link" href="#detalhe-servicos" data-service-toggle="servicos">Saiba mais</a>
+            </article>
+            <article class="service-card">
+              <div class="service-card__icon-wrap">
+                <img class="service-card__icon" src="assets/icons/icon-virtualizacao.svg" alt="" width="32" height="32">
+              </div>
+              <h3>Virtualização e Modernização</h3>
+              <p>Transição de ambientes legados para plataformas modernas, sem interromper a operação.</p>
+              <a class="service-card__link" href="#detalhe-virt" data-service-toggle="virt">Saiba mais</a>
+            </article>
+            <article class="service-card">
+              <div class="service-card__icon-wrap">
+                <img class="service-card__icon" src="assets/icons/icon-automacao.svg" alt="" width="32" height="32">
+              </div>
+              <h3>Automação</h3>
+              <p>Processos, integrações e entrega contínua para reduzir tarefas repetitivas e erros.</p>
+              <a class="service-card__link" href="#detalhe-auto" data-service-toggle="auto">Saiba mais</a>
+            </article>
+            <article class="service-card">
+              <div class="service-card__icon-wrap">
+                <img class="service-card__icon" src="assets/icons/icon-ia.svg" alt="" width="32" height="32">
+              </div>
+              <h3>Inteligência Artificial</h3>
+              <p>IA aplicada com critério — atendimento, operação e projetos com supervisão humana.</p>
+              <a class="service-card__link" href="#detalhe-ia" data-service-toggle="ia">Saiba mais</a>
+            </article>
+            <article class="service-card">
+              <div class="service-card__icon-wrap">
+                <img class="service-card__icon" src="assets/icons/icon-finops.svg" alt="" width="32" height="32">
+              </div>
+              <h3>FinOps</h3>
+              <p>Visibilidade, otimização e governança de custos em cloud — eficiência financeira contínua.</p>
+              <a class="service-card__link" href="#detalhe-finops" data-service-toggle="finops">Saiba mais</a>
+            </article>
+          </div>
+
+          <div id="service-panels" hidden>
+            <div class="service-detail" id="panel-consultoria" role="region" aria-label="Consultoria Estratégica">
+              <h4>Consultoria Estratégica</h4>
+              <p>Entendemos o cenário, mapeamos riscos e oportunidades e construímos um plano executável com marcos claros — conectando gestão, TI e operação.</p>
+            </div>
+            <div class="service-detail" id="panel-cloud" role="region" aria-label="Cloud e Infraestrutura">
+              <h4>Cloud &amp; Infraestrutura</h4>
+              <p>Desenhamos e implementamos arquiteturas resilientes em AWS, Azure, Google Cloud e ambientes híbridos, com segurança e observabilidade desde o início.</p>
+            </div>
+            <div class="service-detail" id="panel-servicos" role="region" aria-label="Serviços Cloud">
+              <h4>Serviços Cloud</h4>
+              <p>Operação gerenciada, migração de cargas, backup, DR e runbooks para manter ambientes estáveis e previsíveis.</p>
+            </div>
+            <div class="service-detail" id="panel-virt" role="region" aria-label="Virtualização">
+              <h4>Virtualização e Modernização</h4>
+              <p>Modernização de datacenters e workloads com VMware, containers e plataformas atuais — com plano de transição gradual.</p>
+            </div>
+            <div class="service-detail" id="panel-auto" role="region" aria-label="Automação">
+              <h4>Automação</h4>
+              <p>CI/CD, orquestração e automação de processos que liberam equipes para trabalho de maior valor.</p>
+            </div>
+            <div class="service-detail" id="panel-ia" role="region" aria-label="Inteligência Artificial">
+              <h4>Inteligência Artificial</h4>
+              <p>Agentes, integrações e projetos de IA com governança, métricas e supervisão — sem hype, com resultado.</p>
+            </div>
+            <div class="service-detail" id="panel-finops" role="region" aria-label="FinOps">
+              <h4>FinOps</h4>
+              <p>Análise de custos, políticas de uso, rightsizing e cultura de responsabilidade financeira na nuvem.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. Metodologia -->
+      <section class="section section--mint" id="metodologia">
+        <div class="container reveal">
+          <div class="section__head section__head--center">
+            <p class="section__eyebrow">Nossa metodologia</p>
+            <h2 class="section__title">Do diagnóstico à <span class="hl-gradient">evolução contínua</span></h2>
+            <hr class="gradient-rule gradient-rule--center" aria-hidden="true">
+          </div>
+          <p class="section__lead section__lead--center">
+            Diagnóstico → Arquitetura → Implantação → Operação → Evolução Contínua
+          </p>
+
+          <div class="methodology" data-methodology>
+            <div class="methodology__track">
+              <div class="methodology__step" data-step>
+                <div class="methodology__node">01</div>
+                <h3>Diagnóstico</h3>
+                <p>Entendimento do ambiente, custos, riscos e prioridades do negócio.</p>
+              </div>
+              <div class="methodology__step" data-step>
+                <div class="methodology__node">02</div>
+                <h3>Arquitetura</h3>
+                <p>Desenho da solução com segurança, escala e eficiência financeira.</p>
+              </div>
+              <div class="methodology__step" data-step>
+                <div class="methodology__node">03</div>
+                <h3>Implantação</h3>
+                <p>Execução com testes, migração controlada e documentação.</p>
+              </div>
+              <div class="methodology__step" data-step>
+                <div class="methodology__node">04</div>
+                <h3>Operação</h3>
+                <p>Monitoramento, sustentação e ajustes no dia a dia.</p>
+              </div>
+              <div class="methodology__step" data-step>
+                <div class="methodology__node">05</div>
+                <h3>Evolução</h3>
+                <p>Melhoria contínua, novas demandas e otimização permanente.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. Diferenciais -->
+      <section class="section section--diff" id="diferenciais">
+        <img class="section__hex-float section__hex-float--tr" src="assets/visuals/hex-grid-accent.svg" alt="" width="100" height="88" aria-hidden="true">
+        <div class="container reveal">
+          <div class="section__head">
+            <p class="section__eyebrow">Diferenciais</p>
+            <h2 class="section__title">Por que a <span class="hl-gradient">BTech Cloud</span></h2>
+            <hr class="gradient-rule" aria-hidden="true">
+          </div>
+          <div class="diff-grid">
+            <article class="diff-card">
+              <div class="diff-card__icon"><img src="assets/icons/icon-diff-senior.svg" alt="" width="22" height="22"></div>
+              <h3>Especialistas seniores</h3>
+              <p>15 a 25 anos de experiência em cloud, infraestrutura e arquitetura de soluções.</p>
+            </article>
+            <article class="diff-card">
+              <div class="diff-card__icon"><img src="assets/icons/icon-diff-consultivo.svg" alt="" width="22" height="22"></div>
+              <h3>Atuação consultiva</h3>
+              <p>Proximidade com gestão e TI — entendemos o negócio antes da ferramenta.</p>
+            </article>
+            <article class="diff-card">
+              <div class="diff-card__icon"><img src="assets/icons/icon-diff-independencia.svg" alt="" width="22" height="22"></div>
+              <h3>Independência tecnológica</h3>
+              <p>Recomendamos o que faz sentido para o cliente, sem viés de fabricante único.</p>
+            </article>
+            <article class="diff-card">
+              <div class="diff-card__icon"><img src="assets/icons/icon-diff-direto.svg" alt="" width="22" height="22"></div>
+              <h3>Participação direta dos especialistas</h3>
+              <p>Quem desenha participa da entrega — sem camadas desnecessárias.</p>
+            </article>
+            <article class="diff-card">
+              <div class="diff-card__icon"><img src="assets/icons/icon-diff-negocio.svg" alt="" width="22" height="22"></div>
+              <h3>Tecnologia com visão de negócio</h3>
+              <p>Decisões técnicas conectadas a custo, risco e crescimento sustentável.</p>
+            </article>
+            <article class="diff-card">
+              <div class="diff-card__icon"><img src="assets/icons/icon-diff-parceria.svg" alt="" width="22" height="22"></div>
+              <h3>Relacionamento de longo prazo</h3>
+              <p>Parceria que evolui com a empresa — da migração à operação contínua.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. CTA Final -->
+      <section class="cta-section" id="cta">
+        <div class="container reveal">
+          <h2 class="section__title">Vamos conversar sobre o <span class="hl-gradient">próximo passo</span> da tecnologia da sua empresa</h2>
+          <hr class="gradient-rule" aria-hidden="true">
+          <p class="section__lead">
+            Se sua empresa está planejando modernizar ambientes, evoluir sua infraestrutura, migrar para cloud,
+            otimizar custos, automatizar processos ou explorar o potencial da Inteligência Artificial,
+            a BTech está pronta para apoiar essa jornada.
+          </p>
+          <a class="btn btn--primary" href="#contato">Falar com um especialista</a>
+        </div>
+      </section>
+
+      <!-- Contato -->
+      <section class="contact-section" id="contato">
+        <div class="container">
+          <div class="contact-grid reveal">
+            <div>
+              <p class="section__eyebrow">Contato</p>
+              <h2 class="section__title">Fale com a <span class="hl-gradient">BTech Cloud</span></h2>
+              <hr class="gradient-rule" aria-hidden="true">
+              <p class="section__lead">Brasília/DF · atendimento remoto e híbrido</p>
+              <p class="section__lead" style="margin-top: 1.5rem;">
+                <a href="mailto:comercial@b-tech.cloud">comercial@b-tech.cloud</a><br>
+                <a href="tel:+5511930226495">(11) 9 3022-6495</a>
+              </p>
+            </div>
+            <form
+              class="contact-form"
+              id="contact-form"
+              data-form-endpoint="https://formsubmit.co/ajax/comercial@b-tech.cloud"
+              data-form-email="comercial@b-tech.cloud"
+              novalidate
+            >
+              <label>Nome<input type="text" name="name" autocomplete="name" required placeholder="Seu nome"></label>
+              <label>E-mail<input type="email" name="email" autocomplete="email" required placeholder="voce@empresa.com"></label>
+              <label>Empresa<input type="text" name="company" autocomplete="organization" placeholder="Nome da empresa"></label>
+              <label>Mensagem<textarea name="message" rows="4" required placeholder="Como podemos ajudar?"></textarea></label>
+              <input type="hidden" name="_subject" value="Site BTech Cloud — contato">
+              <input type="hidden" name="_captcha" value="false">
+              <button class="btn btn--primary" type="submit">Enviar mensagem</button>
+              <p class="form-note" role="status" aria-live="polite"></p>
+            </form>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer site-footer--light">
-      <div class="container site-footer__content">
-        <a class="brand brand--footer-stacked" href="#inicio">
+    <!-- 11. Rodapé -->
+    <footer class="site-footer">
+      <div class="container footer__inner">
+        <a class="footer__brand" href="#inicio" aria-label="BTech Cloud — início">
           <img
-            src="assets/logo-btech-stacked-oficial.png"
-            srcset="assets/logo-btech-stacked-oficial.png 1x, assets/logo-btech-stacked-oficial@2x.png 2x"
-            alt="BTECH"
-            width="88"
-            height="72"
+            class="footer__logo"
+            src="assets/logo-btech-stacked-oficial-light.png"
+            srcset="assets/logo-btech-stacked-oficial-light.png 1x, assets/logo-btech-stacked-oficial-light@2x.png 2x"
+            alt="BTech Cloud"
+            width="96"
+            height="80"
           >
         </a>
-        <p>&copy; <span id="current-year"></span>
-          <span class="brand-word"><span class="brand-word__b">B</span><span class="brand-word__tech">TECH</span></span>
-          · Brasília/DF<br>
-          <a href="mailto:comercial@b-tech.cloud">comercial@b-tech.cloud</a> ·
-          <a href="tel:+5511930226495">(11) 9 3022-6495</a>
+        <p class="footer__copy">
+          &copy; <span id="current-year"></span> BTech Cloud · Brasília/DF<br>
+          comercial@b-tech.cloud · (11) 9 3022-6495
         </p>
-        <a href="#inicio">Topo</a>
+        <ul class="footer__links">
+          <li><a href="#quem-somos">Quem somos</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#inicio">Topo</a></li>
+        </ul>
       </div>
     </footer>
 
     <script src="script.js"></script>
+    <script src="script-institutional.js"></script>
   </body>
 </html>
